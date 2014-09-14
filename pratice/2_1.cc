@@ -1,6 +1,6 @@
 #include "sb6.h"
 
-class my_application : public sb6::my_application{
+class my_application : public sb6::application{
 public:
 	void render(double currentTime)
 	{
