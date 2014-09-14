@@ -1,0 +1,38 @@
+// sh.vp
+// Stonehenge "stone" vertex shader
+
+uniform mat4 mModelViewProjectionMatrix;
+uniform mat3 mNormalMatrix;
+uniform vec3 vLightDirEye;
+
+attribute vec4 vVertexPos;
+attribute vec3 vNormal;
+attribute vec2 vTextCoord;
+attribute vec3 vTangent;
+
+
+varying vec2 vTexCoordVary;
+varying vec3 vLightLocal;
+
+void main(void)
+   {
+   vTexCoordVary = vTextCoord;
+
+   vec3 vNormalEye = normalize(mNormalMatrix * vNormal);
+   gl_Position = mModelViewProjectionMatrix * vVertexPos;
+
+    // Tangent space
+    vec3 b;
+    vec3 t;
+    vec3 v;
+
+    t = normalize(mNormalMatrix * vTangent);
+    b = cross(vNormalEye, t);
+
+    // Transform light position into surface local coordinates
+    v.x = dot(vLightDirEye, t);
+    v.y = dot(vLightDirEye, b);
+    v.z = dot(vLightDirEye, vNormalEye);
+
+    vLightLocal = normalize(v);
+    }
