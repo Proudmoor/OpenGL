@@ -1,7 +1,0 @@
-//
-// Prefix header for all source files of the 'GLUTCore32Demo' target in the 'GLUTCore32Demo' project
-//
-
-#ifdef __OBJC__
-    #import <Cocoa/Cocoa.h>
-#endif
