@@ -670,18 +670,18 @@
         <window title="Triangle" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g" userLabel="Triangle">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="335" y="390" width="480" height="374"/>
+            <rect key="contentRect" x="335" y="390" width="638" height="438"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1440" height="878"/>
             <view key="contentView" id="EiT-Mj-1SZ">
-                <rect key="frame" x="0.0" y="0.0" width="480" height="374"/>
+                <rect key="frame" x="0.0" y="0.0" width="638" height="438"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <openGLView fixedFrame="YES" useAuxiliaryDepthBufferStencil="NO" allowOffline="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1JN-9o-W8a" customClass="MyOpenGLView">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="374"/>
+                        <rect key="frame" x="0.0" y="64" width="480" height="374"/>
                     </openGLView>
                 </subviews>
             </view>
-            <point key="canvasLocation" x="319" y="209"/>
+            <point key="canvasLocation" x="125" y="186"/>
         </window>
         <button verticalHuggingPriority="750" id="QEl-yO-fRk">
             <rect key="frame" x="0.0" y="0.0" width="82" height="32"/>
