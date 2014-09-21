@@ -34,8 +34,8 @@ init( void )
 
     // Create a vertex array object
     GLuint vao;
-    glGenVertexArrays( 1, &vao );
-    glBindVertexArray( vao );
+    glGenVertexArraysAPPLE( 1, &vao );
+    glBindVertexArrayAPPLE( vao );
 
     // Create and initialize a buffer object
     GLuint buffer;
@@ -90,16 +90,16 @@ main( int argc, char **argv )
     // If you are using freeglut, the next two lines will check if 
     // the code is truly 3.2. Otherwise, comment them out
     
-    glutInitContextVersion( 3, 1 );
-    glutInitContextProfile( GLUT_CORE_PROFILE );
+//    glutInitContextVersion( 3, 1 );
+//    glutInitContextProfile( GLUT_CORE_PROFILE );
 
     glutCreateWindow( "Sierpinski Gasket" );
 
-    if ( glewInit() != GLEW_OK )
-	{
-		std::cerr << "Failed to initialize GLEW ... exiting" << std::endl;
-		exit( EXIT_FAILURE );
-	}
+//    if ( glewInit() != GLEW_OK )
+//	{
+//		std::cerr << "Failed to initialize GLEW ... exiting" << std::endl;
+//		exit( EXIT_FAILURE );
+//	}
 
     init();
 

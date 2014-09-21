@@ -93,5 +93,6 @@ InitShader(const char* vShaderFile, const char* fShaderFile)
 
     return program;
 }
+ // Close namespace Angel block
+}
 
-}  // Close namespace Angel block

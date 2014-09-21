@@ -29,19 +29,19 @@
 			remoteGlobalIDString = E2756C6019CDA994003781CE;
 			remoteInfo = mac_demo;
 		};
-		E2756CDD19CDA9CE003781CE /* PBXContainerItemProxy */ = {
+		E2C8CDD319CEB3A6002E5483 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = E2756CD819CDA9CD003781CE /* mac_opengl.xcodeproj */;
+			containerPortal = E2C8CDCE19CEB3A5002E5483 /* Golden Triangle.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = E2756CA119CDA9CD003781CE;
-			remoteInfo = mac_opengl;
+			remoteGlobalIDString = E2C8CDAB19CEB3A5002E5483;
+			remoteInfo = "Golden Triangle";
 		};
-		E2756CDF19CDA9CE003781CE /* PBXContainerItemProxy */ = {
+		E2C8CDD519CEB3A6002E5483 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = E2756CD819CDA9CD003781CE /* mac_opengl.xcodeproj */;
+			containerPortal = E2C8CDCE19CEB3A5002E5483 /* Golden Triangle.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = E2756CC219CDA9CD003781CE;
-			remoteInfo = mac_openglTests;
+			remoteGlobalIDString = E2C8CDBE19CEB3A5002E5483;
+			remoteInfo = "Golden TriangleTests";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -65,8 +65,16 @@
 		E2756C8A19CDA994003781CE /* mac_demoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "mac_demoTests-Info.plist"; sourceTree = "<group>"; };
 		E2756C8C19CDA994003781CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E2756C8E19CDA994003781CE /* mac_demoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mac_demoTests.m; sourceTree = "<group>"; };
-		E2756CD819CDA9CD003781CE /* mac_opengl.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = mac_opengl.xcodeproj; path = ../mac_opengl/mac_opengl.xcodeproj; sourceTree = "<group>"; };
 		E2756CE119CDAA3A003781CE /* libglfw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglfw3.a; path = ../../../../../../usr/local/lib/libglfw3.a; sourceTree = "<group>"; };
+		E2C8CD8519CEB367002E5483 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2C8CD8619CEB367002E5483 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E2C8CD8819CEB367002E5483 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E2C8CD8919CEB367002E5483 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E2C8CD8B19CEB367002E5483 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E2C8CD8E19CEB367002E5483 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		E2C8CD9919CEB367002E5483 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2C8CD9A19CEB367002E5483 /* Golden_TriangleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Golden_TriangleTests.m; sourceTree = "<group>"; };
+		E2C8CDCE19CEB3A5002E5483 /* Golden Triangle.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Golden Triangle.xcodeproj"; path = "../Golden Triangle/Golden Triangle.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,9 +104,11 @@
 			children = (
 				E2756C6A19CDA994003781CE /* mac_demo */,
 				E2756C8819CDA994003781CE /* mac_demoTests */,
+				E2C8CD8319CEB367002E5483 /* Golden Triangle */,
+				E2C8CD9719CEB367002E5483 /* Golden TriangleTests */,
 				E2756C6319CDA994003781CE /* Frameworks */,
 				E2756C6219CDA994003781CE /* Products */,
-				E2756CD819CDA9CD003781CE /* mac_opengl.xcodeproj */,
+				E2C8CDCE19CEB3A5002E5483 /* Golden Triangle.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -174,11 +184,49 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		E2756CD919CDA9CD003781CE /* Products */ = {
+		E2C8CD8319CEB367002E5483 /* Golden Triangle */ = {
 			isa = PBXGroup;
 			children = (
-				E2756CDE19CDA9CE003781CE /* mac_opengl.app */,
-				E2756CE019CDA9CE003781CE /* mac_openglTests.xctest */,
+				E2C8CD8819CEB367002E5483 /* AppDelegate.h */,
+				E2C8CD8919CEB367002E5483 /* AppDelegate.m */,
+				E2C8CD8B19CEB367002E5483 /* Images.xcassets */,
+				E2C8CD8D19CEB367002E5483 /* MainMenu.xib */,
+				E2C8CD8419CEB367002E5483 /* Supporting Files */,
+			);
+			path = "Golden Triangle";
+			sourceTree = "<group>";
+		};
+		E2C8CD8419CEB367002E5483 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E2C8CD8519CEB367002E5483 /* Info.plist */,
+				E2C8CD8619CEB367002E5483 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E2C8CD9719CEB367002E5483 /* Golden TriangleTests */ = {
+			isa = PBXGroup;
+			children = (
+				E2C8CD9A19CEB367002E5483 /* Golden_TriangleTests.m */,
+				E2C8CD9819CEB367002E5483 /* Supporting Files */,
+			);
+			path = "Golden TriangleTests";
+			sourceTree = "<group>";
+		};
+		E2C8CD9819CEB367002E5483 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E2C8CD9919CEB367002E5483 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E2C8CDCF19CEB3A5002E5483 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E2C8CDD419CEB3A6002E5483 /* Golden Triangle.app */,
+				E2C8CDD619CEB3A6002E5483 /* Golden TriangleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -248,8 +296,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = E2756CD919CDA9CD003781CE /* Products */;
-					ProjectRef = E2756CD819CDA9CD003781CE /* mac_opengl.xcodeproj */;
+					ProductGroup = E2C8CDCF19CEB3A5002E5483 /* Products */;
+					ProjectRef = E2C8CDCE19CEB3A5002E5483 /* Golden Triangle.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -261,18 +309,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		E2756CDE19CDA9CE003781CE /* mac_opengl.app */ = {
+		E2C8CDD419CEB3A6002E5483 /* Golden Triangle.app */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.application;
-			path = mac_opengl.app;
-			remoteRef = E2756CDD19CDA9CE003781CE /* PBXContainerItemProxy */;
+			path = "Golden Triangle.app";
+			remoteRef = E2C8CDD319CEB3A6002E5483 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		E2756CE019CDA9CE003781CE /* mac_openglTests.xctest */ = {
+		E2C8CDD619CEB3A6002E5483 /* Golden TriangleTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
-			path = mac_openglTests.xctest;
-			remoteRef = E2756CDF19CDA9CE003781CE /* PBXContainerItemProxy */;
+			path = "Golden TriangleTests.xctest";
+			remoteRef = E2C8CDD519CEB3A6002E5483 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -358,6 +406,14 @@
 				E2756C8C19CDA994003781CE /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E2C8CD8D19CEB367002E5483 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2C8CD8E19CEB367002E5483 /* Base */,
+			);
+			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -530,6 +586,7 @@
 				E2756C9419CDA994003781CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E2756C9519CDA994003781CE /* Build configuration list for PBXNativeTarget "mac_demoTests" */ = {
 			isa = XCConfigurationList;
@@ -538,6 +595,7 @@
 				E2756C9719CDA994003781CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
