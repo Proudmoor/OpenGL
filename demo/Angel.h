@@ -32,8 +32,13 @@
 //
 
 #ifdef __APPLE__  // include Mac OS X verions of headers
-#  include <OpenGL/OpenGL.h>
-#  include <GLUT/glut.h>
+#include <iostream>
+#include <GL/glew.h>
+
+#define __gl_h_
+
+#include <GLUT/glut.h>
+#include <OpenGL/gl3.h>
 #else // non-Mac OS X operating systems
 #  include <GL/glew.h>
 #  include <GL/freeglut.h>

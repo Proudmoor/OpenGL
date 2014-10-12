@@ -2,9 +2,9 @@
 // Generated using randomly selected vertices and bisection
 
 #include "Angel.h"
-
-#pragma comment(lib, "glew32.lib")
-#pragma comment(lib, "freeglut.lib")
+//
+//#pragma comment(lib, "glew32.lib")
+//#pragma comment(lib, "freeglut.lib")
 
 const int NumPoints = 5000;
 
@@ -34,8 +34,8 @@ init( void )
 
     // Create a vertex array object
     GLuint vao;
-    glGenVertexArraysAPPLE( 1, &vao );
-    glBindVertexArrayAPPLE( vao );
+    glGenVertexArrays( 1, &vao );
+    glBindVertexArray( vao );
 
     // Create and initialize a buffer object
     GLuint buffer;
@@ -44,7 +44,7 @@ init( void )
     glBufferData( GL_ARRAY_BUFFER, sizeof(points), points, GL_STATIC_DRAW );
 
     // Load shaders and use the resulting shader program
-    GLuint program = InitShader( "vshader21.glsl", "fshader21.glsl" );
+    GLuint program = InitShader( "/Users/pengfei/github/OpenGL/demo/vshader21.glsl", "/Users/pengfei/github/OpenGL/demo/fshader21.glsl" );
     glUseProgram( program );
 
     // Initialize the vertex position attribute from the vertex shader
@@ -84,22 +84,25 @@ int
 main( int argc, char **argv )
 {
     glutInit( &argc, argv );
-    glutInitDisplayMode( GLUT_RGBA );
+    glutInitDisplayMode( GLUT_RGBA|GLUT_3_2_CORE_PROFILE );
     glutInitWindowSize( 512, 512 );
 
     // If you are using freeglut, the next two lines will check if 
     // the code is truly 3.2. Otherwise, comment them out
     
-//    glutInitContextVersion( 3, 1 );
+   // glutInitContextVersion( 3, 1 );
 //    glutInitContextProfile( GLUT_CORE_PROFILE );
 
     glutCreateWindow( "Sierpinski Gasket" );
+    glewExperimental = GL_TRUE;
+    glewInit();
+    
 
-//    if ( glewInit() != GLEW_OK )
-//	{
-//		std::cerr << "Failed to initialize GLEW ... exiting" << std::endl;
-//		exit( EXIT_FAILURE );
-//	}
+    if ( glewInit() != GLEW_OK )
+	{
+		std::cerr << "Failed to initialize GLEW ... exiting" << std::endl;
+		exit( EXIT_FAILURE );
+	}
 
     init();
 
