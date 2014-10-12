@@ -1,0 +1,348 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		012561E52DD03EAA0B39596A /* BasicImpostor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 34621190165B30F40B2D700F /* BasicImpostor.cpp */; };
+		593B33AE7471385431CC5F3D /* libframeworkD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 64BB43F5474F26486E274F81 /* libframeworkD.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6DAE4F327D9614CA5E4B298B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B39331612572B49496D4C3B /* framework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 225B3CC936837713028E539B;
+			remoteInfo = "libframeworkD.a";
+		};
+		6CED5C58301B5B343F65243E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B39331612572B49496D4C3B /* framework.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 78AF4B3262FD74AB44764885;
+			remoteInfo = "libframeworkD.a";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		34621190165B30F40B2D700F /* BasicImpostor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "BasicImpostor.cpp"; path = "BasicImpostor.cpp"; sourceTree = "<group>"; };
+		52D727495D916C3A0AD55C04 /* BasicImpostor.frag */ = {isa = PBXFileReference; lastKnownFileType = text; name = "BasicImpostor.frag"; path = "BasicImpostor.frag"; sourceTree = "<group>"; };
+		456058115F3C130767FA620D /* BasicImpostor.vert */ = {isa = PBXFileReference; lastKnownFileType = text; name = "BasicImpostor.vert"; path = "BasicImpostor.vert"; sourceTree = "<group>"; };
+		495924292ED47CB007B13281 /* DepthImpostor.frag */ = {isa = PBXFileReference; lastKnownFileType = text; name = "DepthImpostor.frag"; path = "DepthImpostor.frag"; sourceTree = "<group>"; };
+		46C93C694EB43C5D0D786E97 /* DepthImpostor.vert */ = {isa = PBXFileReference; lastKnownFileType = text; name = "DepthImpostor.vert"; path = "DepthImpostor.vert"; sourceTree = "<group>"; };
+		2AB5794A75FD724317CC5DE3 /* Lighting.frag */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Lighting.frag"; path = "Lighting.frag"; sourceTree = "<group>"; };
+		7BA5384A05C35BC57C3E0B31 /* PN.vert */ = {isa = PBXFileReference; lastKnownFileType = text; name = "PN.vert"; path = "PN.vert"; sourceTree = "<group>"; };
+		69FC5B657AB457D1763E0F65 /* PerspImpostor.frag */ = {isa = PBXFileReference; lastKnownFileType = text; name = "PerspImpostor.frag"; path = "PerspImpostor.frag"; sourceTree = "<group>"; };
+		4FF436174B893659413B1966 /* PerspImpostor.vert */ = {isa = PBXFileReference; lastKnownFileType = text; name = "PerspImpostor.vert"; path = "PerspImpostor.vert"; sourceTree = "<group>"; };
+		41EB601520FF01605B5615FE /* Tut 13 Basic ImpostorD */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = "Tut 13 Basic ImpostorD"; path = "Tut 13 Basic ImpostorD"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B39331612572B49496D4C3B /* framework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "framework.xcodeproj"; path = "../framework/framework.xcodeproj"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		499F6F697C400EE2320D2954 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				593B33AE7471385431CC5F3D /* libframeworkD.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		753779C458F00A8A6B534206 /* Tut 13 Basic Impostor */ = {
+			isa = PBXGroup;
+			children = (
+				34621190165B30F40B2D700F /* BasicImpostor.cpp */,
+				6DEA29C548A23F354D6B4B16 /* data */,
+				7CEE6F62176B7DEA465A5554 /* Products */,
+				161556BD16931DF97E43616F /* Projects */,
+			);
+			name = "Tut 13 Basic Impostor";
+			sourceTree = "<group>";
+		};
+		6DEA29C548A23F354D6B4B16 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				52D727495D916C3A0AD55C04 /* BasicImpostor.frag */,
+				456058115F3C130767FA620D /* BasicImpostor.vert */,
+				495924292ED47CB007B13281 /* DepthImpostor.frag */,
+				46C93C694EB43C5D0D786E97 /* DepthImpostor.vert */,
+				2AB5794A75FD724317CC5DE3 /* Lighting.frag */,
+				7BA5384A05C35BC57C3E0B31 /* PN.vert */,
+				69FC5B657AB457D1763E0F65 /* PerspImpostor.frag */,
+				4FF436174B893659413B1966 /* PerspImpostor.vert */,
+			);
+			name = "data";
+			path = data;
+			sourceTree = "<group>";
+		};
+		7CEE6F62176B7DEA465A5554 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				41EB601520FF01605B5615FE /* Tut 13 Basic ImpostorD */,
+			);
+			name = "Products";
+			sourceTree = "<group>";
+		};
+		161556BD16931DF97E43616F /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				5B39331612572B49496D4C3B /* framework.xcodeproj */,
+			);
+			name = "Projects";
+			sourceTree = "<group>";
+		};
+		7D7C77AA7AB4736E50D1500C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64BB43F5474F26486E274F81 /* libframeworkD.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0AD1594E30E74BAA41A57074 /* Tut 13 Basic Impostor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54F0792646930A900D631077 /* Build configuration list for PBXNativeTarget "Tut 13 Basic Impostor" */;
+			buildPhases = (
+				111676BA54F46F1B6B9A0746 /* Resources */,
+				2BFC56361B1F2F341A9A3350 /* Sources */,
+				499F6F697C400EE2320D2954 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6A111EA02F415A0136822C1C /* PBXTargetDependency */,
+			);
+			name = "Tut 13 Basic Impostor";
+			productInstallPath = "$(HOME)/bin";
+			productName = "Tut 13 Basic Impostor";
+			productReference = 41EB601520FF01605B5615FE /* Tut 13 Basic ImpostorD */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Tut 13 Basic Impostor" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 753779C458F00A8A6B534206 /* Tut 13 Basic Impostor */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 7D7C77AA7AB4736E50D1500C /* Products */;
+					ProjectRef = 5B39331612572B49496D4C3B /* framework.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				0AD1594E30E74BAA41A57074 /* Tut 13 Basic ImpostorD */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		64BB43F5474F26486E274F81 /* libframeworkD.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "lib/libframeworkD.a";
+			remoteRef = 6DAE4F327D9614CA5E4B298B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		111676BA54F46F1B6B9A0746 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2BFC56361B1F2F341A9A3350 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				012561E52DD03EAA0B39596A /* BasicImpostor.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
+
+/* Begin PBXTargetDependency section */
+		6A111EA02F415A0136822C1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "libframeworkD.a";
+			targetProxy = 6CED5C58301B5B343F65243E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		7FB13E1D0F883B2A4E9604F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = "Tut 13 Basic ImpostorD";
+			};
+			name = "Debug";
+		};
+		310D56DB61A53CC017FB0152 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = "Tut 13 Basic Impostor";
+			};
+			name = "Release";
+		};
+		259E35700BF32F9372660C59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_CRT_SECURE_NO_WARNINGS",
+					"_CRT_SECURE_NO_DEPRECATE",
+					"_SCL_SECURE_NO_WARNINGS",
+					"TIXML_USE_STL",
+					"FREEGLUT_STATIC",
+					"_LIB",
+					"FREEGLUT_LIB_PRAGMAS=0",
+					"DEBUG",
+					"_DEBUG",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../framework",
+					"../glsdk/glload/include",
+					"../glsdk/glimg/include",
+					"../glsdk/glm",
+					"../glsdk/glutil/include",
+					"../glsdk/glmesh/include",
+					"../glsdk/freeglut/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"../glsdk/glload/lib",
+					"../glsdk/glimg/lib",
+					"../glsdk/glutil/lib",
+					"../glsdk/glmesh/lib",
+					"../glsdk/freeglut/lib",
+				);
+				OBJROOT = "obj/Debug/Tut 13 Basic Impostor";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-lglloadD",
+					"-lglimgD",
+					"-lglutilD",
+					"-lglmeshD",
+					"-lfreeglutD",
+				);
+				PREBINDING = NO;
+			};
+			name = "Debug";
+		};
+		6C3D402818546E33690812C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_CRT_SECURE_NO_WARNINGS",
+					"_CRT_SECURE_NO_DEPRECATE",
+					"_SCL_SECURE_NO_WARNINGS",
+					"TIXML_USE_STL",
+					"FREEGLUT_STATIC",
+					"_LIB",
+					"FREEGLUT_LIB_PRAGMAS=0",
+					"RELEASE",
+					"NDEBUG",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../framework",
+					"../glsdk/glload/include",
+					"../glsdk/glimg/include",
+					"../glsdk/glm",
+					"../glsdk/glutil/include",
+					"../glsdk/glmesh/include",
+					"../glsdk/freeglut/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"../glsdk/glload/lib",
+					"../glsdk/glimg/lib",
+					"../glsdk/glutil/lib",
+					"../glsdk/glmesh/lib",
+					"../glsdk/freeglut/lib",
+				);
+				OBJROOT = "obj/Release/Tut 13 Basic Impostor";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-fomit-frame-pointer",
+				);
+				OTHER_LDFLAGS = (
+					"-lglload",
+					"-lglimg",
+					"-lglutil",
+					"-lglmesh",
+					"-lfreeglut",
+				);
+				PREBINDING = NO;
+				WARNING_CFLAGS = "-Wall";
+			};
+			name = "Release";
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		54F0792646930A900D631077 /* Build configuration list for PBXNativeTarget "Tut 13 Basic ImpostorD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FB13E1D0F883B2A4E9604F3 /* Debug */,
+				310D56DB61A53CC017FB0152 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Debug";
+		};
+		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Tut 13 Basic Impostor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				259E35700BF32F9372660C59 /* Debug */,
+				6C3D402818546E33690812C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Debug";
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

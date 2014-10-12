@@ -1,0 +1,351 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		36B00944725A237559693C9D /* Scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2BEF6E3855CE5E87047E2523 /* Scene.cpp */; };
+		45FA5B0C0343529535C66EA3 /* Mesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4A6E193B73162BC73E811710 /* Mesh.cpp */; };
+		5AB41B05122814F1724B25D8 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20CA57713DDE6EEA742813DE /* Timer.cpp */; };
+		6F9328772AB156DD77720DFE /* framework.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07AD0FCE42F2538E12633CF8 /* framework.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		07AD0FCE42F2538E12633CF8 /* framework.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = framework.cpp; sourceTree = "<group>"; };
+		09046FCE6CF3632936423DDB /* rapidxml.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; path = rapidxml.hpp; sourceTree = "<group>"; };
+		0B40311C2C6B30D518A856A5 /* framework_all.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = framework_all.h; sourceTree = "<group>"; };
+		110E47B47CAF537601D42550 /* UniformBlockArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UniformBlockArray.h; sourceTree = "<group>"; };
+		197C53CF407C0E733C2B66F3 /* Timer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Timer.h; sourceTree = "<group>"; };
+		1D66232B0EE445400BA10DDB /* MousePole.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MousePole.h; sourceTree = "<group>"; };
+		20CA57713DDE6EEA742813DE /* Timer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Timer.cpp; sourceTree = "<group>"; };
+		26215B7923D45FBE71BE046A /* libframeworkD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libframeworkD.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BEF6E3855CE5E87047E2523 /* Scene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Scene.cpp; sourceTree = "<group>"; };
+		31415BB55D16641C06E349A1 /* framework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = framework.h; sourceTree = "<group>"; };
+		3A2010C8784519776DC868D7 /* directories.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = directories.h; sourceTree = "<group>"; };
+		42942E115FF4129451BB7B57 /* Mesh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mesh.h; sourceTree = "<group>"; };
+		47525AC35AAF3CED0D6C5FE7 /* rapidxml_iterators.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; path = rapidxml_iterators.hpp; sourceTree = "<group>"; };
+		4A6E193B73162BC73E811710 /* Mesh.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Mesh.cpp; sourceTree = "<group>"; };
+		4C617FC25406646C77C55723 /* rapidxml_print.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; path = rapidxml_print.hpp; sourceTree = "<group>"; };
+		4D6F664F4EDA636E75CD19AD /* rapidxml_utils.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; path = rapidxml_utils.hpp; sourceTree = "<group>"; };
+		54526B396F4734EA14AE34EC /* SceneBinders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneBinders.h; sourceTree = "<group>"; };
+		599F58703D234896047405FB /* Interpolators.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Interpolators.h; sourceTree = "<group>"; };
+		69AD1A833E3C7FBF5D57325C /* Scene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Scene.h; sourceTree = "<group>"; };
+		75AD48D007F83C8F64DC4461 /* rapidxml_helpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rapidxml_helpers.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		57F6743027932E6F08F34A20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		433A35853D15578054014572 /* framework */ = {
+			isa = PBXGroup;
+			children = (
+				599F58703D234896047405FB /* Interpolators.h */,
+				4A6E193B73162BC73E811710 /* Mesh.cpp */,
+				42942E115FF4129451BB7B57 /* Mesh.h */,
+				1D66232B0EE445400BA10DDB /* MousePole.h */,
+				2BEF6E3855CE5E87047E2523 /* Scene.cpp */,
+				69AD1A833E3C7FBF5D57325C /* Scene.h */,
+				54526B396F4734EA14AE34EC /* SceneBinders.h */,
+				20CA57713DDE6EEA742813DE /* Timer.cpp */,
+				197C53CF407C0E733C2B66F3 /* Timer.h */,
+				110E47B47CAF537601D42550 /* UniformBlockArray.h */,
+				3A2010C8784519776DC868D7 /* directories.h */,
+				07AD0FCE42F2538E12633CF8 /* framework.cpp */,
+				31415BB55D16641C06E349A1 /* framework.h */,
+				0B40311C2C6B30D518A856A5 /* framework_all.h */,
+				09046FCE6CF3632936423DDB /* rapidxml.hpp */,
+				75AD48D007F83C8F64DC4461 /* rapidxml_helpers.h */,
+				47525AC35AAF3CED0D6C5FE7 /* rapidxml_iterators.hpp */,
+				4C617FC25406646C77C55723 /* rapidxml_print.hpp */,
+				4D6F664F4EDA636E75CD19AD /* rapidxml_utils.hpp */,
+				48D2040D11AF2A3D28625A4E /* Products */,
+			);
+			name = framework;
+			sourceTree = "<group>";
+		};
+		48D2040D11AF2A3D28625A4E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				26215B7923D45FBE71BE046A /* libframeworkD.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		086D41AE298303DF35C815A8 /* framework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 534D65DC592465D64EC52842 /* Build configuration list for PBXNativeTarget "framework" */;
+			buildPhases = (
+				3BEE42307EB46D5777C8172F /* Resources */,
+				28EC507C07477E2876EB7DCD /* Sources */,
+				57F6743027932E6F08F34A20 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = framework;
+			productName = framework;
+			productReference = 26215B7923D45FBE71BE046A /* libframeworkD.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+			};
+			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "framework" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 433A35853D15578054014572 /* framework */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				086D41AE298303DF35C815A8 /* framework */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3BEE42307EB46D5777C8172F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		28EC507C07477E2876EB7DCD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45FA5B0C0343529535C66EA3 /* Mesh.cpp in Sources */,
+				36B00944725A237559693C9D /* Scene.cpp in Sources */,
+				5AB41B05122814F1724B25D8 /* Timer.cpp in Sources */,
+				6F9328772AB156DD77720DFE /* framework.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		23270BC12C490D953EFD0EA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = lib;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				HEADER_SEARCH_PATHS = (
+					.,
+					../glsdk/glload/include,
+					../glsdk/glimg/include,
+					../glsdk/glm,
+					../glsdk/glmesh/include,
+					/usr/X11/include/,
+					../glsdk/glutil/include,
+				);
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = (
+					../glsdk/glload/lib,
+					../glsdk/glimg/lib,
+					../glsdk/glmesh/lib,
+					/usr/X11/lib,
+				);
+				OTHER_LDFLAGS = (
+					"-lglloadD",
+					"-lglimgD",
+					"-lglmeshD",
+					"-lglut",
+				);
+				PRODUCT_NAME = frameworkD;
+			};
+			name = Debug;
+		};
+		38FE638A14EC1F1350527393 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = lib;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				HEADER_SEARCH_PATHS = (
+					.,
+					../glsdk/glload/include,
+					../glsdk/glimg/include,
+					../glsdk/glm,
+					../glsdk/glmesh/include,
+					/usr/X11/include/,
+					../glsdk/glutil/include,
+				);
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = (
+					../glsdk/glload/lib,
+					../glsdk/glimg/lib,
+					../glsdk/glmesh/lib,
+					/usr/X11/lib,
+				);
+				OTHER_LDFLAGS = (
+					"-lglload",
+					"-lglimg",
+					"-lglmesh",
+					"-lglut",
+				);
+				PRODUCT_NAME = framework;
+			};
+			name = Release;
+		};
+		3FD815A301BB520777450E0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_CRT_SECURE_NO_WARNINGS,
+					_CRT_SECURE_NO_DEPRECATE,
+					_SCL_SECURE_NO_WARNINGS,
+					TIXML_USE_STL,
+					FREEGLUT_STATIC,
+					_LIB,
+					"FREEGLUT_LIB_PRAGMAS=0",
+					DEBUG,
+					_DEBUG,
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					.,
+					../glsdk/glload/include,
+					../glsdk/glimg/include,
+					../glsdk/glm,
+					../glsdk/glutil/include,
+					../glsdk/glmesh/include,
+					/usr/X11/include/GL,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					../glsdk/glload/lib,
+					../glsdk/glimg/lib,
+					../glsdk/glutil/lib,
+					../glsdk/glmesh/lib,
+					/usr/X11/lib,
+				);
+				OBJROOT = lib/Debug;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-lglloadD",
+					"-lglimgD",
+					"-lglutilD",
+					"-lglmeshD",
+					"-lglut",
+				);
+				PREBINDING = NO;
+				SYMROOT = lib;
+			};
+			name = Debug;
+		};
+		6B9043491FBF3A8B039C1724 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_CRT_SECURE_NO_WARNINGS,
+					_CRT_SECURE_NO_DEPRECATE,
+					_SCL_SECURE_NO_WARNINGS,
+					TIXML_USE_STL,
+					FREEGLUT_STATIC,
+					_LIB,
+					"FREEGLUT_LIB_PRAGMAS=0",
+					RELEASE,
+					NDEBUG,
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					.,
+					../glsdk/glload/include,
+					../glsdk/glimg/include,
+					../glsdk/glm,
+					../glsdk/glutil/include,
+					../glsdk/glmesh/include,
+					/usr/X11/include/GL,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					../glsdk/glload/lib,
+					../glsdk/glimg/lib,
+					../glsdk/glutil/lib,
+					../glsdk/glmesh/lib,
+					/usr/X11/lib,
+				);
+				OBJROOT = lib/Release;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-fomit-frame-pointer";
+				OTHER_LDFLAGS = (
+					"-lglload",
+					"-lglimg",
+					"-lglutil",
+					"-lglmesh",
+					"-lglut",
+				);
+				PREBINDING = NO;
+				SYMROOT = lib;
+				WARNING_CFLAGS = "-Wall";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FD815A301BB520777450E0F /* Debug */,
+				6B9043491FBF3A8B039C1724 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		534D65DC592465D64EC52842 /* Build configuration list for PBXNativeTarget "framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23270BC12C490D953EFD0EA0 /* Debug */,
+				38FE638A14EC1F1350527393 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

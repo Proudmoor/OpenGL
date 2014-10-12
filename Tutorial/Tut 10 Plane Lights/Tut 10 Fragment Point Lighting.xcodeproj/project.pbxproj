@@ -1,0 +1,344 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		65614618580068AA7E65562E /* Fragment Point Lighting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1BC272A54C0C3644684D4620 /* Fragment Point Lighting.cpp */; };
+		3121181131A43AA7369E6319 /* libframeworkD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E7C0138244E29821BF06277 /* libframeworkD.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5F2E69A570753E5A0C3E5CC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41B2270B010F24165C3A0C08 /* framework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 225B3CC936837713028E539B;
+			remoteInfo = "libframeworkD.a";
+		};
+		1C0D1F525D860FD974C760F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41B2270B010F24165C3A0C08 /* framework.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 78AF4B3262FD74AB44764885;
+			remoteInfo = "libframeworkD.a";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1BC272A54C0C3644684D4620 /* Fragment Point Lighting.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Fragment Point Lighting.cpp"; path = "Fragment Point Lighting.cpp"; sourceTree = "<group>"; };
+		240703441575602B28F845AC /* ColorPassthrough.frag */ = {isa = PBXFileReference; lastKnownFileType = text; name = "ColorPassthrough.frag"; path = "ColorPassthrough.frag"; sourceTree = "<group>"; };
+		2F171F7B65F97BED0E613244 /* FragmentLighting.frag */ = {isa = PBXFileReference; lastKnownFileType = text; name = "FragmentLighting.frag"; path = "FragmentLighting.frag"; sourceTree = "<group>"; };
+		3EB76ABE7A700B9113A74C99 /* FragmentLighting_PCN.vert */ = {isa = PBXFileReference; lastKnownFileType = text; name = "FragmentLighting_PCN.vert"; path = "FragmentLighting_PCN.vert"; sourceTree = "<group>"; };
+		0FB94BFA178B2D931E3F57E8 /* FragmentLighting_PN.vert */ = {isa = PBXFileReference; lastKnownFileType = text; name = "FragmentLighting_PN.vert"; path = "FragmentLighting_PN.vert"; sourceTree = "<group>"; };
+		483473A0442777E97A95669B /* ModelPosVertexLighting_PCN.vert */ = {isa = PBXFileReference; lastKnownFileType = text; name = "ModelPosVertexLighting_PCN.vert"; path = "ModelPosVertexLighting_PCN.vert"; sourceTree = "<group>"; };
+		744022720D9C27723F152BCE /* ModelPosVertexLighting_PN.vert */ = {isa = PBXFileReference; lastKnownFileType = text; name = "ModelPosVertexLighting_PN.vert"; path = "ModelPosVertexLighting_PN.vert"; sourceTree = "<group>"; };
+		07F5185A62BE3E7175DD156C /* Tut 10 Fragment Point LightingD */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = "Tut 10 Fragment Point LightingD"; path = "Tut 10 Fragment Point LightingD"; sourceTree = BUILT_PRODUCTS_DIR; };
+		41B2270B010F24165C3A0C08 /* framework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "framework.xcodeproj"; path = "../framework/framework.xcodeproj"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		03A028470BD35F1518036F0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3121181131A43AA7369E6319 /* libframeworkD.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		46A5065C2EF640A478BC396A /* Tut 10 Fragment Point Lighting */ = {
+			isa = PBXGroup;
+			children = (
+				1BC272A54C0C3644684D4620 /* Fragment Point Lighting.cpp */,
+				233E7BA469055C8816EA7396 /* data */,
+				76CF3AA15DA32F410A057343 /* Products */,
+				6044476979E21847711E129F /* Projects */,
+			);
+			name = "Tut 10 Fragment Point Lighting";
+			sourceTree = "<group>";
+		};
+		233E7BA469055C8816EA7396 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				240703441575602B28F845AC /* ColorPassthrough.frag */,
+				2F171F7B65F97BED0E613244 /* FragmentLighting.frag */,
+				3EB76ABE7A700B9113A74C99 /* FragmentLighting_PCN.vert */,
+				0FB94BFA178B2D931E3F57E8 /* FragmentLighting_PN.vert */,
+				483473A0442777E97A95669B /* ModelPosVertexLighting_PCN.vert */,
+				744022720D9C27723F152BCE /* ModelPosVertexLighting_PN.vert */,
+			);
+			name = "data";
+			path = data;
+			sourceTree = "<group>";
+		};
+		76CF3AA15DA32F410A057343 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07F5185A62BE3E7175DD156C /* Tut 10 Fragment Point LightingD */,
+			);
+			name = "Products";
+			sourceTree = "<group>";
+		};
+		6044476979E21847711E129F /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				41B2270B010F24165C3A0C08 /* framework.xcodeproj */,
+			);
+			name = "Projects";
+			sourceTree = "<group>";
+		};
+		65454CDF7DD068EA624D4F85 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1E7C0138244E29821BF06277 /* libframeworkD.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		01B814307F56707F349120A7 /* Tut 10 Fragment Point Lighting */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F9A2A215EBC0C284E6A3CBC /* Build configuration list for PBXNativeTarget "Tut 10 Fragment Point Lighting" */;
+			buildPhases = (
+				6A0A3BFE2DA7575470F867BE /* Resources */,
+				193371F24DFC025F2EA65372 /* Sources */,
+				03A028470BD35F1518036F0A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				626D0AE217D74A8E56FF0427 /* PBXTargetDependency */,
+			);
+			name = "Tut 10 Fragment Point Lighting";
+			productInstallPath = "$(HOME)/bin";
+			productName = "Tut 10 Fragment Point Lighting";
+			productReference = 07F5185A62BE3E7175DD156C /* Tut 10 Fragment Point LightingD */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Tut 10 Fragment Point Lighting" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 46A5065C2EF640A478BC396A /* Tut 10 Fragment Point Lighting */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 65454CDF7DD068EA624D4F85 /* Products */;
+					ProjectRef = 41B2270B010F24165C3A0C08 /* framework.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				01B814307F56707F349120A7 /* Tut 10 Fragment Point LightingD */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		1E7C0138244E29821BF06277 /* libframeworkD.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "lib/libframeworkD.a";
+			remoteRef = 5F2E69A570753E5A0C3E5CC7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6A0A3BFE2DA7575470F867BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		193371F24DFC025F2EA65372 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65614618580068AA7E65562E /* Fragment Point Lighting.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
+
+/* Begin PBXTargetDependency section */
+		626D0AE217D74A8E56FF0427 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "libframeworkD.a";
+			targetProxy = 1C0D1F525D860FD974C760F6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4AAA6987593559252DD33938 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = "Tut 10 Fragment Point LightingD";
+			};
+			name = "Debug";
+		};
+		11AB0B854FA032903D5735A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = "Tut 10 Fragment Point Lighting";
+			};
+			name = "Release";
+		};
+		1155735E26A322EC55926F56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_CRT_SECURE_NO_WARNINGS",
+					"_CRT_SECURE_NO_DEPRECATE",
+					"_SCL_SECURE_NO_WARNINGS",
+					"TIXML_USE_STL",
+					"FREEGLUT_STATIC",
+					"_LIB",
+					"FREEGLUT_LIB_PRAGMAS=0",
+					"DEBUG",
+					"_DEBUG",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../framework",
+					"../glsdk/glload/include",
+					"../glsdk/glimg/include",
+					"../glsdk/glm",
+					"../glsdk/glutil/include",
+					"../glsdk/glmesh/include",
+					"../glsdk/freeglut/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"../glsdk/glload/lib",
+					"../glsdk/glimg/lib",
+					"../glsdk/glutil/lib",
+					"../glsdk/glmesh/lib",
+					"../glsdk/freeglut/lib",
+				);
+				OBJROOT = "obj/Debug/Tut 10 Fragment Point Lighting";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-lglloadD",
+					"-lglimgD",
+					"-lglutilD",
+					"-lglmeshD",
+					"-lfreeglutD",
+				);
+				PREBINDING = NO;
+			};
+			name = "Debug";
+		};
+		799207EC318B440C12924F6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_CRT_SECURE_NO_WARNINGS",
+					"_CRT_SECURE_NO_DEPRECATE",
+					"_SCL_SECURE_NO_WARNINGS",
+					"TIXML_USE_STL",
+					"FREEGLUT_STATIC",
+					"_LIB",
+					"FREEGLUT_LIB_PRAGMAS=0",
+					"RELEASE",
+					"NDEBUG",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../framework",
+					"../glsdk/glload/include",
+					"../glsdk/glimg/include",
+					"../glsdk/glm",
+					"../glsdk/glutil/include",
+					"../glsdk/glmesh/include",
+					"../glsdk/freeglut/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"../glsdk/glload/lib",
+					"../glsdk/glimg/lib",
+					"../glsdk/glutil/lib",
+					"../glsdk/glmesh/lib",
+					"../glsdk/freeglut/lib",
+				);
+				OBJROOT = "obj/Release/Tut 10 Fragment Point Lighting";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-fomit-frame-pointer",
+				);
+				OTHER_LDFLAGS = (
+					"-lglload",
+					"-lglimg",
+					"-lglutil",
+					"-lglmesh",
+					"-lfreeglut",
+				);
+				PREBINDING = NO;
+				WARNING_CFLAGS = "-Wall";
+			};
+			name = "Release";
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2F9A2A215EBC0C284E6A3CBC /* Build configuration list for PBXNativeTarget "Tut 10 Fragment Point LightingD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AAA6987593559252DD33938 /* Debug */,
+				11AB0B854FA032903D5735A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Debug";
+		};
+		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Tut 10 Fragment Point Lighting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1155735E26A322EC55926F56 /* Debug */,
+				799207EC318B440C12924F6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Debug";
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

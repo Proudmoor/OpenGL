@@ -1,0 +1,352 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		066F04733D0F35BA54E675F0 /* Gaussian Specular Lighting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7E0F43FE10C85BE268052283 /* Gaussian Specular Lighting.cpp */; };
+		2147560848A814CA59E00E41 /* libframeworkD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 12261A8E75EE7F2974CC3D9D /* libframeworkD.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		66F76527007B1F3F7CD64798 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A275D3E25B671AD4B5F58A4 /* framework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 225B3CC936837713028E539B;
+			remoteInfo = "libframeworkD.a";
+		};
+		62596ACB5D0577741FC7579E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A275D3E25B671AD4B5F58A4 /* framework.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 78AF4B3262FD74AB44764885;
+			remoteInfo = "libframeworkD.a";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7E0F43FE10C85BE268052283 /* Gaussian Specular Lighting.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Gaussian Specular Lighting.cpp"; path = "Gaussian Specular Lighting.cpp"; sourceTree = "<group>"; };
+		7F5A032A495770605639607B /* BlinnLighting.frag */ = {isa = PBXFileReference; lastKnownFileType = text; name = "BlinnLighting.frag"; path = "BlinnLighting.frag"; sourceTree = "<group>"; };
+		3F9A20DD4D674207667E177D /* BlinnOnly.frag */ = {isa = PBXFileReference; lastKnownFileType = text; name = "BlinnOnly.frag"; path = "BlinnOnly.frag"; sourceTree = "<group>"; };
+		49A372C51E280B7E2F36258E /* GaussianLighting.frag */ = {isa = PBXFileReference; lastKnownFileType = text; name = "GaussianLighting.frag"; path = "GaussianLighting.frag"; sourceTree = "<group>"; };
+		3D9B489332A37DD808DA617B /* GaussianOnly.frag */ = {isa = PBXFileReference; lastKnownFileType = text; name = "GaussianOnly.frag"; path = "GaussianOnly.frag"; sourceTree = "<group>"; };
+		77551BAF173F572150DB02F2 /* PCN.vert */ = {isa = PBXFileReference; lastKnownFileType = text; name = "PCN.vert"; path = "PCN.vert"; sourceTree = "<group>"; };
+		06527B5A06AF6FE218E662F8 /* PN.vert */ = {isa = PBXFileReference; lastKnownFileType = text; name = "PN.vert"; path = "PN.vert"; sourceTree = "<group>"; };
+		190D653A61CF0FE93B2B3D16 /* PhongLighting.frag */ = {isa = PBXFileReference; lastKnownFileType = text; name = "PhongLighting.frag"; path = "PhongLighting.frag"; sourceTree = "<group>"; };
+		283E2B6268FF7DE355151337 /* PhongOnly.frag */ = {isa = PBXFileReference; lastKnownFileType = text; name = "PhongOnly.frag"; path = "PhongOnly.frag"; sourceTree = "<group>"; };
+		2270162D7D3E7AD1594968F1 /* PosTransform.vert */ = {isa = PBXFileReference; lastKnownFileType = text; name = "PosTransform.vert"; path = "PosTransform.vert"; sourceTree = "<group>"; };
+		3E5577340A60295401333DF0 /* UniformColor.frag */ = {isa = PBXFileReference; lastKnownFileType = text; name = "UniformColor.frag"; path = "UniformColor.frag"; sourceTree = "<group>"; };
+		45250DE558E14B367B687C0D /* Tut 11 Gaussian Specular LightingD */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = "Tut 11 Gaussian Specular LightingD"; path = "Tut 11 Gaussian Specular LightingD"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A275D3E25B671AD4B5F58A4 /* framework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "framework.xcodeproj"; path = "../framework/framework.xcodeproj"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		70766432196E1D1152954BDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2147560848A814CA59E00E41 /* libframeworkD.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D05333624E8264649111F7B /* Tut 11 Gaussian Specular Lighting */ = {
+			isa = PBXGroup;
+			children = (
+				7E0F43FE10C85BE268052283 /* Gaussian Specular Lighting.cpp */,
+				0AB849624EA4225E011E7ED3 /* data */,
+				170362A83310037C598408FD /* Products */,
+				408905A6132E65257ED75683 /* Projects */,
+			);
+			name = "Tut 11 Gaussian Specular Lighting";
+			sourceTree = "<group>";
+		};
+		0AB849624EA4225E011E7ED3 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				7F5A032A495770605639607B /* BlinnLighting.frag */,
+				3F9A20DD4D674207667E177D /* BlinnOnly.frag */,
+				49A372C51E280B7E2F36258E /* GaussianLighting.frag */,
+				3D9B489332A37DD808DA617B /* GaussianOnly.frag */,
+				77551BAF173F572150DB02F2 /* PCN.vert */,
+				06527B5A06AF6FE218E662F8 /* PN.vert */,
+				190D653A61CF0FE93B2B3D16 /* PhongLighting.frag */,
+				283E2B6268FF7DE355151337 /* PhongOnly.frag */,
+				2270162D7D3E7AD1594968F1 /* PosTransform.vert */,
+				3E5577340A60295401333DF0 /* UniformColor.frag */,
+			);
+			name = "data";
+			path = data;
+			sourceTree = "<group>";
+		};
+		170362A83310037C598408FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				45250DE558E14B367B687C0D /* Tut 11 Gaussian Specular LightingD */,
+			);
+			name = "Products";
+			sourceTree = "<group>";
+		};
+		408905A6132E65257ED75683 /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				4A275D3E25B671AD4B5F58A4 /* framework.xcodeproj */,
+			);
+			name = "Projects";
+			sourceTree = "<group>";
+		};
+		601A0026474C63E2369B3167 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				12261A8E75EE7F2974CC3D9D /* libframeworkD.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		49CF74AB3121241421A453D1 /* Tut 11 Gaussian Specular Lighting */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 701E4ECF2B7671187DA167CA /* Build configuration list for PBXNativeTarget "Tut 11 Gaussian Specular Lighting" */;
+			buildPhases = (
+				39E2278A5EE9475E04D36C6B /* Resources */,
+				0C5938CD20A010144BC8565C /* Sources */,
+				70766432196E1D1152954BDB /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				58995A3D6662437F6B261DE5 /* PBXTargetDependency */,
+			);
+			name = "Tut 11 Gaussian Specular Lighting";
+			productInstallPath = "$(HOME)/bin";
+			productName = "Tut 11 Gaussian Specular Lighting";
+			productReference = 45250DE558E14B367B687C0D /* Tut 11 Gaussian Specular LightingD */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Tut 11 Gaussian Specular Lighting" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 2D05333624E8264649111F7B /* Tut 11 Gaussian Specular Lighting */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 601A0026474C63E2369B3167 /* Products */;
+					ProjectRef = 4A275D3E25B671AD4B5F58A4 /* framework.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				49CF74AB3121241421A453D1 /* Tut 11 Gaussian Specular LightingD */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		12261A8E75EE7F2974CC3D9D /* libframeworkD.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "lib/libframeworkD.a";
+			remoteRef = 66F76527007B1F3F7CD64798 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		39E2278A5EE9475E04D36C6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0C5938CD20A010144BC8565C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				066F04733D0F35BA54E675F0 /* Gaussian Specular Lighting.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
+
+/* Begin PBXTargetDependency section */
+		58995A3D6662437F6B261DE5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "libframeworkD.a";
+			targetProxy = 62596ACB5D0577741FC7579E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		52E4218750600BFA7905643E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = "Tut 11 Gaussian Specular LightingD";
+			};
+			name = "Debug";
+		};
+		1A1A22AB2D8D33C846BF586C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = "Tut 11 Gaussian Specular Lighting";
+			};
+			name = "Release";
+		};
+		581C45BD307C34765EB820CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_CRT_SECURE_NO_WARNINGS",
+					"_CRT_SECURE_NO_DEPRECATE",
+					"_SCL_SECURE_NO_WARNINGS",
+					"TIXML_USE_STL",
+					"FREEGLUT_STATIC",
+					"_LIB",
+					"FREEGLUT_LIB_PRAGMAS=0",
+					"DEBUG",
+					"_DEBUG",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../framework",
+					"../glsdk/glload/include",
+					"../glsdk/glimg/include",
+					"../glsdk/glm",
+					"../glsdk/glutil/include",
+					"../glsdk/glmesh/include",
+					"../glsdk/freeglut/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"../glsdk/glload/lib",
+					"../glsdk/glimg/lib",
+					"../glsdk/glutil/lib",
+					"../glsdk/glmesh/lib",
+					"../glsdk/freeglut/lib",
+				);
+				OBJROOT = "obj/Debug/Tut 11 Gaussian Specular Lighting";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-lglloadD",
+					"-lglimgD",
+					"-lglutilD",
+					"-lglmeshD",
+					"-lfreeglutD",
+				);
+				PREBINDING = NO;
+			};
+			name = "Debug";
+		};
+		53B5143473D81D22253C1A07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_CRT_SECURE_NO_WARNINGS",
+					"_CRT_SECURE_NO_DEPRECATE",
+					"_SCL_SECURE_NO_WARNINGS",
+					"TIXML_USE_STL",
+					"FREEGLUT_STATIC",
+					"_LIB",
+					"FREEGLUT_LIB_PRAGMAS=0",
+					"RELEASE",
+					"NDEBUG",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../framework",
+					"../glsdk/glload/include",
+					"../glsdk/glimg/include",
+					"../glsdk/glm",
+					"../glsdk/glutil/include",
+					"../glsdk/glmesh/include",
+					"../glsdk/freeglut/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"../glsdk/glload/lib",
+					"../glsdk/glimg/lib",
+					"../glsdk/glutil/lib",
+					"../glsdk/glmesh/lib",
+					"../glsdk/freeglut/lib",
+				);
+				OBJROOT = "obj/Release/Tut 11 Gaussian Specular Lighting";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-fomit-frame-pointer",
+				);
+				OTHER_LDFLAGS = (
+					"-lglload",
+					"-lglimg",
+					"-lglutil",
+					"-lglmesh",
+					"-lfreeglut",
+				);
+				PREBINDING = NO;
+				WARNING_CFLAGS = "-Wall";
+			};
+			name = "Release";
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		701E4ECF2B7671187DA167CA /* Build configuration list for PBXNativeTarget "Tut 11 Gaussian Specular LightingD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52E4218750600BFA7905643E /* Debug */,
+				1A1A22AB2D8D33C846BF586C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Debug";
+		};
+		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Tut 11 Gaussian Specular Lighting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				581C45BD307C34765EB820CB /* Debug */,
+				53B5143473D81D22253C1A07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Debug";
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

@@ -1,0 +1,336 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05B93A8250F477026026737F /* fragChangeColor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 06522E4334393C21358A33F4 /* fragChangeColor.cpp */; };
+		31016B4C54AD2B2333FD39B8 /* libframeworkD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A8645AF02240CED5A0D458D /* libframeworkD.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		468020F969D737370D4C1FCB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D3A4C0D02A759F31AC9295F /* framework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 225B3CC936837713028E539B;
+			remoteInfo = "libframeworkD.a";
+		};
+		079F78241D6642A9228840B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D3A4C0D02A759F31AC9295F /* framework.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 78AF4B3262FD74AB44764885;
+			remoteInfo = "libframeworkD.a";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		66C806AD653A64A276F441C0 /* calcColor.frag */ = {isa = PBXFileReference; lastKnownFileType = text; name = "calcColor.frag"; path = "calcColor.frag"; sourceTree = "<group>"; };
+		34BB17B64ADE38335A004CF7 /* calcOffset.vert */ = {isa = PBXFileReference; lastKnownFileType = text; name = "calcOffset.vert"; path = "calcOffset.vert"; sourceTree = "<group>"; };
+		06522E4334393C21358A33F4 /* fragChangeColor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "fragChangeColor.cpp"; path = "fragChangeColor.cpp"; sourceTree = "<group>"; };
+		324650A8647C47FA09C1686A /* Tut 03 Fragment Change ColorD */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = "Tut 03 Fragment Change ColorD"; path = "Tut 03 Fragment Change ColorD"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D3A4C0D02A759F31AC9295F /* framework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "framework.xcodeproj"; path = "../framework/framework.xcodeproj"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		49632F9A56F9256923A40065 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31016B4C54AD2B2333FD39B8 /* libframeworkD.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7CE338F428ED10A35E5079A7 /* Tut 03 Fragment Change Color */ = {
+			isa = PBXGroup;
+			children = (
+				711732C86AB0528D671F4096 /* data */,
+				06522E4334393C21358A33F4 /* fragChangeColor.cpp */,
+				3F8340A255EB5F2738407964 /* Products */,
+				3BE01A6A59A82C1136966C47 /* Projects */,
+			);
+			name = "Tut 03 Fragment Change Color";
+			sourceTree = "<group>";
+		};
+		711732C86AB0528D671F4096 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				66C806AD653A64A276F441C0 /* calcColor.frag */,
+				34BB17B64ADE38335A004CF7 /* calcOffset.vert */,
+			);
+			name = "data";
+			path = data;
+			sourceTree = "<group>";
+		};
+		3F8340A255EB5F2738407964 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				324650A8647C47FA09C1686A /* Tut 03 Fragment Change ColorD */,
+			);
+			name = "Products";
+			sourceTree = "<group>";
+		};
+		3BE01A6A59A82C1136966C47 /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				3D3A4C0D02A759F31AC9295F /* framework.xcodeproj */,
+			);
+			name = "Projects";
+			sourceTree = "<group>";
+		};
+		4216544731656A3C45F04DC3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4A8645AF02240CED5A0D458D /* libframeworkD.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		396A62A62916669813F42D2E /* Tut 03 Fragment Change Color */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B2A14BE49FF0DC322383CAB /* Build configuration list for PBXNativeTarget "Tut 03 Fragment Change Color" */;
+			buildPhases = (
+				26E7414205167AB2675F3B7D /* Resources */,
+				19B638657B65421573692B73 /* Sources */,
+				49632F9A56F9256923A40065 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				56685B1F61AF66BF11FA63CA /* PBXTargetDependency */,
+			);
+			name = "Tut 03 Fragment Change Color";
+			productInstallPath = "$(HOME)/bin";
+			productName = "Tut 03 Fragment Change Color";
+			productReference = 324650A8647C47FA09C1686A /* Tut 03 Fragment Change ColorD */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Tut 03 Fragment Change Color" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 7CE338F428ED10A35E5079A7 /* Tut 03 Fragment Change Color */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4216544731656A3C45F04DC3 /* Products */;
+					ProjectRef = 3D3A4C0D02A759F31AC9295F /* framework.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				396A62A62916669813F42D2E /* Tut 03 Fragment Change ColorD */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		4A8645AF02240CED5A0D458D /* libframeworkD.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "lib/libframeworkD.a";
+			remoteRef = 468020F969D737370D4C1FCB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		26E7414205167AB2675F3B7D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		19B638657B65421573692B73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05B93A8250F477026026737F /* fragChangeColor.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
+
+/* Begin PBXTargetDependency section */
+		56685B1F61AF66BF11FA63CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "libframeworkD.a";
+			targetProxy = 079F78241D6642A9228840B5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5A4863D561892A4206134CF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = "Tut 03 Fragment Change ColorD";
+			};
+			name = "Debug";
+		};
+		3B78621507B0437B012C2245 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = "Tut 03 Fragment Change Color";
+			};
+			name = "Release";
+		};
+		667A660E60C4707B3D634F85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_CRT_SECURE_NO_WARNINGS",
+					"_CRT_SECURE_NO_DEPRECATE",
+					"_SCL_SECURE_NO_WARNINGS",
+					"TIXML_USE_STL",
+					"FREEGLUT_STATIC",
+					"_LIB",
+					"FREEGLUT_LIB_PRAGMAS=0",
+					"DEBUG",
+					"_DEBUG",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../framework",
+					"../glsdk/glload/include",
+					"../glsdk/glimg/include",
+					"../glsdk/glm",
+					"../glsdk/glutil/include",
+					"../glsdk/glmesh/include",
+					"../glsdk/freeglut/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"../glsdk/glload/lib",
+					"../glsdk/glimg/lib",
+					"../glsdk/glutil/lib",
+					"../glsdk/glmesh/lib",
+					"../glsdk/freeglut/lib",
+				);
+				OBJROOT = "obj/Debug/Tut 03 Fragment Change Color";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-lglloadD",
+					"-lglimgD",
+					"-lglutilD",
+					"-lglmeshD",
+					"-lfreeglutD",
+				);
+				PREBINDING = NO;
+			};
+			name = "Debug";
+		};
+		161A09A2161018816A464D25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_CRT_SECURE_NO_WARNINGS",
+					"_CRT_SECURE_NO_DEPRECATE",
+					"_SCL_SECURE_NO_WARNINGS",
+					"TIXML_USE_STL",
+					"FREEGLUT_STATIC",
+					"_LIB",
+					"FREEGLUT_LIB_PRAGMAS=0",
+					"RELEASE",
+					"NDEBUG",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../framework",
+					"../glsdk/glload/include",
+					"../glsdk/glimg/include",
+					"../glsdk/glm",
+					"../glsdk/glutil/include",
+					"../glsdk/glmesh/include",
+					"../glsdk/freeglut/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"../glsdk/glload/lib",
+					"../glsdk/glimg/lib",
+					"../glsdk/glutil/lib",
+					"../glsdk/glmesh/lib",
+					"../glsdk/freeglut/lib",
+				);
+				OBJROOT = "obj/Release/Tut 03 Fragment Change Color";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-fomit-frame-pointer",
+				);
+				OTHER_LDFLAGS = (
+					"-lglload",
+					"-lglimg",
+					"-lglutil",
+					"-lglmesh",
+					"-lfreeglut",
+				);
+				PREBINDING = NO;
+				WARNING_CFLAGS = "-Wall";
+			};
+			name = "Release";
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6B2A14BE49FF0DC322383CAB /* Build configuration list for PBXNativeTarget "Tut 03 Fragment Change ColorD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A4863D561892A4206134CF4 /* Debug */,
+				3B78621507B0437B012C2245 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Debug";
+		};
+		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Tut 03 Fragment Change Color" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				667A660E60C4707B3D634F85 /* Debug */,
+				161A09A2161018816A464D25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Debug";
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

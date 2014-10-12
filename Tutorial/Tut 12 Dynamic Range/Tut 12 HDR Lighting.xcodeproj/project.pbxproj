@@ -1,0 +1,356 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		578221C4733C06AA3EBC3C04 /* HDR Lighting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28F66F5D5D6808E265B43413 /* HDR Lighting.cpp */; };
+		7FE1417462B43319509053BA /* Lights.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B0263B848054D9E6E903D8D /* Lights.cpp */; };
+		077E765C1A745DB1197A46F9 /* Scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3566535660C7690236931E01 /* Scene.cpp */; };
+		0E796575197F04F44C062817 /* libframeworkD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 774C2B7C740B259778F73E4E /* libframeworkD.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		06BF00467CD312CE44E8011B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2713707D58474CBA72446FD6 /* framework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 225B3CC936837713028E539B;
+			remoteInfo = "libframeworkD.a";
+		};
+		41B5039C2B9F578501B40F6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2713707D58474CBA72446FD6 /* framework.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 78AF4B3262FD74AB44764885;
+			remoteInfo = "libframeworkD.a";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		28F66F5D5D6808E265B43413 /* HDR Lighting.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "HDR Lighting.cpp"; path = "HDR Lighting.cpp"; sourceTree = "<group>"; };
+		6B0263B848054D9E6E903D8D /* Lights.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Lights.cpp"; path = "Lights.cpp"; sourceTree = "<group>"; };
+		19CA25862E0004585BEC7119 /* Lights.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Lights.h"; path = "Lights.h"; sourceTree = "<group>"; };
+		3566535660C7690236931E01 /* Scene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Scene.cpp"; path = "Scene.cpp"; sourceTree = "<group>"; };
+		21C52B5912155C7260C5657A /* Scene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Scene.h"; path = "Scene.h"; sourceTree = "<group>"; };
+		4F4A25C27A5D243667BD512E /* DiffuseOnly.frag */ = {isa = PBXFileReference; lastKnownFileType = text; name = "DiffuseOnly.frag"; path = "DiffuseOnly.frag"; sourceTree = "<group>"; };
+		40E7318A19D718F53A8178CF /* DiffuseOnlyMtl.frag */ = {isa = PBXFileReference; lastKnownFileType = text; name = "DiffuseOnlyMtl.frag"; path = "DiffuseOnlyMtl.frag"; sourceTree = "<group>"; };
+		069265B15E316B7C40A7219A /* DiffuseSpecular.frag */ = {isa = PBXFileReference; lastKnownFileType = text; name = "DiffuseSpecular.frag"; path = "DiffuseSpecular.frag"; sourceTree = "<group>"; };
+		0ED369FC20A9407223BD71FF /* DiffuseSpecularMtl.frag */ = {isa = PBXFileReference; lastKnownFileType = text; name = "DiffuseSpecularMtl.frag"; path = "DiffuseSpecularMtl.frag"; sourceTree = "<group>"; };
+		307E3201071E5B8B1E85549D /* PN.vert */ = {isa = PBXFileReference; lastKnownFileType = text; name = "PN.vert"; path = "PN.vert"; sourceTree = "<group>"; };
+		291A049770840EE62F1051B0 /* PNC.vert */ = {isa = PBXFileReference; lastKnownFileType = text; name = "PNC.vert"; path = "PNC.vert"; sourceTree = "<group>"; };
+		76D946503DCA237574FE6B91 /* Tut 12 HDR LightingD */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = "Tut 12 HDR LightingD"; path = "Tut 12 HDR LightingD"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2713707D58474CBA72446FD6 /* framework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "framework.xcodeproj"; path = "../framework/framework.xcodeproj"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4499327068B159901A0001D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E796575197F04F44C062817 /* libframeworkD.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		71187DD626B12FD615590B80 /* Tut 12 HDR Lighting */ = {
+			isa = PBXGroup;
+			children = (
+				28F66F5D5D6808E265B43413 /* HDR Lighting.cpp */,
+				6B0263B848054D9E6E903D8D /* Lights.cpp */,
+				19CA25862E0004585BEC7119 /* Lights.h */,
+				3566535660C7690236931E01 /* Scene.cpp */,
+				21C52B5912155C7260C5657A /* Scene.h */,
+				639162271B54537326D76F18 /* data */,
+				151867026F1301FA63B73892 /* Products */,
+				259837000C445D3814922BEC /* Projects */,
+			);
+			name = "Tut 12 HDR Lighting";
+			sourceTree = "<group>";
+		};
+		639162271B54537326D76F18 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				4F4A25C27A5D243667BD512E /* DiffuseOnly.frag */,
+				40E7318A19D718F53A8178CF /* DiffuseOnlyMtl.frag */,
+				069265B15E316B7C40A7219A /* DiffuseSpecular.frag */,
+				0ED369FC20A9407223BD71FF /* DiffuseSpecularMtl.frag */,
+				307E3201071E5B8B1E85549D /* PN.vert */,
+				291A049770840EE62F1051B0 /* PNC.vert */,
+			);
+			name = "data";
+			path = data;
+			sourceTree = "<group>";
+		};
+		151867026F1301FA63B73892 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				76D946503DCA237574FE6B91 /* Tut 12 HDR LightingD */,
+			);
+			name = "Products";
+			sourceTree = "<group>";
+		};
+		259837000C445D3814922BEC /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				2713707D58474CBA72446FD6 /* framework.xcodeproj */,
+			);
+			name = "Projects";
+			sourceTree = "<group>";
+		};
+		22ED7C30428F7BDA4C062216 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				774C2B7C740B259778F73E4E /* libframeworkD.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		32A726E70CEE14E975101BE6 /* Tut 12 HDR Lighting */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3EBF0CDB0FE246E17D677F3E /* Build configuration list for PBXNativeTarget "Tut 12 HDR Lighting" */;
+			buildPhases = (
+				50715D8D71EB3296329176A1 /* Resources */,
+				66B040E32C3E23D12F4E442C /* Sources */,
+				4499327068B159901A0001D1 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49DB0769294D34891D022B6A /* PBXTargetDependency */,
+			);
+			name = "Tut 12 HDR Lighting";
+			productInstallPath = "$(HOME)/bin";
+			productName = "Tut 12 HDR Lighting";
+			productReference = 76D946503DCA237574FE6B91 /* Tut 12 HDR LightingD */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Tut 12 HDR Lighting" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 71187DD626B12FD615590B80 /* Tut 12 HDR Lighting */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 22ED7C30428F7BDA4C062216 /* Products */;
+					ProjectRef = 2713707D58474CBA72446FD6 /* framework.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				32A726E70CEE14E975101BE6 /* Tut 12 HDR LightingD */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		774C2B7C740B259778F73E4E /* libframeworkD.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "lib/libframeworkD.a";
+			remoteRef = 06BF00467CD312CE44E8011B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		50715D8D71EB3296329176A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		66B040E32C3E23D12F4E442C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				578221C4733C06AA3EBC3C04 /* HDR Lighting.cpp in Sources */,
+				7FE1417462B43319509053BA /* Lights.cpp in Sources */,
+				077E765C1A745DB1197A46F9 /* Scene.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
+
+/* Begin PBXTargetDependency section */
+		49DB0769294D34891D022B6A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "libframeworkD.a";
+			targetProxy = 41B5039C2B9F578501B40F6D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		7A5B2A040C0D3441240140A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = "Tut 12 HDR LightingD";
+			};
+			name = "Debug";
+		};
+		2ECD2CA33BEE0F412C3E2F28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = "Tut 12 HDR Lighting";
+			};
+			name = "Release";
+		};
+		7FC764B672C45D090A677D31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_CRT_SECURE_NO_WARNINGS",
+					"_CRT_SECURE_NO_DEPRECATE",
+					"_SCL_SECURE_NO_WARNINGS",
+					"TIXML_USE_STL",
+					"FREEGLUT_STATIC",
+					"_LIB",
+					"FREEGLUT_LIB_PRAGMAS=0",
+					"DEBUG",
+					"_DEBUG",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../framework",
+					"../glsdk/glload/include",
+					"../glsdk/glimg/include",
+					"../glsdk/glm",
+					"../glsdk/glutil/include",
+					"../glsdk/glmesh/include",
+					"../glsdk/freeglut/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"../glsdk/glload/lib",
+					"../glsdk/glimg/lib",
+					"../glsdk/glutil/lib",
+					"../glsdk/glmesh/lib",
+					"../glsdk/freeglut/lib",
+				);
+				OBJROOT = "obj/Debug/Tut 12 HDR Lighting";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-lglloadD",
+					"-lglimgD",
+					"-lglutilD",
+					"-lglmeshD",
+					"-lfreeglutD",
+				);
+				PREBINDING = NO;
+			};
+			name = "Debug";
+		};
+		1F761D587F9664A91BC4194F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_CRT_SECURE_NO_WARNINGS",
+					"_CRT_SECURE_NO_DEPRECATE",
+					"_SCL_SECURE_NO_WARNINGS",
+					"TIXML_USE_STL",
+					"FREEGLUT_STATIC",
+					"_LIB",
+					"FREEGLUT_LIB_PRAGMAS=0",
+					"RELEASE",
+					"NDEBUG",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../framework",
+					"../glsdk/glload/include",
+					"../glsdk/glimg/include",
+					"../glsdk/glm",
+					"../glsdk/glutil/include",
+					"../glsdk/glmesh/include",
+					"../glsdk/freeglut/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"../glsdk/glload/lib",
+					"../glsdk/glimg/lib",
+					"../glsdk/glutil/lib",
+					"../glsdk/glmesh/lib",
+					"../glsdk/freeglut/lib",
+				);
+				OBJROOT = "obj/Release/Tut 12 HDR Lighting";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-fomit-frame-pointer",
+				);
+				OTHER_LDFLAGS = (
+					"-lglload",
+					"-lglimg",
+					"-lglutil",
+					"-lglmesh",
+					"-lfreeglut",
+				);
+				PREBINDING = NO;
+				WARNING_CFLAGS = "-Wall";
+			};
+			name = "Release";
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3EBF0CDB0FE246E17D677F3E /* Build configuration list for PBXNativeTarget "Tut 12 HDR LightingD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A5B2A040C0D3441240140A2 /* Debug */,
+				2ECD2CA33BEE0F412C3E2F28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Debug";
+		};
+		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Tut 12 HDR Lighting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FC764B672C45D090A677D31 /* Debug */,
+				1F761D587F9664A91BC4194F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Debug";
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

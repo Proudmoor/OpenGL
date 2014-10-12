@@ -1,0 +1,336 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4DD3787828816C5E17AF1B2B /* Many Images.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 001C5D8D006C33CD641C7198 /* Many Images.cpp */; };
+		7A126D786CE46DA2379B331F /* libframeworkD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FDB7C69646F559D3AFD7238 /* libframeworkD.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0F1A2A522140274947065C0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 783B0A0432490A311EDC3917 /* framework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 225B3CC936837713028E539B;
+			remoteInfo = "libframeworkD.a";
+		};
+		78A320CF12F51D8106A77D11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 783B0A0432490A311EDC3917 /* framework.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 78AF4B3262FD74AB44764885;
+			remoteInfo = "libframeworkD.a";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		001C5D8D006C33CD641C7198 /* Many Images.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Many Images.cpp"; path = "Many Images.cpp"; sourceTree = "<group>"; };
+		4F2944F8217A0E336B9473D3 /* PT.vert */ = {isa = PBXFileReference; lastKnownFileType = text; name = "PT.vert"; path = "PT.vert"; sourceTree = "<group>"; };
+		5E283CD7558B35E20F167DA0 /* Tex.frag */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Tex.frag"; path = "Tex.frag"; sourceTree = "<group>"; };
+		18FF125547F52B6068885AC3 /* Tut 15 Many ImagesD */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = "Tut 15 Many ImagesD"; path = "Tut 15 Many ImagesD"; sourceTree = BUILT_PRODUCTS_DIR; };
+		783B0A0432490A311EDC3917 /* framework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "framework.xcodeproj"; path = "../framework/framework.xcodeproj"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		566B24271EC354031B6F305A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A126D786CE46DA2379B331F /* libframeworkD.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7AD002BD00EE1DB21D52207F /* Tut 15 Many Images */ = {
+			isa = PBXGroup;
+			children = (
+				001C5D8D006C33CD641C7198 /* Many Images.cpp */,
+				5D3F7917054910C507B73656 /* data */,
+				2CF2653F25F91649237D13FC /* Products */,
+				331A73BA72603AD06A404708 /* Projects */,
+			);
+			name = "Tut 15 Many Images";
+			sourceTree = "<group>";
+		};
+		5D3F7917054910C507B73656 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				4F2944F8217A0E336B9473D3 /* PT.vert */,
+				5E283CD7558B35E20F167DA0 /* Tex.frag */,
+			);
+			name = "data";
+			path = data;
+			sourceTree = "<group>";
+		};
+		2CF2653F25F91649237D13FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18FF125547F52B6068885AC3 /* Tut 15 Many ImagesD */,
+			);
+			name = "Products";
+			sourceTree = "<group>";
+		};
+		331A73BA72603AD06A404708 /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				783B0A0432490A311EDC3917 /* framework.xcodeproj */,
+			);
+			name = "Projects";
+			sourceTree = "<group>";
+		};
+		6E1610EB75BC447A3A93106D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2FDB7C69646F559D3AFD7238 /* libframeworkD.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4C02286E5D9B0878030F0377 /* Tut 15 Many Images */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73B873FF05FC76F850AC4FBC /* Build configuration list for PBXNativeTarget "Tut 15 Many Images" */;
+			buildPhases = (
+				6C0E314F45921F49327A737E /* Resources */,
+				7AF8584113DA736040A66163 /* Sources */,
+				566B24271EC354031B6F305A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				768737F21F032B11292D7B4E /* PBXTargetDependency */,
+			);
+			name = "Tut 15 Many Images";
+			productInstallPath = "$(HOME)/bin";
+			productName = "Tut 15 Many Images";
+			productReference = 18FF125547F52B6068885AC3 /* Tut 15 Many ImagesD */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Tut 15 Many Images" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 7AD002BD00EE1DB21D52207F /* Tut 15 Many Images */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 6E1610EB75BC447A3A93106D /* Products */;
+					ProjectRef = 783B0A0432490A311EDC3917 /* framework.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				4C02286E5D9B0878030F0377 /* Tut 15 Many ImagesD */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		2FDB7C69646F559D3AFD7238 /* libframeworkD.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "lib/libframeworkD.a";
+			remoteRef = 0F1A2A522140274947065C0D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6C0E314F45921F49327A737E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7AF8584113DA736040A66163 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DD3787828816C5E17AF1B2B /* Many Images.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
+
+/* Begin PBXTargetDependency section */
+		768737F21F032B11292D7B4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "libframeworkD.a";
+			targetProxy = 78A320CF12F51D8106A77D11 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		17FA34BF1D44649B37615542 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = "Tut 15 Many ImagesD";
+			};
+			name = "Debug";
+		};
+		7B4D3B8E1983084B1D31165A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = "Tut 15 Many Images";
+			};
+			name = "Release";
+		};
+		664F0D3B1EC119357BF33178 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_CRT_SECURE_NO_WARNINGS",
+					"_CRT_SECURE_NO_DEPRECATE",
+					"_SCL_SECURE_NO_WARNINGS",
+					"TIXML_USE_STL",
+					"FREEGLUT_STATIC",
+					"_LIB",
+					"FREEGLUT_LIB_PRAGMAS=0",
+					"DEBUG",
+					"_DEBUG",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../framework",
+					"../glsdk/glload/include",
+					"../glsdk/glimg/include",
+					"../glsdk/glm",
+					"../glsdk/glutil/include",
+					"../glsdk/glmesh/include",
+					"../glsdk/freeglut/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"../glsdk/glload/lib",
+					"../glsdk/glimg/lib",
+					"../glsdk/glutil/lib",
+					"../glsdk/glmesh/lib",
+					"../glsdk/freeglut/lib",
+				);
+				OBJROOT = "obj/Debug";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-lglloadD",
+					"-lglimgD",
+					"-lglutilD",
+					"-lglmeshD",
+					"-lfreeglutD",
+				);
+				PREBINDING = NO;
+			};
+			name = "Debug";
+		};
+		25C335333FA44169140776A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_CRT_SECURE_NO_WARNINGS",
+					"_CRT_SECURE_NO_DEPRECATE",
+					"_SCL_SECURE_NO_WARNINGS",
+					"TIXML_USE_STL",
+					"FREEGLUT_STATIC",
+					"_LIB",
+					"FREEGLUT_LIB_PRAGMAS=0",
+					"RELEASE",
+					"NDEBUG",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../framework",
+					"../glsdk/glload/include",
+					"../glsdk/glimg/include",
+					"../glsdk/glm",
+					"../glsdk/glutil/include",
+					"../glsdk/glmesh/include",
+					"../glsdk/freeglut/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"../glsdk/glload/lib",
+					"../glsdk/glimg/lib",
+					"../glsdk/glutil/lib",
+					"../glsdk/glmesh/lib",
+					"../glsdk/freeglut/lib",
+				);
+				OBJROOT = "obj/Release";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-fomit-frame-pointer",
+				);
+				OTHER_LDFLAGS = (
+					"-lglload",
+					"-lglimg",
+					"-lglutil",
+					"-lglmesh",
+					"-lfreeglut",
+				);
+				PREBINDING = NO;
+				WARNING_CFLAGS = "-Wall";
+			};
+			name = "Release";
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		73B873FF05FC76F850AC4FBC /* Build configuration list for PBXNativeTarget "Tut 15 Many ImagesD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17FA34BF1D44649B37615542 /* Debug */,
+				7B4D3B8E1983084B1D31165A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Debug";
+		};
+		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Tut 15 Many Images" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				664F0D3B1EC119357BF33178 /* Debug */,
+				25C335333FA44169140776A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Debug";
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

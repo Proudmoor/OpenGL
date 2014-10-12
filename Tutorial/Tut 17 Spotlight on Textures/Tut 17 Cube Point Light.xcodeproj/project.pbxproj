@@ -1,0 +1,336 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		57BF69E837515B991BB512E3 /* Cube Point Light.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 169409540D0C39983F6A6F05 /* Cube Point Light.cpp */; };
+		45AA57512658766C35B45299 /* libframeworkD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32B913E05E282B15149C2887 /* libframeworkD.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2F8B55196B126C851A9363F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7EAB25D20203546804FD15FB /* framework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 225B3CC936837713028E539B;
+			remoteInfo = "libframeworkD.a";
+		};
+		6CA906B4490112BD4DB625A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7EAB25D20203546804FD15FB /* framework.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 78AF4B3262FD74AB44764885;
+			remoteInfo = "libframeworkD.a";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		169409540D0C39983F6A6F05 /* Cube Point Light.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Cube Point Light.cpp"; path = "Cube Point Light.cpp"; sourceTree = "<group>"; };
+		706665BE3C3C1B037CBD050C /* cubeLight.frag */ = {isa = PBXFileReference; lastKnownFileType = text; name = "cubeLight.frag"; path = "cubeLight.frag"; sourceTree = "<group>"; };
+		6C885B0873373A235A430A94 /* cubeLight.vert */ = {isa = PBXFileReference; lastKnownFileType = text; name = "cubeLight.vert"; path = "cubeLight.vert"; sourceTree = "<group>"; };
+		271B0AE0165C2963588B405F /* Tut 17 Cube Point LightD */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = "Tut 17 Cube Point LightD"; path = "Tut 17 Cube Point LightD"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EAB25D20203546804FD15FB /* framework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "framework.xcodeproj"; path = "../framework/framework.xcodeproj"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5FA626E12CDA359171FA7048 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45AA57512658766C35B45299 /* libframeworkD.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		20CA37B5030F08B215106061 /* Tut 17 Cube Point Light */ = {
+			isa = PBXGroup;
+			children = (
+				169409540D0C39983F6A6F05 /* Cube Point Light.cpp */,
+				25876F495F8464533E8B3A69 /* data */,
+				06BA3EA7040448E36A571389 /* Products */,
+				0D603961173077335D3E45D4 /* Projects */,
+			);
+			name = "Tut 17 Cube Point Light";
+			sourceTree = "<group>";
+		};
+		25876F495F8464533E8B3A69 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				706665BE3C3C1B037CBD050C /* cubeLight.frag */,
+				6C885B0873373A235A430A94 /* cubeLight.vert */,
+			);
+			name = "data";
+			path = data;
+			sourceTree = "<group>";
+		};
+		06BA3EA7040448E36A571389 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				271B0AE0165C2963588B405F /* Tut 17 Cube Point LightD */,
+			);
+			name = "Products";
+			sourceTree = "<group>";
+		};
+		0D603961173077335D3E45D4 /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				7EAB25D20203546804FD15FB /* framework.xcodeproj */,
+			);
+			name = "Projects";
+			sourceTree = "<group>";
+		};
+		170E32E77ED76A417688195D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				32B913E05E282B15149C2887 /* libframeworkD.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		317849956CD51EC470FF3225 /* Tut 17 Cube Point Light */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C3F4A795F3C058D0D2C6D0E /* Build configuration list for PBXNativeTarget "Tut 17 Cube Point Light" */;
+			buildPhases = (
+				7274374F3E9604964E9E1203 /* Resources */,
+				18EE6AE2318954F87C6C4BAB /* Sources */,
+				5FA626E12CDA359171FA7048 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7313165535813BC719F336F3 /* PBXTargetDependency */,
+			);
+			name = "Tut 17 Cube Point Light";
+			productInstallPath = "$(HOME)/bin";
+			productName = "Tut 17 Cube Point Light";
+			productReference = 271B0AE0165C2963588B405F /* Tut 17 Cube Point LightD */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Tut 17 Cube Point Light" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 20CA37B5030F08B215106061 /* Tut 17 Cube Point Light */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 170E32E77ED76A417688195D /* Products */;
+					ProjectRef = 7EAB25D20203546804FD15FB /* framework.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				317849956CD51EC470FF3225 /* Tut 17 Cube Point LightD */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		32B913E05E282B15149C2887 /* libframeworkD.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "lib/libframeworkD.a";
+			remoteRef = 2F8B55196B126C851A9363F8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7274374F3E9604964E9E1203 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18EE6AE2318954F87C6C4BAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57BF69E837515B991BB512E3 /* Cube Point Light.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
+
+/* Begin PBXTargetDependency section */
+		7313165535813BC719F336F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "libframeworkD.a";
+			targetProxy = 6CA906B4490112BD4DB625A3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		31745959157D65BE2F700A18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = "Tut 17 Cube Point LightD";
+			};
+			name = "Debug";
+		};
+		06AE20094A4E7DF90E367D6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = "Tut 17 Cube Point Light";
+			};
+			name = "Release";
+		};
+		505A59C467EE79067FE72857 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_CRT_SECURE_NO_WARNINGS",
+					"_CRT_SECURE_NO_DEPRECATE",
+					"_SCL_SECURE_NO_WARNINGS",
+					"TIXML_USE_STL",
+					"FREEGLUT_STATIC",
+					"_LIB",
+					"FREEGLUT_LIB_PRAGMAS=0",
+					"DEBUG",
+					"_DEBUG",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../framework",
+					"../glsdk/glload/include",
+					"../glsdk/glimg/include",
+					"../glsdk/glm",
+					"../glsdk/glutil/include",
+					"../glsdk/glmesh/include",
+					"../glsdk/freeglut/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"../glsdk/glload/lib",
+					"../glsdk/glimg/lib",
+					"../glsdk/glutil/lib",
+					"../glsdk/glmesh/lib",
+					"../glsdk/freeglut/lib",
+				);
+				OBJROOT = "obj/Debug/Tut 17 Cube Point Light";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-lglloadD",
+					"-lglimgD",
+					"-lglutilD",
+					"-lglmeshD",
+					"-lfreeglutD",
+				);
+				PREBINDING = NO;
+			};
+			name = "Debug";
+		};
+		7B8F256141B70F46681213E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_CRT_SECURE_NO_WARNINGS",
+					"_CRT_SECURE_NO_DEPRECATE",
+					"_SCL_SECURE_NO_WARNINGS",
+					"TIXML_USE_STL",
+					"FREEGLUT_STATIC",
+					"_LIB",
+					"FREEGLUT_LIB_PRAGMAS=0",
+					"RELEASE",
+					"NDEBUG",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../framework",
+					"../glsdk/glload/include",
+					"../glsdk/glimg/include",
+					"../glsdk/glm",
+					"../glsdk/glutil/include",
+					"../glsdk/glmesh/include",
+					"../glsdk/freeglut/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"../glsdk/glload/lib",
+					"../glsdk/glimg/lib",
+					"../glsdk/glutil/lib",
+					"../glsdk/glmesh/lib",
+					"../glsdk/freeglut/lib",
+				);
+				OBJROOT = "obj/Release/Tut 17 Cube Point Light";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-fomit-frame-pointer",
+				);
+				OTHER_LDFLAGS = (
+					"-lglload",
+					"-lglimg",
+					"-lglutil",
+					"-lglmesh",
+					"-lfreeglut",
+				);
+				PREBINDING = NO;
+				WARNING_CFLAGS = "-Wall";
+			};
+			name = "Release";
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6C3F4A795F3C058D0D2C6D0E /* Build configuration list for PBXNativeTarget "Tut 17 Cube Point LightD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31745959157D65BE2F700A18 /* Debug */,
+				06AE20094A4E7DF90E367D6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Debug";
+		};
+		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Tut 17 Cube Point Light" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				505A59C467EE79067FE72857 /* Debug */,
+				7B8F256141B70F46681213E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Debug";
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

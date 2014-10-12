@@ -1,0 +1,336 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		23DB213C7C986D3A15B138BA /* OrthoCube.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 722C464C4B7032342E7F243E /* OrthoCube.cpp */; };
+		2FBA5E4D331731244CAC351B /* libframeworkD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 577F0F6F4249009816073F52 /* libframeworkD.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		368E40D70B585B2444D66BD4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48135EAF5BDD38645F4C127B /* framework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 225B3CC936837713028E539B;
+			remoteInfo = "libframeworkD.a";
+		};
+		6CDD2BBC5753259455E94DB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48135EAF5BDD38645F4C127B /* framework.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 78AF4B3262FD74AB44764885;
+			remoteInfo = "libframeworkD.a";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		722C464C4B7032342E7F243E /* OrthoCube.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "OrthoCube.cpp"; path = "OrthoCube.cpp"; sourceTree = "<group>"; };
+		27513FD01BA5194857477AF9 /* OrthoWithOffset.vert */ = {isa = PBXFileReference; lastKnownFileType = text; name = "OrthoWithOffset.vert"; path = "OrthoWithOffset.vert"; sourceTree = "<group>"; };
+		0DC658B36F872C6B310F64F2 /* StandardColors.frag */ = {isa = PBXFileReference; lastKnownFileType = text; name = "StandardColors.frag"; path = "StandardColors.frag"; sourceTree = "<group>"; };
+		2BB675B540DB04C663CF579F /* Tut 04 Orthographic CubeD */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = "Tut 04 Orthographic CubeD"; path = "Tut 04 Orthographic CubeD"; sourceTree = BUILT_PRODUCTS_DIR; };
+		48135EAF5BDD38645F4C127B /* framework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "framework.xcodeproj"; path = "../framework/framework.xcodeproj"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		523C67991063749968FC3254 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FBA5E4D331731244CAC351B /* libframeworkD.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10D2703203311D40097E6A3B /* Tut 04 Orthographic Cube */ = {
+			isa = PBXGroup;
+			children = (
+				722C464C4B7032342E7F243E /* OrthoCube.cpp */,
+				63A64F63221F5B0F761F0B46 /* data */,
+				581422235F810EF92E0B1590 /* Products */,
+				29971CD56DAC7729385C4889 /* Projects */,
+			);
+			name = "Tut 04 Orthographic Cube";
+			sourceTree = "<group>";
+		};
+		63A64F63221F5B0F761F0B46 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				27513FD01BA5194857477AF9 /* OrthoWithOffset.vert */,
+				0DC658B36F872C6B310F64F2 /* StandardColors.frag */,
+			);
+			name = "data";
+			path = data;
+			sourceTree = "<group>";
+		};
+		581422235F810EF92E0B1590 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2BB675B540DB04C663CF579F /* Tut 04 Orthographic CubeD */,
+			);
+			name = "Products";
+			sourceTree = "<group>";
+		};
+		29971CD56DAC7729385C4889 /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				48135EAF5BDD38645F4C127B /* framework.xcodeproj */,
+			);
+			name = "Projects";
+			sourceTree = "<group>";
+		};
+		60591CBC088B18E5086D56E6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				577F0F6F4249009816073F52 /* libframeworkD.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		26EF37890E8C11070D4F7BA8 /* Tut 04 Orthographic Cube */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20521FCD53367ED5563B4101 /* Build configuration list for PBXNativeTarget "Tut 04 Orthographic Cube" */;
+			buildPhases = (
+				582E6D0D3094629732740F6B /* Resources */,
+				73FE6949514406441B63106E /* Sources */,
+				523C67991063749968FC3254 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				20EC1298674D76C12A3B1BFF /* PBXTargetDependency */,
+			);
+			name = "Tut 04 Orthographic Cube";
+			productInstallPath = "$(HOME)/bin";
+			productName = "Tut 04 Orthographic Cube";
+			productReference = 2BB675B540DB04C663CF579F /* Tut 04 Orthographic CubeD */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Tut 04 Orthographic Cube" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 10D2703203311D40097E6A3B /* Tut 04 Orthographic Cube */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 60591CBC088B18E5086D56E6 /* Products */;
+					ProjectRef = 48135EAF5BDD38645F4C127B /* framework.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				26EF37890E8C11070D4F7BA8 /* Tut 04 Orthographic CubeD */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		577F0F6F4249009816073F52 /* libframeworkD.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "lib/libframeworkD.a";
+			remoteRef = 368E40D70B585B2444D66BD4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		582E6D0D3094629732740F6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		73FE6949514406441B63106E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23DB213C7C986D3A15B138BA /* OrthoCube.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
+
+/* Begin PBXTargetDependency section */
+		20EC1298674D76C12A3B1BFF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "libframeworkD.a";
+			targetProxy = 6CDD2BBC5753259455E94DB6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6EC57CB641EC0BF65F4A23C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = "Tut 04 Orthographic CubeD";
+			};
+			name = "Debug";
+		};
+		7F8A53965770359C2B327886 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = "Tut 04 Orthographic Cube";
+			};
+			name = "Release";
+		};
+		0625746D5BA026432AF339FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_CRT_SECURE_NO_WARNINGS",
+					"_CRT_SECURE_NO_DEPRECATE",
+					"_SCL_SECURE_NO_WARNINGS",
+					"TIXML_USE_STL",
+					"FREEGLUT_STATIC",
+					"_LIB",
+					"FREEGLUT_LIB_PRAGMAS=0",
+					"DEBUG",
+					"_DEBUG",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../framework",
+					"../glsdk/glload/include",
+					"../glsdk/glimg/include",
+					"../glsdk/glm",
+					"../glsdk/glutil/include",
+					"../glsdk/glmesh/include",
+					"../glsdk/freeglut/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"../glsdk/glload/lib",
+					"../glsdk/glimg/lib",
+					"../glsdk/glutil/lib",
+					"../glsdk/glmesh/lib",
+					"../glsdk/freeglut/lib",
+				);
+				OBJROOT = "obj/Debug/Tut 04 Orthographic Cube";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-lglloadD",
+					"-lglimgD",
+					"-lglutilD",
+					"-lglmeshD",
+					"-lfreeglutD",
+				);
+				PREBINDING = NO;
+			};
+			name = "Debug";
+		};
+		4ADD05797241212676460C09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_CRT_SECURE_NO_WARNINGS",
+					"_CRT_SECURE_NO_DEPRECATE",
+					"_SCL_SECURE_NO_WARNINGS",
+					"TIXML_USE_STL",
+					"FREEGLUT_STATIC",
+					"_LIB",
+					"FREEGLUT_LIB_PRAGMAS=0",
+					"RELEASE",
+					"NDEBUG",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../framework",
+					"../glsdk/glload/include",
+					"../glsdk/glimg/include",
+					"../glsdk/glm",
+					"../glsdk/glutil/include",
+					"../glsdk/glmesh/include",
+					"../glsdk/freeglut/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"../glsdk/glload/lib",
+					"../glsdk/glimg/lib",
+					"../glsdk/glutil/lib",
+					"../glsdk/glmesh/lib",
+					"../glsdk/freeglut/lib",
+				);
+				OBJROOT = "obj/Release/Tut 04 Orthographic Cube";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-fomit-frame-pointer",
+				);
+				OTHER_LDFLAGS = (
+					"-lglload",
+					"-lglimg",
+					"-lglutil",
+					"-lglmesh",
+					"-lfreeglut",
+				);
+				PREBINDING = NO;
+				WARNING_CFLAGS = "-Wall";
+			};
+			name = "Release";
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		20521FCD53367ED5563B4101 /* Build configuration list for PBXNativeTarget "Tut 04 Orthographic CubeD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EC57CB641EC0BF65F4A23C5 /* Debug */,
+				7F8A53965770359C2B327886 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Debug";
+		};
+		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Tut 04 Orthographic Cube" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0625746D5BA026432AF339FC /* Debug */,
+				4ADD05797241212676460C09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Debug";
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

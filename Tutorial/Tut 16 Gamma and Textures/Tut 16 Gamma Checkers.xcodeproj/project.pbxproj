@@ -1,0 +1,338 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6A8C37EB2D18182D42747059 /* Gamma Checkers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 44D910791BD76A7E25200F98 /* Gamma Checkers.cpp */; };
+		1FC21A8133E26B8D0CE00777 /* libframeworkD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 49735D1079946BFD48581888 /* libframeworkD.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		77612FDE447770C2069E7234 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 713978E12B663998383F4A9D /* framework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 225B3CC936837713028E539B;
+			remoteInfo = "libframeworkD.a";
+		};
+		413D0D365521113C2CA44D89 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 713978E12B663998383F4A9D /* framework.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 78AF4B3262FD74AB44764885;
+			remoteInfo = "libframeworkD.a";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		44D910791BD76A7E25200F98 /* Gamma Checkers.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Gamma Checkers.cpp"; path = "Gamma Checkers.cpp"; sourceTree = "<group>"; };
+		23AF49AC3D8364AF2F8A256F /* PT.vert */ = {isa = PBXFileReference; lastKnownFileType = text; name = "PT.vert"; path = "PT.vert"; sourceTree = "<group>"; };
+		440B5432469C64051AB861BF /* textureGamma.frag */ = {isa = PBXFileReference; lastKnownFileType = text; name = "textureGamma.frag"; path = "textureGamma.frag"; sourceTree = "<group>"; };
+		45BE4A7F64EE041E0DAE40AB /* textureNoGamma.frag */ = {isa = PBXFileReference; lastKnownFileType = text; name = "textureNoGamma.frag"; path = "textureNoGamma.frag"; sourceTree = "<group>"; };
+		5B94031E5D3F663546E97C3F /* Tut 16 Gamma CheckersD */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = "Tut 16 Gamma CheckersD"; path = "Tut 16 Gamma CheckersD"; sourceTree = BUILT_PRODUCTS_DIR; };
+		713978E12B663998383F4A9D /* framework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "framework.xcodeproj"; path = "../framework/framework.xcodeproj"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7ED5656763BC0B27488F5607 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FC21A8133E26B8D0CE00777 /* libframeworkD.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13D516033ECE781C18C673D7 /* Tut 16 Gamma Checkers */ = {
+			isa = PBXGroup;
+			children = (
+				44D910791BD76A7E25200F98 /* Gamma Checkers.cpp */,
+				770D1A270BD22CC364052685 /* data */,
+				45E76F46103F3DF07EF52488 /* Products */,
+				66E775CB723B360C6F371281 /* Projects */,
+			);
+			name = "Tut 16 Gamma Checkers";
+			sourceTree = "<group>";
+		};
+		770D1A270BD22CC364052685 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				23AF49AC3D8364AF2F8A256F /* PT.vert */,
+				440B5432469C64051AB861BF /* textureGamma.frag */,
+				45BE4A7F64EE041E0DAE40AB /* textureNoGamma.frag */,
+			);
+			name = "data";
+			path = data;
+			sourceTree = "<group>";
+		};
+		45E76F46103F3DF07EF52488 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5B94031E5D3F663546E97C3F /* Tut 16 Gamma CheckersD */,
+			);
+			name = "Products";
+			sourceTree = "<group>";
+		};
+		66E775CB723B360C6F371281 /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				713978E12B663998383F4A9D /* framework.xcodeproj */,
+			);
+			name = "Projects";
+			sourceTree = "<group>";
+		};
+		3B6C38F452B971794BA16ABE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				49735D1079946BFD48581888 /* libframeworkD.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		40AE618B1E705FB854B02FD5 /* Tut 16 Gamma Checkers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 274121515CE00FB820465BB2 /* Build configuration list for PBXNativeTarget "Tut 16 Gamma Checkers" */;
+			buildPhases = (
+				28BD153417752015447830AE /* Resources */,
+				79D405CF11EB6CBE49976E85 /* Sources */,
+				7ED5656763BC0B27488F5607 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				61D42D4257C90C721BE76122 /* PBXTargetDependency */,
+			);
+			name = "Tut 16 Gamma Checkers";
+			productInstallPath = "$(HOME)/bin";
+			productName = "Tut 16 Gamma Checkers";
+			productReference = 5B94031E5D3F663546E97C3F /* Tut 16 Gamma CheckersD */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Tut 16 Gamma Checkers" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 13D516033ECE781C18C673D7 /* Tut 16 Gamma Checkers */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3B6C38F452B971794BA16ABE /* Products */;
+					ProjectRef = 713978E12B663998383F4A9D /* framework.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				40AE618B1E705FB854B02FD5 /* Tut 16 Gamma CheckersD */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		49735D1079946BFD48581888 /* libframeworkD.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "lib/libframeworkD.a";
+			remoteRef = 77612FDE447770C2069E7234 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		28BD153417752015447830AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		79D405CF11EB6CBE49976E85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A8C37EB2D18182D42747059 /* Gamma Checkers.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
+
+/* Begin PBXTargetDependency section */
+		61D42D4257C90C721BE76122 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "libframeworkD.a";
+			targetProxy = 413D0D365521113C2CA44D89 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		04D22B7728AE60086B6403EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = "Tut 16 Gamma CheckersD";
+			};
+			name = "Debug";
+		};
+		1A8050B65D8976F413B37104 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = "Tut 16 Gamma Checkers";
+			};
+			name = "Release";
+		};
+		3FA92CA67C0F710A52B02AFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_CRT_SECURE_NO_WARNINGS",
+					"_CRT_SECURE_NO_DEPRECATE",
+					"_SCL_SECURE_NO_WARNINGS",
+					"TIXML_USE_STL",
+					"FREEGLUT_STATIC",
+					"_LIB",
+					"FREEGLUT_LIB_PRAGMAS=0",
+					"DEBUG",
+					"_DEBUG",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../framework",
+					"../glsdk/glload/include",
+					"../glsdk/glimg/include",
+					"../glsdk/glm",
+					"../glsdk/glutil/include",
+					"../glsdk/glmesh/include",
+					"../glsdk/freeglut/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"../glsdk/glload/lib",
+					"../glsdk/glimg/lib",
+					"../glsdk/glutil/lib",
+					"../glsdk/glmesh/lib",
+					"../glsdk/freeglut/lib",
+				);
+				OBJROOT = "obj/Debug/Tut 16 Gamma Checkers";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-lglloadD",
+					"-lglimgD",
+					"-lglutilD",
+					"-lglmeshD",
+					"-lfreeglutD",
+				);
+				PREBINDING = NO;
+			};
+			name = "Debug";
+		};
+		42882D8518EC4B2B06F57F80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_CRT_SECURE_NO_WARNINGS",
+					"_CRT_SECURE_NO_DEPRECATE",
+					"_SCL_SECURE_NO_WARNINGS",
+					"TIXML_USE_STL",
+					"FREEGLUT_STATIC",
+					"_LIB",
+					"FREEGLUT_LIB_PRAGMAS=0",
+					"RELEASE",
+					"NDEBUG",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../framework",
+					"../glsdk/glload/include",
+					"../glsdk/glimg/include",
+					"../glsdk/glm",
+					"../glsdk/glutil/include",
+					"../glsdk/glmesh/include",
+					"../glsdk/freeglut/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"../glsdk/glload/lib",
+					"../glsdk/glimg/lib",
+					"../glsdk/glutil/lib",
+					"../glsdk/glmesh/lib",
+					"../glsdk/freeglut/lib",
+				);
+				OBJROOT = "obj/Release/Tut 16 Gamma Checkers";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-fomit-frame-pointer",
+				);
+				OTHER_LDFLAGS = (
+					"-lglload",
+					"-lglimg",
+					"-lglutil",
+					"-lglmesh",
+					"-lfreeglut",
+				);
+				PREBINDING = NO;
+				WARNING_CFLAGS = "-Wall";
+			};
+			name = "Release";
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		274121515CE00FB820465BB2 /* Build configuration list for PBXNativeTarget "Tut 16 Gamma CheckersD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04D22B7728AE60086B6403EE /* Debug */,
+				1A8050B65D8976F413B37104 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Debug";
+		};
+		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Tut 16 Gamma Checkers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FA92CA67C0F710A52B02AFE /* Debug */,
+				42882D8518EC4B2B06F57F80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Debug";
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

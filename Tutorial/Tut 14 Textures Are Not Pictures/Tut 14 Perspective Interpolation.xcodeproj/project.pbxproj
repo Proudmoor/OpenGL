@@ -1,0 +1,340 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C2B2BC54CFB76320ADA0D1B /* Perspective Interpolation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B15608A379C7787489E130D /* Perspective Interpolation.cpp */; };
+		2833640B3BDD60CE30846524 /* libframeworkD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A3372A8742E199F4B7C4694 /* libframeworkD.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		541829816C252EA77B89742A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F0019AD4C475A4D1C471B6E /* framework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 225B3CC936837713028E539B;
+			remoteInfo = "libframeworkD.a";
+		};
+		10722D3B02D63F873FDD000E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F0019AD4C475A4D1C471B6E /* framework.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 78AF4B3262FD74AB44764885;
+			remoteInfo = "libframeworkD.a";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5B15608A379C7787489E130D /* Perspective Interpolation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Perspective Interpolation.cpp"; path = "Perspective Interpolation.cpp"; sourceTree = "<group>"; };
+		1265296C138912FC65FE07A6 /* NoCorrectVertexColors.frag */ = {isa = PBXFileReference; lastKnownFileType = text; name = "NoCorrectVertexColors.frag"; path = "NoCorrectVertexColors.frag"; sourceTree = "<group>"; };
+		3A33146923B82C344A425BC7 /* NoCorrectVertexColors.vert */ = {isa = PBXFileReference; lastKnownFileType = text; name = "NoCorrectVertexColors.vert"; path = "NoCorrectVertexColors.vert"; sourceTree = "<group>"; };
+		08FE711A6EAA11F4585001C5 /* SmoothVertexColors.frag */ = {isa = PBXFileReference; lastKnownFileType = text; name = "SmoothVertexColors.frag"; path = "SmoothVertexColors.frag"; sourceTree = "<group>"; };
+		4C9420AC349E73DA6EB8316A /* SmoothVertexColors.vert */ = {isa = PBXFileReference; lastKnownFileType = text; name = "SmoothVertexColors.vert"; path = "SmoothVertexColors.vert"; sourceTree = "<group>"; };
+		58F20BBC115716DD07704C2A /* Tut 14 Perspective InterpolationD */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = "Tut 14 Perspective InterpolationD"; path = "Tut 14 Perspective InterpolationD"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F0019AD4C475A4D1C471B6E /* framework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "framework.xcodeproj"; path = "../framework/framework.xcodeproj"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		143A6DE448202E271B6A6D21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2833640B3BDD60CE30846524 /* libframeworkD.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14B7356671C1735563542B37 /* Tut 14 Perspective Interpolation */ = {
+			isa = PBXGroup;
+			children = (
+				5B15608A379C7787489E130D /* Perspective Interpolation.cpp */,
+				1F364443176E70644E891413 /* data */,
+				3D4941621D49580E2A204820 /* Products */,
+				57426F040EF86F621BBE59B4 /* Projects */,
+			);
+			name = "Tut 14 Perspective Interpolation";
+			sourceTree = "<group>";
+		};
+		1F364443176E70644E891413 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				1265296C138912FC65FE07A6 /* NoCorrectVertexColors.frag */,
+				3A33146923B82C344A425BC7 /* NoCorrectVertexColors.vert */,
+				08FE711A6EAA11F4585001C5 /* SmoothVertexColors.frag */,
+				4C9420AC349E73DA6EB8316A /* SmoothVertexColors.vert */,
+			);
+			name = "data";
+			path = data;
+			sourceTree = "<group>";
+		};
+		3D4941621D49580E2A204820 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				58F20BBC115716DD07704C2A /* Tut 14 Perspective InterpolationD */,
+			);
+			name = "Products";
+			sourceTree = "<group>";
+		};
+		57426F040EF86F621BBE59B4 /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				5F0019AD4C475A4D1C471B6E /* framework.xcodeproj */,
+			);
+			name = "Projects";
+			sourceTree = "<group>";
+		};
+		1170072A5A1B3D7370211E4B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6A3372A8742E199F4B7C4694 /* libframeworkD.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0F9C56FC4BA606DD35625276 /* Tut 14 Perspective Interpolation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D715DB85C3215767BA65514 /* Build configuration list for PBXNativeTarget "Tut 14 Perspective Interpolation" */;
+			buildPhases = (
+				279E07760EF3247D3F7F5D58 /* Resources */,
+				6D057E24080D4B1210DD4491 /* Sources */,
+				143A6DE448202E271B6A6D21 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4FBE63AD757D0DDA23EF4414 /* PBXTargetDependency */,
+			);
+			name = "Tut 14 Perspective Interpolation";
+			productInstallPath = "$(HOME)/bin";
+			productName = "Tut 14 Perspective Interpolation";
+			productReference = 58F20BBC115716DD07704C2A /* Tut 14 Perspective InterpolationD */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Tut 14 Perspective Interpolation" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 14B7356671C1735563542B37 /* Tut 14 Perspective Interpolation */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 1170072A5A1B3D7370211E4B /* Products */;
+					ProjectRef = 5F0019AD4C475A4D1C471B6E /* framework.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				0F9C56FC4BA606DD35625276 /* Tut 14 Perspective InterpolationD */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		6A3372A8742E199F4B7C4694 /* libframeworkD.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "lib/libframeworkD.a";
+			remoteRef = 541829816C252EA77B89742A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		279E07760EF3247D3F7F5D58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6D057E24080D4B1210DD4491 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C2B2BC54CFB76320ADA0D1B /* Perspective Interpolation.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
+
+/* Begin PBXTargetDependency section */
+		4FBE63AD757D0DDA23EF4414 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "libframeworkD.a";
+			targetProxy = 10722D3B02D63F873FDD000E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		60AC7D0D026F78453989529A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = "Tut 14 Perspective InterpolationD";
+			};
+			name = "Debug";
+		};
+		0E73215D7E0871F9454953EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = "Tut 14 Perspective Interpolation";
+			};
+			name = "Release";
+		};
+		20D92F1A08BD6C1852907B01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_CRT_SECURE_NO_WARNINGS",
+					"_CRT_SECURE_NO_DEPRECATE",
+					"_SCL_SECURE_NO_WARNINGS",
+					"TIXML_USE_STL",
+					"FREEGLUT_STATIC",
+					"_LIB",
+					"FREEGLUT_LIB_PRAGMAS=0",
+					"DEBUG",
+					"_DEBUG",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../framework",
+					"../glsdk/glload/include",
+					"../glsdk/glimg/include",
+					"../glsdk/glm",
+					"../glsdk/glutil/include",
+					"../glsdk/glmesh/include",
+					"../glsdk/freeglut/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"../glsdk/glload/lib",
+					"../glsdk/glimg/lib",
+					"../glsdk/glutil/lib",
+					"../glsdk/glmesh/lib",
+					"../glsdk/freeglut/lib",
+				);
+				OBJROOT = "obj/Debug/Tut 14 Perspective Interpolation";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-lglloadD",
+					"-lglimgD",
+					"-lglutilD",
+					"-lglmeshD",
+					"-lfreeglutD",
+				);
+				PREBINDING = NO;
+			};
+			name = "Debug";
+		};
+		42F712DE467814AE578B675D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_CRT_SECURE_NO_WARNINGS",
+					"_CRT_SECURE_NO_DEPRECATE",
+					"_SCL_SECURE_NO_WARNINGS",
+					"TIXML_USE_STL",
+					"FREEGLUT_STATIC",
+					"_LIB",
+					"FREEGLUT_LIB_PRAGMAS=0",
+					"RELEASE",
+					"NDEBUG",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../framework",
+					"../glsdk/glload/include",
+					"../glsdk/glimg/include",
+					"../glsdk/glm",
+					"../glsdk/glutil/include",
+					"../glsdk/glmesh/include",
+					"../glsdk/freeglut/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"../glsdk/glload/lib",
+					"../glsdk/glimg/lib",
+					"../glsdk/glutil/lib",
+					"../glsdk/glmesh/lib",
+					"../glsdk/freeglut/lib",
+				);
+				OBJROOT = "obj/Release/Tut 14 Perspective Interpolation";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-fomit-frame-pointer",
+				);
+				OTHER_LDFLAGS = (
+					"-lglload",
+					"-lglimg",
+					"-lglutil",
+					"-lglmesh",
+					"-lfreeglut",
+				);
+				PREBINDING = NO;
+				WARNING_CFLAGS = "-Wall";
+			};
+			name = "Release";
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5D715DB85C3215767BA65514 /* Build configuration list for PBXNativeTarget "Tut 14 Perspective InterpolationD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60AC7D0D026F78453989529A /* Debug */,
+				0E73215D7E0871F9454953EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Debug";
+		};
+		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Tut 14 Perspective Interpolation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20D92F1A08BD6C1852907B01 /* Debug */,
+				42F712DE467814AE578B675D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Debug";
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

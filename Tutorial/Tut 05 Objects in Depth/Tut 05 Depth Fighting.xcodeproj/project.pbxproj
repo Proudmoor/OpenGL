@@ -1,0 +1,336 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E7734074F753ED46DE416D7 /* DepthFighting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 670B28A30B42591C72251606 /* DepthFighting.cpp */; };
+		7881123E492214C112CE3110 /* libframeworkD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33614EB6237C2BC92EAD6E33 /* libframeworkD.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3D7D5CA640A13B0B6C7F07A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 37F82E501F8E47761E4D5BED /* framework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 225B3CC936837713028E539B;
+			remoteInfo = "libframeworkD.a";
+		};
+		242D31B57C134B32617E2199 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 37F82E501F8E47761E4D5BED /* framework.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 78AF4B3262FD74AB44764885;
+			remoteInfo = "libframeworkD.a";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		670B28A30B42591C72251606 /* DepthFighting.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "DepthFighting.cpp"; path = "DepthFighting.cpp"; sourceTree = "<group>"; };
+		145652224A6E37243E327B0D /* Standard.frag */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Standard.frag"; path = "Standard.frag"; sourceTree = "<group>"; };
+		294B09DF397A35501FA060D6 /* Standard.vert */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Standard.vert"; path = "Standard.vert"; sourceTree = "<group>"; };
+		380D1EEC4A7D00FC40E72E94 /* Tut 05 Depth FightingD */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = "Tut 05 Depth FightingD"; path = "Tut 05 Depth FightingD"; sourceTree = BUILT_PRODUCTS_DIR; };
+		37F82E501F8E47761E4D5BED /* framework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "framework.xcodeproj"; path = "../framework/framework.xcodeproj"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		01882B914B70588106C5098D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7881123E492214C112CE3110 /* libframeworkD.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		43627E47023C5EEE6DC131E5 /* Tut 05 Depth Fighting */ = {
+			isa = PBXGroup;
+			children = (
+				670B28A30B42591C72251606 /* DepthFighting.cpp */,
+				0C4A597D522E4E5D7D3120D9 /* data */,
+				35286D2B630513BB04E63A62 /* Products */,
+				7A7268120B7F57627AB7209B /* Projects */,
+			);
+			name = "Tut 05 Depth Fighting";
+			sourceTree = "<group>";
+		};
+		0C4A597D522E4E5D7D3120D9 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				145652224A6E37243E327B0D /* Standard.frag */,
+				294B09DF397A35501FA060D6 /* Standard.vert */,
+			);
+			name = "data";
+			path = data;
+			sourceTree = "<group>";
+		};
+		35286D2B630513BB04E63A62 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				380D1EEC4A7D00FC40E72E94 /* Tut 05 Depth FightingD */,
+			);
+			name = "Products";
+			sourceTree = "<group>";
+		};
+		7A7268120B7F57627AB7209B /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				37F82E501F8E47761E4D5BED /* framework.xcodeproj */,
+			);
+			name = "Projects";
+			sourceTree = "<group>";
+		};
+		080743A06FB0417D09EF4BF1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				33614EB6237C2BC92EAD6E33 /* libframeworkD.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7DA42DEF27D93E2713574B73 /* Tut 05 Depth Fighting */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30345D1F505A6096291E0DA2 /* Build configuration list for PBXNativeTarget "Tut 05 Depth Fighting" */;
+			buildPhases = (
+				3EA2327F5CF843D82550512A /* Resources */,
+				40086E571374408770AF0B07 /* Sources */,
+				01882B914B70588106C5098D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				73D4713B588A70F319E07863 /* PBXTargetDependency */,
+			);
+			name = "Tut 05 Depth Fighting";
+			productInstallPath = "$(HOME)/bin";
+			productName = "Tut 05 Depth Fighting";
+			productReference = 380D1EEC4A7D00FC40E72E94 /* Tut 05 Depth FightingD */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Tut 05 Depth Fighting" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 43627E47023C5EEE6DC131E5 /* Tut 05 Depth Fighting */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 080743A06FB0417D09EF4BF1 /* Products */;
+					ProjectRef = 37F82E501F8E47761E4D5BED /* framework.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				7DA42DEF27D93E2713574B73 /* Tut 05 Depth FightingD */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		33614EB6237C2BC92EAD6E33 /* libframeworkD.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "lib/libframeworkD.a";
+			remoteRef = 3D7D5CA640A13B0B6C7F07A9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3EA2327F5CF843D82550512A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		40086E571374408770AF0B07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E7734074F753ED46DE416D7 /* DepthFighting.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
+
+/* Begin PBXTargetDependency section */
+		73D4713B588A70F319E07863 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "libframeworkD.a";
+			targetProxy = 242D31B57C134B32617E2199 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		087637D71FE5226C099D55D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = "Tut 05 Depth FightingD";
+			};
+			name = "Debug";
+		};
+		12AE6EA32A2C38893685113D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = "Tut 05 Depth Fighting";
+			};
+			name = "Release";
+		};
+		40DC3D0C751F68217CD85114 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_CRT_SECURE_NO_WARNINGS",
+					"_CRT_SECURE_NO_DEPRECATE",
+					"_SCL_SECURE_NO_WARNINGS",
+					"TIXML_USE_STL",
+					"FREEGLUT_STATIC",
+					"_LIB",
+					"FREEGLUT_LIB_PRAGMAS=0",
+					"DEBUG",
+					"_DEBUG",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../framework",
+					"../glsdk/glload/include",
+					"../glsdk/glimg/include",
+					"../glsdk/glm",
+					"../glsdk/glutil/include",
+					"../glsdk/glmesh/include",
+					"../glsdk/freeglut/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"../glsdk/glload/lib",
+					"../glsdk/glimg/lib",
+					"../glsdk/glutil/lib",
+					"../glsdk/glmesh/lib",
+					"../glsdk/freeglut/lib",
+				);
+				OBJROOT = "obj/Debug/Tut 05 Depth Fighting";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-lglloadD",
+					"-lglimgD",
+					"-lglutilD",
+					"-lglmeshD",
+					"-lfreeglutD",
+				);
+				PREBINDING = NO;
+			};
+			name = "Debug";
+		};
+		61E502F27E695E33079B5FD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_CRT_SECURE_NO_WARNINGS",
+					"_CRT_SECURE_NO_DEPRECATE",
+					"_SCL_SECURE_NO_WARNINGS",
+					"TIXML_USE_STL",
+					"FREEGLUT_STATIC",
+					"_LIB",
+					"FREEGLUT_LIB_PRAGMAS=0",
+					"RELEASE",
+					"NDEBUG",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../framework",
+					"../glsdk/glload/include",
+					"../glsdk/glimg/include",
+					"../glsdk/glm",
+					"../glsdk/glutil/include",
+					"../glsdk/glmesh/include",
+					"../glsdk/freeglut/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"../glsdk/glload/lib",
+					"../glsdk/glimg/lib",
+					"../glsdk/glutil/lib",
+					"../glsdk/glmesh/lib",
+					"../glsdk/freeglut/lib",
+				);
+				OBJROOT = "obj/Release/Tut 05 Depth Fighting";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-fomit-frame-pointer",
+				);
+				OTHER_LDFLAGS = (
+					"-lglload",
+					"-lglimg",
+					"-lglutil",
+					"-lglmesh",
+					"-lfreeglut",
+				);
+				PREBINDING = NO;
+				WARNING_CFLAGS = "-Wall";
+			};
+			name = "Release";
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		30345D1F505A6096291E0DA2 /* Build configuration list for PBXNativeTarget "Tut 05 Depth FightingD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				087637D71FE5226C099D55D3 /* Debug */,
+				12AE6EA32A2C38893685113D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Debug";
+		};
+		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Tut 05 Depth Fighting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40DC3D0C751F68217CD85114 /* Debug */,
+				61E502F27E695E33079B5FD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Debug";
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

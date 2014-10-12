@@ -1,0 +1,342 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		344C787D72BE23A53D601D37 /* World Scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7BD97A841C341FC162663FFF /* World Scene.cpp */; };
+		44370D45589000057EBA125E /* libframeworkD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25BF353937BC1BBC05240E40 /* libframeworkD.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		225272A27A6037796EC34EEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F81791B5FA303980AF30247 /* framework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 225B3CC936837713028E539B;
+			remoteInfo = "libframeworkD.a";
+		};
+		09C915E119E46075490441FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F81791B5FA303980AF30247 /* framework.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 78AF4B3262FD74AB44764885;
+			remoteInfo = "libframeworkD.a";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7BD97A841C341FC162663FFF /* World Scene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "World Scene.cpp"; path = "World Scene.cpp"; sourceTree = "<group>"; };
+		0A0612AC7E7367523BF6496C /* ColorMultUniform.frag */ = {isa = PBXFileReference; lastKnownFileType = text; name = "ColorMultUniform.frag"; path = "ColorMultUniform.frag"; sourceTree = "<group>"; };
+		10A61758519C7B762F464D94 /* ColorPassthrough.frag */ = {isa = PBXFileReference; lastKnownFileType = text; name = "ColorPassthrough.frag"; path = "ColorPassthrough.frag"; sourceTree = "<group>"; };
+		4030173A1B271F7140734562 /* ColorUniform.frag */ = {isa = PBXFileReference; lastKnownFileType = text; name = "ColorUniform.frag"; path = "ColorUniform.frag"; sourceTree = "<group>"; };
+		4B29311913E2058A3ACF1DAE /* PosColorWorldTransform.vert */ = {isa = PBXFileReference; lastKnownFileType = text; name = "PosColorWorldTransform.vert"; path = "PosColorWorldTransform.vert"; sourceTree = "<group>"; };
+		2A913ED6593065ED5B8D2B5E /* PosOnlyWorldTransform.vert */ = {isa = PBXFileReference; lastKnownFileType = text; name = "PosOnlyWorldTransform.vert"; path = "PosOnlyWorldTransform.vert"; sourceTree = "<group>"; };
+		4090378536E97BB423E31DB0 /* Tut 07 World SceneD */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = "Tut 07 World SceneD"; path = "Tut 07 World SceneD"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F81791B5FA303980AF30247 /* framework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "framework.xcodeproj"; path = "../framework/framework.xcodeproj"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		778E19CB0EC418BC740E554C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44370D45589000057EBA125E /* libframeworkD.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05AA64CB71BB4D550B482A17 /* Tut 07 World Scene */ = {
+			isa = PBXGroup;
+			children = (
+				7BD97A841C341FC162663FFF /* World Scene.cpp */,
+				39626BC0264671450F6B7804 /* data */,
+				5F0B563F649435BD478E6597 /* Products */,
+				2B5447B3587A702D380E567E /* Projects */,
+			);
+			name = "Tut 07 World Scene";
+			sourceTree = "<group>";
+		};
+		39626BC0264671450F6B7804 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				0A0612AC7E7367523BF6496C /* ColorMultUniform.frag */,
+				10A61758519C7B762F464D94 /* ColorPassthrough.frag */,
+				4030173A1B271F7140734562 /* ColorUniform.frag */,
+				4B29311913E2058A3ACF1DAE /* PosColorWorldTransform.vert */,
+				2A913ED6593065ED5B8D2B5E /* PosOnlyWorldTransform.vert */,
+			);
+			name = "data";
+			path = data;
+			sourceTree = "<group>";
+		};
+		5F0B563F649435BD478E6597 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4090378536E97BB423E31DB0 /* Tut 07 World SceneD */,
+			);
+			name = "Products";
+			sourceTree = "<group>";
+		};
+		2B5447B3587A702D380E567E /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				1F81791B5FA303980AF30247 /* framework.xcodeproj */,
+			);
+			name = "Projects";
+			sourceTree = "<group>";
+		};
+		354A3A3310223D9713D857BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				25BF353937BC1BBC05240E40 /* libframeworkD.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1ED36C447B09429179C91AC9 /* Tut 07 World Scene */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 626C5EEB20BE49BD38A978D3 /* Build configuration list for PBXNativeTarget "Tut 07 World Scene" */;
+			buildPhases = (
+				6F812D832D1545AD121A279A /* Resources */,
+				091A3E89258C0CC42A981264 /* Sources */,
+				778E19CB0EC418BC740E554C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				74194CC878A65F704D7C0FBA /* PBXTargetDependency */,
+			);
+			name = "Tut 07 World Scene";
+			productInstallPath = "$(HOME)/bin";
+			productName = "Tut 07 World Scene";
+			productReference = 4090378536E97BB423E31DB0 /* Tut 07 World SceneD */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Tut 07 World Scene" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 05AA64CB71BB4D550B482A17 /* Tut 07 World Scene */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 354A3A3310223D9713D857BC /* Products */;
+					ProjectRef = 1F81791B5FA303980AF30247 /* framework.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				1ED36C447B09429179C91AC9 /* Tut 07 World SceneD */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		25BF353937BC1BBC05240E40 /* libframeworkD.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "lib/libframeworkD.a";
+			remoteRef = 225272A27A6037796EC34EEC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6F812D832D1545AD121A279A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		091A3E89258C0CC42A981264 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				344C787D72BE23A53D601D37 /* World Scene.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
+
+/* Begin PBXTargetDependency section */
+		74194CC878A65F704D7C0FBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "libframeworkD.a";
+			targetProxy = 09C915E119E46075490441FB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3DEF4D5A76E13F6278896DB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = "Tut 07 World SceneD";
+			};
+			name = "Debug";
+		};
+		413643A2567E2833480352A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = "Tut 07 World Scene";
+			};
+			name = "Release";
+		};
+		1C302E286673150C60CD3BBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_CRT_SECURE_NO_WARNINGS",
+					"_CRT_SECURE_NO_DEPRECATE",
+					"_SCL_SECURE_NO_WARNINGS",
+					"TIXML_USE_STL",
+					"FREEGLUT_STATIC",
+					"_LIB",
+					"FREEGLUT_LIB_PRAGMAS=0",
+					"DEBUG",
+					"_DEBUG",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../framework",
+					"../glsdk/glload/include",
+					"../glsdk/glimg/include",
+					"../glsdk/glm",
+					"../glsdk/glutil/include",
+					"../glsdk/glmesh/include",
+					"../glsdk/freeglut/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"../glsdk/glload/lib",
+					"../glsdk/glimg/lib",
+					"../glsdk/glutil/lib",
+					"../glsdk/glmesh/lib",
+					"../glsdk/freeglut/lib",
+				);
+				OBJROOT = "obj/Debug/Tut 07 World Scene";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-lglloadD",
+					"-lglimgD",
+					"-lglutilD",
+					"-lglmeshD",
+					"-lfreeglutD",
+				);
+				PREBINDING = NO;
+			};
+			name = "Debug";
+		};
+		53877C782EAA4C2D242E0643 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_CRT_SECURE_NO_WARNINGS",
+					"_CRT_SECURE_NO_DEPRECATE",
+					"_SCL_SECURE_NO_WARNINGS",
+					"TIXML_USE_STL",
+					"FREEGLUT_STATIC",
+					"_LIB",
+					"FREEGLUT_LIB_PRAGMAS=0",
+					"RELEASE",
+					"NDEBUG",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../framework",
+					"../glsdk/glload/include",
+					"../glsdk/glimg/include",
+					"../glsdk/glm",
+					"../glsdk/glutil/include",
+					"../glsdk/glmesh/include",
+					"../glsdk/freeglut/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"../glsdk/glload/lib",
+					"../glsdk/glimg/lib",
+					"../glsdk/glutil/lib",
+					"../glsdk/glmesh/lib",
+					"../glsdk/freeglut/lib",
+				);
+				OBJROOT = "obj/Release/Tut 07 World Scene";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-fomit-frame-pointer",
+				);
+				OTHER_LDFLAGS = (
+					"-lglload",
+					"-lglimg",
+					"-lglutil",
+					"-lglmesh",
+					"-lfreeglut",
+				);
+				PREBINDING = NO;
+				WARNING_CFLAGS = "-Wall";
+			};
+			name = "Release";
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		626C5EEB20BE49BD38A978D3 /* Build configuration list for PBXNativeTarget "Tut 07 World SceneD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DEF4D5A76E13F6278896DB7 /* Debug */,
+				413643A2567E2833480352A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Debug";
+		};
+		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Tut 07 World Scene" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C302E286673150C60CD3BBC /* Debug */,
+				53877C782EAA4C2D242E0643 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Debug";
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

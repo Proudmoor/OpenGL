@@ -1,0 +1,336 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C480F0B57BD6AD1612B0B9F /* VertexClipping.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14A0345A37AE235C2A3127E3 /* VertexClipping.cpp */; };
+		659B2C592515079E43DD663B /* libframeworkD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DD82B1115F90F783F4363FA /* libframeworkD.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		68CB0FFB388E1D0C29A10DF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C3863FD1CF67C471F1B5AF0 /* framework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 225B3CC936837713028E539B;
+			remoteInfo = "libframeworkD.a";
+		};
+		63814B21210973BB291610FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C3863FD1CF67C471F1B5AF0 /* framework.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 78AF4B3262FD74AB44764885;
+			remoteInfo = "libframeworkD.a";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		14A0345A37AE235C2A3127E3 /* VertexClipping.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "VertexClipping.cpp"; path = "VertexClipping.cpp"; sourceTree = "<group>"; };
+		5EAE0A784CE245CB38FC5FA5 /* Standard.frag */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Standard.frag"; path = "Standard.frag"; sourceTree = "<group>"; };
+		03D000361ADB268E724856DB /* Standard.vert */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Standard.vert"; path = "Standard.vert"; sourceTree = "<group>"; };
+		51B40B437D7203E53E8122A2 /* Tut 05 Vertex ClippingD */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = "Tut 05 Vertex ClippingD"; path = "Tut 05 Vertex ClippingD"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C3863FD1CF67C471F1B5AF0 /* framework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "framework.xcodeproj"; path = "../framework/framework.xcodeproj"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5C67714315B205A47E503E2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				659B2C592515079E43DD663B /* libframeworkD.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		53EE6A2149536DDC25C560B5 /* Tut 05 Vertex Clipping */ = {
+			isa = PBXGroup;
+			children = (
+				14A0345A37AE235C2A3127E3 /* VertexClipping.cpp */,
+				0DEE0CB3689540EA7291153F /* data */,
+				4C937C6625EA572357B12D02 /* Products */,
+				5FB57D366DE557C8151348EE /* Projects */,
+			);
+			name = "Tut 05 Vertex Clipping";
+			sourceTree = "<group>";
+		};
+		0DEE0CB3689540EA7291153F /* data */ = {
+			isa = PBXGroup;
+			children = (
+				5EAE0A784CE245CB38FC5FA5 /* Standard.frag */,
+				03D000361ADB268E724856DB /* Standard.vert */,
+			);
+			name = "data";
+			path = data;
+			sourceTree = "<group>";
+		};
+		4C937C6625EA572357B12D02 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				51B40B437D7203E53E8122A2 /* Tut 05 Vertex ClippingD */,
+			);
+			name = "Products";
+			sourceTree = "<group>";
+		};
+		5FB57D366DE557C8151348EE /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				0C3863FD1CF67C471F1B5AF0 /* framework.xcodeproj */,
+			);
+			name = "Projects";
+			sourceTree = "<group>";
+		};
+		2F4577B07D244D42313474F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7DD82B1115F90F783F4363FA /* libframeworkD.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		78485AAC725351DC4F0F236C /* Tut 05 Vertex Clipping */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 403013B641DA0915521E43B8 /* Build configuration list for PBXNativeTarget "Tut 05 Vertex Clipping" */;
+			buildPhases = (
+				052E20E52B8B5B4057FC11DE /* Resources */,
+				172E66B92CA112AF3BD94D60 /* Sources */,
+				5C67714315B205A47E503E2A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A0E68447A6D0C5351FB758E /* PBXTargetDependency */,
+			);
+			name = "Tut 05 Vertex Clipping";
+			productInstallPath = "$(HOME)/bin";
+			productName = "Tut 05 Vertex Clipping";
+			productReference = 51B40B437D7203E53E8122A2 /* Tut 05 Vertex ClippingD */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Tut 05 Vertex Clipping" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 53EE6A2149536DDC25C560B5 /* Tut 05 Vertex Clipping */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 2F4577B07D244D42313474F6 /* Products */;
+					ProjectRef = 0C3863FD1CF67C471F1B5AF0 /* framework.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				78485AAC725351DC4F0F236C /* Tut 05 Vertex ClippingD */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		7DD82B1115F90F783F4363FA /* libframeworkD.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "lib/libframeworkD.a";
+			remoteRef = 68CB0FFB388E1D0C29A10DF9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		052E20E52B8B5B4057FC11DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		172E66B92CA112AF3BD94D60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C480F0B57BD6AD1612B0B9F /* VertexClipping.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
+
+/* Begin PBXTargetDependency section */
+		5A0E68447A6D0C5351FB758E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "libframeworkD.a";
+			targetProxy = 63814B21210973BB291610FD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5BBA4B08121D34A20BD62E43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = "Tut 05 Vertex ClippingD";
+			};
+			name = "Debug";
+		};
+		0ED77FE66E75663E2FF86350 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = "Tut 05 Vertex Clipping";
+			};
+			name = "Release";
+		};
+		423F4D56502010DE18071D4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_CRT_SECURE_NO_WARNINGS",
+					"_CRT_SECURE_NO_DEPRECATE",
+					"_SCL_SECURE_NO_WARNINGS",
+					"TIXML_USE_STL",
+					"FREEGLUT_STATIC",
+					"_LIB",
+					"FREEGLUT_LIB_PRAGMAS=0",
+					"DEBUG",
+					"_DEBUG",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../framework",
+					"../glsdk/glload/include",
+					"../glsdk/glimg/include",
+					"../glsdk/glm",
+					"../glsdk/glutil/include",
+					"../glsdk/glmesh/include",
+					"../glsdk/freeglut/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"../glsdk/glload/lib",
+					"../glsdk/glimg/lib",
+					"../glsdk/glutil/lib",
+					"../glsdk/glmesh/lib",
+					"../glsdk/freeglut/lib",
+				);
+				OBJROOT = "obj/Debug/Tut 05 Vertex Clipping";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-lglloadD",
+					"-lglimgD",
+					"-lglutilD",
+					"-lglmeshD",
+					"-lfreeglutD",
+				);
+				PREBINDING = NO;
+			};
+			name = "Debug";
+		};
+		58BA531A5EF814BC45DA7A9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_CRT_SECURE_NO_WARNINGS",
+					"_CRT_SECURE_NO_DEPRECATE",
+					"_SCL_SECURE_NO_WARNINGS",
+					"TIXML_USE_STL",
+					"FREEGLUT_STATIC",
+					"_LIB",
+					"FREEGLUT_LIB_PRAGMAS=0",
+					"RELEASE",
+					"NDEBUG",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../framework",
+					"../glsdk/glload/include",
+					"../glsdk/glimg/include",
+					"../glsdk/glm",
+					"../glsdk/glutil/include",
+					"../glsdk/glmesh/include",
+					"../glsdk/freeglut/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"../glsdk/glload/lib",
+					"../glsdk/glimg/lib",
+					"../glsdk/glutil/lib",
+					"../glsdk/glmesh/lib",
+					"../glsdk/freeglut/lib",
+				);
+				OBJROOT = "obj/Release/Tut 05 Vertex Clipping";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-fomit-frame-pointer",
+				);
+				OTHER_LDFLAGS = (
+					"-lglload",
+					"-lglimg",
+					"-lglutil",
+					"-lglmesh",
+					"-lfreeglut",
+				);
+				PREBINDING = NO;
+				WARNING_CFLAGS = "-Wall";
+			};
+			name = "Release";
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		403013B641DA0915521E43B8 /* Build configuration list for PBXNativeTarget "Tut 05 Vertex ClippingD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BBA4B08121D34A20BD62E43 /* Debug */,
+				0ED77FE66E75663E2FF86350 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Debug";
+		};
+		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Tut 05 Vertex Clipping" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				423F4D56502010DE18071D4A /* Debug */,
+				58BA531A5EF814BC45DA7A9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Debug";
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

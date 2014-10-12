@@ -1,0 +1,336 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5FDA1A3804625F5A46BB55DC /* DepthBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3AD7378C572B67D7752039DD /* DepthBuffer.cpp */; };
+		31CF173C68425AC638FB6BDE /* libframeworkD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 73326AFA039B3FE758202462 /* libframeworkD.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		09B010722FA30DC11BA2514F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B745A9634CF12F52C8037C7 /* framework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 225B3CC936837713028E539B;
+			remoteInfo = "libframeworkD.a";
+		};
+		1EBC641669D81D6A3A8F2C83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B745A9634CF12F52C8037C7 /* framework.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 78AF4B3262FD74AB44764885;
+			remoteInfo = "libframeworkD.a";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3AD7378C572B67D7752039DD /* DepthBuffer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "DepthBuffer.cpp"; path = "DepthBuffer.cpp"; sourceTree = "<group>"; };
+		58DB42F25B304BEC78E51F46 /* Standard.frag */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Standard.frag"; path = "Standard.frag"; sourceTree = "<group>"; };
+		448302C01A5347D5037C56F6 /* Standard.vert */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Standard.vert"; path = "Standard.vert"; sourceTree = "<group>"; };
+		50D95EC1119700E5608B6DA7 /* Tut 05 Depth BufferingD */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = "Tut 05 Depth BufferingD"; path = "Tut 05 Depth BufferingD"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B745A9634CF12F52C8037C7 /* framework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "framework.xcodeproj"; path = "../framework/framework.xcodeproj"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6F7320EA14124ACD7CE068BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31CF173C68425AC638FB6BDE /* libframeworkD.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E071AEC0D0F0736138870EA /* Tut 05 Depth Buffering */ = {
+			isa = PBXGroup;
+			children = (
+				3AD7378C572B67D7752039DD /* DepthBuffer.cpp */,
+				7B1671FD46EC674C4E3A5A52 /* data */,
+				3162198648D5439100D0776F /* Products */,
+				1B4701E832334C752B347B8E /* Projects */,
+			);
+			name = "Tut 05 Depth Buffering";
+			sourceTree = "<group>";
+		};
+		7B1671FD46EC674C4E3A5A52 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				58DB42F25B304BEC78E51F46 /* Standard.frag */,
+				448302C01A5347D5037C56F6 /* Standard.vert */,
+			);
+			name = "data";
+			path = data;
+			sourceTree = "<group>";
+		};
+		3162198648D5439100D0776F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50D95EC1119700E5608B6DA7 /* Tut 05 Depth BufferingD */,
+			);
+			name = "Products";
+			sourceTree = "<group>";
+		};
+		1B4701E832334C752B347B8E /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				3B745A9634CF12F52C8037C7 /* framework.xcodeproj */,
+			);
+			name = "Projects";
+			sourceTree = "<group>";
+		};
+		7C5C0A2E6301586B5D7812DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				73326AFA039B3FE758202462 /* libframeworkD.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		005D1A9479476505443F4237 /* Tut 05 Depth Buffering */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 573A560916F8215973B045A4 /* Build configuration list for PBXNativeTarget "Tut 05 Depth Buffering" */;
+			buildPhases = (
+				3E657C0A0CBB67E454222E6D /* Resources */,
+				0E281A0224EA22293A2C583C /* Sources */,
+				6F7320EA14124ACD7CE068BD /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B2E28E21D0B7B952F4652A2 /* PBXTargetDependency */,
+			);
+			name = "Tut 05 Depth Buffering";
+			productInstallPath = "$(HOME)/bin";
+			productName = "Tut 05 Depth Buffering";
+			productReference = 50D95EC1119700E5608B6DA7 /* Tut 05 Depth BufferingD */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Tut 05 Depth Buffering" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 0E071AEC0D0F0736138870EA /* Tut 05 Depth Buffering */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 7C5C0A2E6301586B5D7812DB /* Products */;
+					ProjectRef = 3B745A9634CF12F52C8037C7 /* framework.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				005D1A9479476505443F4237 /* Tut 05 Depth BufferingD */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		73326AFA039B3FE758202462 /* libframeworkD.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "lib/libframeworkD.a";
+			remoteRef = 09B010722FA30DC11BA2514F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3E657C0A0CBB67E454222E6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0E281A0224EA22293A2C583C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FDA1A3804625F5A46BB55DC /* DepthBuffer.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
+
+/* Begin PBXTargetDependency section */
+		0B2E28E21D0B7B952F4652A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "libframeworkD.a";
+			targetProxy = 1EBC641669D81D6A3A8F2C83 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		43B672717F8A450B023E4537 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = "Tut 05 Depth BufferingD";
+			};
+			name = "Debug";
+		};
+		06BA34986ED42282130E04ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = "Tut 05 Depth Buffering";
+			};
+			name = "Release";
+		};
+		53D21D095E210646113C1DEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_CRT_SECURE_NO_WARNINGS",
+					"_CRT_SECURE_NO_DEPRECATE",
+					"_SCL_SECURE_NO_WARNINGS",
+					"TIXML_USE_STL",
+					"FREEGLUT_STATIC",
+					"_LIB",
+					"FREEGLUT_LIB_PRAGMAS=0",
+					"DEBUG",
+					"_DEBUG",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../framework",
+					"../glsdk/glload/include",
+					"../glsdk/glimg/include",
+					"../glsdk/glm",
+					"../glsdk/glutil/include",
+					"../glsdk/glmesh/include",
+					"../glsdk/freeglut/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"../glsdk/glload/lib",
+					"../glsdk/glimg/lib",
+					"../glsdk/glutil/lib",
+					"../glsdk/glmesh/lib",
+					"../glsdk/freeglut/lib",
+				);
+				OBJROOT = "obj/Debug/Tut 05 Depth Buffering";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-lglloadD",
+					"-lglimgD",
+					"-lglutilD",
+					"-lglmeshD",
+					"-lfreeglutD",
+				);
+				PREBINDING = NO;
+			};
+			name = "Debug";
+		};
+		7070775054FC0A0156255349 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_CRT_SECURE_NO_WARNINGS",
+					"_CRT_SECURE_NO_DEPRECATE",
+					"_SCL_SECURE_NO_WARNINGS",
+					"TIXML_USE_STL",
+					"FREEGLUT_STATIC",
+					"_LIB",
+					"FREEGLUT_LIB_PRAGMAS=0",
+					"RELEASE",
+					"NDEBUG",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../framework",
+					"../glsdk/glload/include",
+					"../glsdk/glimg/include",
+					"../glsdk/glm",
+					"../glsdk/glutil/include",
+					"../glsdk/glmesh/include",
+					"../glsdk/freeglut/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"../glsdk/glload/lib",
+					"../glsdk/glimg/lib",
+					"../glsdk/glutil/lib",
+					"../glsdk/glmesh/lib",
+					"../glsdk/freeglut/lib",
+				);
+				OBJROOT = "obj/Release/Tut 05 Depth Buffering";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-fomit-frame-pointer",
+				);
+				OTHER_LDFLAGS = (
+					"-lglload",
+					"-lglimg",
+					"-lglutil",
+					"-lglmesh",
+					"-lfreeglut",
+				);
+				PREBINDING = NO;
+				WARNING_CFLAGS = "-Wall";
+			};
+			name = "Release";
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		573A560916F8215973B045A4 /* Build configuration list for PBXNativeTarget "Tut 05 Depth BufferingD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43B672717F8A450B023E4537 /* Debug */,
+				06BA34986ED42282130E04ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Debug";
+		};
+		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Tut 05 Depth Buffering" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53D21D095E210646113C1DEC /* Debug */,
+				7070775054FC0A0156255349 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Debug";
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

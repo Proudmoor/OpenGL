@@ -1,0 +1,342 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B0506914C7A662B3FC4694C /* Material Texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BA66FF76D1741AD705A4ECB /* Material Texture.cpp */; };
+		143F7522311841040D8E040B /* libframeworkD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 289214F65A9C45A967B4022A /* libframeworkD.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4A15301F51A3439857316C01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 257F67B205547C55365C0962 /* framework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 225B3CC936837713028E539B;
+			remoteInfo = "libframeworkD.a";
+		};
+		7502720F4AD664EC73703FD7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 257F67B205547C55365C0962 /* framework.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 78AF4B3262FD74AB44764885;
+			remoteInfo = "libframeworkD.a";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6BA66FF76D1741AD705A4ECB /* Material Texture.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Material Texture.cpp"; path = "Material Texture.cpp"; sourceTree = "<group>"; };
+		6141131D14BA6BA6042413D3 /* FixedShininess.frag */ = {isa = PBXFileReference; lastKnownFileType = text; name = "FixedShininess.frag"; path = "FixedShininess.frag"; sourceTree = "<group>"; };
+		147746680A4E325049D94E4D /* PN.vert */ = {isa = PBXFileReference; lastKnownFileType = text; name = "PN.vert"; path = "PN.vert"; sourceTree = "<group>"; };
+		40E912EA780F459215667E0F /* PNT.vert */ = {isa = PBXFileReference; lastKnownFileType = text; name = "PNT.vert"; path = "PNT.vert"; sourceTree = "<group>"; };
+		293C50085F3E678C43113739 /* TextureCompute.frag */ = {isa = PBXFileReference; lastKnownFileType = text; name = "TextureCompute.frag"; path = "TextureCompute.frag"; sourceTree = "<group>"; };
+		368829295DE10A69194479FD /* TextureShininess.frag */ = {isa = PBXFileReference; lastKnownFileType = text; name = "TextureShininess.frag"; path = "TextureShininess.frag"; sourceTree = "<group>"; };
+		7BE7213068BA4BCC61A86547 /* Tut 14 Material TextureD */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = "Tut 14 Material TextureD"; path = "Tut 14 Material TextureD"; sourceTree = BUILT_PRODUCTS_DIR; };
+		257F67B205547C55365C0962 /* framework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "framework.xcodeproj"; path = "../framework/framework.xcodeproj"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1339412F27887CE879F15433 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				143F7522311841040D8E040B /* libframeworkD.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		458E74DF6ECF12714B8C5C80 /* Tut 14 Material Texture */ = {
+			isa = PBXGroup;
+			children = (
+				6BA66FF76D1741AD705A4ECB /* Material Texture.cpp */,
+				7D3B58DA5580469377820FEA /* data */,
+				54371452209C17EB75B62F31 /* Products */,
+				4DFC1331347D24D34CA04DC8 /* Projects */,
+			);
+			name = "Tut 14 Material Texture";
+			sourceTree = "<group>";
+		};
+		7D3B58DA5580469377820FEA /* data */ = {
+			isa = PBXGroup;
+			children = (
+				6141131D14BA6BA6042413D3 /* FixedShininess.frag */,
+				147746680A4E325049D94E4D /* PN.vert */,
+				40E912EA780F459215667E0F /* PNT.vert */,
+				293C50085F3E678C43113739 /* TextureCompute.frag */,
+				368829295DE10A69194479FD /* TextureShininess.frag */,
+			);
+			name = "data";
+			path = data;
+			sourceTree = "<group>";
+		};
+		54371452209C17EB75B62F31 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7BE7213068BA4BCC61A86547 /* Tut 14 Material TextureD */,
+			);
+			name = "Products";
+			sourceTree = "<group>";
+		};
+		4DFC1331347D24D34CA04DC8 /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				257F67B205547C55365C0962 /* framework.xcodeproj */,
+			);
+			name = "Projects";
+			sourceTree = "<group>";
+		};
+		4D303758278125A921812DDA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				289214F65A9C45A967B4022A /* libframeworkD.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		328A1D0A17372AEA04C0048E /* Tut 14 Material Texture */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DFE259F7BE90F3E36CB5192 /* Build configuration list for PBXNativeTarget "Tut 14 Material Texture" */;
+			buildPhases = (
+				4DCB0899041B402C4A47145E /* Resources */,
+				3B63185C611615254F504A53 /* Sources */,
+				1339412F27887CE879F15433 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				59010AB172A141177C4D4C77 /* PBXTargetDependency */,
+			);
+			name = "Tut 14 Material Texture";
+			productInstallPath = "$(HOME)/bin";
+			productName = "Tut 14 Material Texture";
+			productReference = 7BE7213068BA4BCC61A86547 /* Tut 14 Material TextureD */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Tut 14 Material Texture" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 458E74DF6ECF12714B8C5C80 /* Tut 14 Material Texture */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4D303758278125A921812DDA /* Products */;
+					ProjectRef = 257F67B205547C55365C0962 /* framework.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				328A1D0A17372AEA04C0048E /* Tut 14 Material TextureD */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		289214F65A9C45A967B4022A /* libframeworkD.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "lib/libframeworkD.a";
+			remoteRef = 4A15301F51A3439857316C01 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4DCB0899041B402C4A47145E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B63185C611615254F504A53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B0506914C7A662B3FC4694C /* Material Texture.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
+
+/* Begin PBXTargetDependency section */
+		59010AB172A141177C4D4C77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "libframeworkD.a";
+			targetProxy = 7502720F4AD664EC73703FD7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		14BD0E7B5AF522187E54557E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = "Tut 14 Material TextureD";
+			};
+			name = "Debug";
+		};
+		79F37CC454026D2A74877722 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = "Tut 14 Material Texture";
+			};
+			name = "Release";
+		};
+		4A8F1B497B5315571D560E03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_CRT_SECURE_NO_WARNINGS",
+					"_CRT_SECURE_NO_DEPRECATE",
+					"_SCL_SECURE_NO_WARNINGS",
+					"TIXML_USE_STL",
+					"FREEGLUT_STATIC",
+					"_LIB",
+					"FREEGLUT_LIB_PRAGMAS=0",
+					"DEBUG",
+					"_DEBUG",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../framework",
+					"../glsdk/glload/include",
+					"../glsdk/glimg/include",
+					"../glsdk/glm",
+					"../glsdk/glutil/include",
+					"../glsdk/glmesh/include",
+					"../glsdk/freeglut/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"../glsdk/glload/lib",
+					"../glsdk/glimg/lib",
+					"../glsdk/glutil/lib",
+					"../glsdk/glmesh/lib",
+					"../glsdk/freeglut/lib",
+				);
+				OBJROOT = "obj/Debug/Tut 14 Material Texture";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-lglloadD",
+					"-lglimgD",
+					"-lglutilD",
+					"-lglmeshD",
+					"-lfreeglutD",
+				);
+				PREBINDING = NO;
+			};
+			name = "Debug";
+		};
+		04DF5C7B2A1022C61ADA7873 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_CRT_SECURE_NO_WARNINGS",
+					"_CRT_SECURE_NO_DEPRECATE",
+					"_SCL_SECURE_NO_WARNINGS",
+					"TIXML_USE_STL",
+					"FREEGLUT_STATIC",
+					"_LIB",
+					"FREEGLUT_LIB_PRAGMAS=0",
+					"RELEASE",
+					"NDEBUG",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../framework",
+					"../glsdk/glload/include",
+					"../glsdk/glimg/include",
+					"../glsdk/glm",
+					"../glsdk/glutil/include",
+					"../glsdk/glmesh/include",
+					"../glsdk/freeglut/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"../glsdk/glload/lib",
+					"../glsdk/glimg/lib",
+					"../glsdk/glutil/lib",
+					"../glsdk/glmesh/lib",
+					"../glsdk/freeglut/lib",
+				);
+				OBJROOT = "obj/Release/Tut 14 Material Texture";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-fomit-frame-pointer",
+				);
+				OTHER_LDFLAGS = (
+					"-lglload",
+					"-lglimg",
+					"-lglutil",
+					"-lglmesh",
+					"-lfreeglut",
+				);
+				PREBINDING = NO;
+				WARNING_CFLAGS = "-Wall";
+			};
+			name = "Release";
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DFE259F7BE90F3E36CB5192 /* Build configuration list for PBXNativeTarget "Tut 14 Material TextureD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14BD0E7B5AF522187E54557E /* Debug */,
+				79F37CC454026D2A74877722 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Debug";
+		};
+		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Tut 14 Material Texture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A8F1B497B5315571D560E03 /* Debug */,
+				04DF5C7B2A1022C61ADA7873 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Debug";
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

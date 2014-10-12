@@ -1,0 +1,336 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		21FF742A1F0A7EC779413E62 /* MatrixPerspective.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03353EED66EC168B0A6C4B68 /* MatrixPerspective.cpp */; };
+		1097646D5D146AC73AE115BC /* libframeworkD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 334066652B712757473239C6 /* libframeworkD.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7E654812378F4133232914F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08066DCA28FF7D8B47783FC1 /* framework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 225B3CC936837713028E539B;
+			remoteInfo = "libframeworkD.a";
+		};
+		75C01DC465833A6A0AB05EDA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08066DCA28FF7D8B47783FC1 /* framework.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 78AF4B3262FD74AB44764885;
+			remoteInfo = "libframeworkD.a";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03353EED66EC168B0A6C4B68 /* MatrixPerspective.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "MatrixPerspective.cpp"; path = "MatrixPerspective.cpp"; sourceTree = "<group>"; };
+		250E79521436156E706914CE /* MatrixPerspective.vert */ = {isa = PBXFileReference; lastKnownFileType = text; name = "MatrixPerspective.vert"; path = "MatrixPerspective.vert"; sourceTree = "<group>"; };
+		0BFD41033B035B324FB17312 /* StandardColors.frag */ = {isa = PBXFileReference; lastKnownFileType = text; name = "StandardColors.frag"; path = "StandardColors.frag"; sourceTree = "<group>"; };
+		4F6C6A491AEA263D23F32AB1 /* Tut 04 MatrixPerspectiveD */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = "Tut 04 MatrixPerspectiveD"; path = "Tut 04 MatrixPerspectiveD"; sourceTree = BUILT_PRODUCTS_DIR; };
+		08066DCA28FF7D8B47783FC1 /* framework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "framework.xcodeproj"; path = "../framework/framework.xcodeproj"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0289049D0CF1379F45C912A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1097646D5D146AC73AE115BC /* libframeworkD.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		567D4CC879A0103109BF61F8 /* Tut 04 MatrixPerspective */ = {
+			isa = PBXGroup;
+			children = (
+				03353EED66EC168B0A6C4B68 /* MatrixPerspective.cpp */,
+				39A53A350E17421C7910425B /* data */,
+				45E344FE0BE11C504F98169B /* Products */,
+				4E43134543AB42AE315C3DE3 /* Projects */,
+			);
+			name = "Tut 04 MatrixPerspective";
+			sourceTree = "<group>";
+		};
+		39A53A350E17421C7910425B /* data */ = {
+			isa = PBXGroup;
+			children = (
+				250E79521436156E706914CE /* MatrixPerspective.vert */,
+				0BFD41033B035B324FB17312 /* StandardColors.frag */,
+			);
+			name = "data";
+			path = data;
+			sourceTree = "<group>";
+		};
+		45E344FE0BE11C504F98169B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4F6C6A491AEA263D23F32AB1 /* Tut 04 MatrixPerspectiveD */,
+			);
+			name = "Products";
+			sourceTree = "<group>";
+		};
+		4E43134543AB42AE315C3DE3 /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				08066DCA28FF7D8B47783FC1 /* framework.xcodeproj */,
+			);
+			name = "Projects";
+			sourceTree = "<group>";
+		};
+		57A511F2534707815C8137AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				334066652B712757473239C6 /* libframeworkD.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		799625E373530ECF3F4A2531 /* Tut 04 MatrixPerspective */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 268E5738396137413A5953D1 /* Build configuration list for PBXNativeTarget "Tut 04 MatrixPerspective" */;
+			buildPhases = (
+				77D76F3716EA74FB0F3B2891 /* Resources */,
+				587D261D563077D97EB33BE6 /* Sources */,
+				0289049D0CF1379F45C912A3 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				69184881314C17BA384A1437 /* PBXTargetDependency */,
+			);
+			name = "Tut 04 MatrixPerspective";
+			productInstallPath = "$(HOME)/bin";
+			productName = "Tut 04 MatrixPerspective";
+			productReference = 4F6C6A491AEA263D23F32AB1 /* Tut 04 MatrixPerspectiveD */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Tut 04 MatrixPerspective" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 567D4CC879A0103109BF61F8 /* Tut 04 MatrixPerspective */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 57A511F2534707815C8137AF /* Products */;
+					ProjectRef = 08066DCA28FF7D8B47783FC1 /* framework.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				799625E373530ECF3F4A2531 /* Tut 04 MatrixPerspectiveD */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		334066652B712757473239C6 /* libframeworkD.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "lib/libframeworkD.a";
+			remoteRef = 7E654812378F4133232914F1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		77D76F3716EA74FB0F3B2891 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		587D261D563077D97EB33BE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21FF742A1F0A7EC779413E62 /* MatrixPerspective.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
+
+/* Begin PBXTargetDependency section */
+		69184881314C17BA384A1437 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "libframeworkD.a";
+			targetProxy = 75C01DC465833A6A0AB05EDA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		01F57BF54BB627BB7F465CDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = "Tut 04 MatrixPerspectiveD";
+			};
+			name = "Debug";
+		};
+		655D4F0E2B30651234015EB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = "Tut 04 MatrixPerspective";
+			};
+			name = "Release";
+		};
+		0D793FC3391730A47BA73639 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_CRT_SECURE_NO_WARNINGS",
+					"_CRT_SECURE_NO_DEPRECATE",
+					"_SCL_SECURE_NO_WARNINGS",
+					"TIXML_USE_STL",
+					"FREEGLUT_STATIC",
+					"_LIB",
+					"FREEGLUT_LIB_PRAGMAS=0",
+					"DEBUG",
+					"_DEBUG",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../framework",
+					"../glsdk/glload/include",
+					"../glsdk/glimg/include",
+					"../glsdk/glm",
+					"../glsdk/glutil/include",
+					"../glsdk/glmesh/include",
+					"../glsdk/freeglut/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"../glsdk/glload/lib",
+					"../glsdk/glimg/lib",
+					"../glsdk/glutil/lib",
+					"../glsdk/glmesh/lib",
+					"../glsdk/freeglut/lib",
+				);
+				OBJROOT = "obj/Debug/Tut 04 MatrixPerspective";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-lglloadD",
+					"-lglimgD",
+					"-lglutilD",
+					"-lglmeshD",
+					"-lfreeglutD",
+				);
+				PREBINDING = NO;
+			};
+			name = "Debug";
+		};
+		5C4B5BB80D1C46647CF3741F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_CRT_SECURE_NO_WARNINGS",
+					"_CRT_SECURE_NO_DEPRECATE",
+					"_SCL_SECURE_NO_WARNINGS",
+					"TIXML_USE_STL",
+					"FREEGLUT_STATIC",
+					"_LIB",
+					"FREEGLUT_LIB_PRAGMAS=0",
+					"RELEASE",
+					"NDEBUG",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../framework",
+					"../glsdk/glload/include",
+					"../glsdk/glimg/include",
+					"../glsdk/glm",
+					"../glsdk/glutil/include",
+					"../glsdk/glmesh/include",
+					"../glsdk/freeglut/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"../glsdk/glload/lib",
+					"../glsdk/glimg/lib",
+					"../glsdk/glutil/lib",
+					"../glsdk/glmesh/lib",
+					"../glsdk/freeglut/lib",
+				);
+				OBJROOT = "obj/Release/Tut 04 MatrixPerspective";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-fomit-frame-pointer",
+				);
+				OTHER_LDFLAGS = (
+					"-lglload",
+					"-lglimg",
+					"-lglutil",
+					"-lglmesh",
+					"-lfreeglut",
+				);
+				PREBINDING = NO;
+				WARNING_CFLAGS = "-Wall";
+			};
+			name = "Release";
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		268E5738396137413A5953D1 /* Build configuration list for PBXNativeTarget "Tut 04 MatrixPerspectiveD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01F57BF54BB627BB7F465CDE /* Debug */,
+				655D4F0E2B30651234015EB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Debug";
+		};
+		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Tut 04 MatrixPerspective" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D793FC3391730A47BA73639 /* Debug */,
+				5C4B5BB80D1C46647CF3741F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Debug";
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

@@ -1,0 +1,348 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7A9B6474155D2CC563781918 /* Blinn vs Phong Lighting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 59AA43111FD97EF122BC10F9 /* Blinn vs Phong Lighting.cpp */; };
+		17BA5000434F0C8D31E6024C /* libframeworkD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E7E06A830A73B712AA53725 /* libframeworkD.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		20054EA12CEF0F3F77342082 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 261742571EA2493426430C4F /* framework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 225B3CC936837713028E539B;
+			remoteInfo = "libframeworkD.a";
+		};
+		42672D3A733011CF3A3E66BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 261742571EA2493426430C4F /* framework.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 78AF4B3262FD74AB44764885;
+			remoteInfo = "libframeworkD.a";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		59AA43111FD97EF122BC10F9 /* Blinn vs Phong Lighting.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Blinn vs Phong Lighting.cpp"; path = "Blinn vs Phong Lighting.cpp"; sourceTree = "<group>"; };
+		02277B114D3E43C1633019A6 /* BlinnLighting.frag */ = {isa = PBXFileReference; lastKnownFileType = text; name = "BlinnLighting.frag"; path = "BlinnLighting.frag"; sourceTree = "<group>"; };
+		19C75834626C378B14DF4123 /* BlinnOnly.frag */ = {isa = PBXFileReference; lastKnownFileType = text; name = "BlinnOnly.frag"; path = "BlinnOnly.frag"; sourceTree = "<group>"; };
+		1980438A5714222B4989664A /* PCN.vert */ = {isa = PBXFileReference; lastKnownFileType = text; name = "PCN.vert"; path = "PCN.vert"; sourceTree = "<group>"; };
+		04C2614F348F32A437E06524 /* PN.vert */ = {isa = PBXFileReference; lastKnownFileType = text; name = "PN.vert"; path = "PN.vert"; sourceTree = "<group>"; };
+		3BBC4EFE2DAC065170CC7419 /* PhongLighting.frag */ = {isa = PBXFileReference; lastKnownFileType = text; name = "PhongLighting.frag"; path = "PhongLighting.frag"; sourceTree = "<group>"; };
+		271178403C6C66E4047071A2 /* PhongOnly.frag */ = {isa = PBXFileReference; lastKnownFileType = text; name = "PhongOnly.frag"; path = "PhongOnly.frag"; sourceTree = "<group>"; };
+		5972559210F15A3350253FEC /* PosTransform.vert */ = {isa = PBXFileReference; lastKnownFileType = text; name = "PosTransform.vert"; path = "PosTransform.vert"; sourceTree = "<group>"; };
+		4D69579049F912A25E9B4C27 /* UniformColor.frag */ = {isa = PBXFileReference; lastKnownFileType = text; name = "UniformColor.frag"; path = "UniformColor.frag"; sourceTree = "<group>"; };
+		3D0473A1749B24DF6A6F1FFB /* Tut 11 Blinn vs Phong LightingD */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = "Tut 11 Blinn vs Phong LightingD"; path = "Tut 11 Blinn vs Phong LightingD"; sourceTree = BUILT_PRODUCTS_DIR; };
+		261742571EA2493426430C4F /* framework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "framework.xcodeproj"; path = "../framework/framework.xcodeproj"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		024A6F5A32A500D54722392D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17BA5000434F0C8D31E6024C /* libframeworkD.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		502E160D6F9C7A1667F53D71 /* Tut 11 Blinn vs Phong Lighting */ = {
+			isa = PBXGroup;
+			children = (
+				59AA43111FD97EF122BC10F9 /* Blinn vs Phong Lighting.cpp */,
+				153C2B57656B6F3E4FB46D93 /* data */,
+				3F043E4C178D460B0325271D /* Products */,
+				193301735762044367A92D91 /* Projects */,
+			);
+			name = "Tut 11 Blinn vs Phong Lighting";
+			sourceTree = "<group>";
+		};
+		153C2B57656B6F3E4FB46D93 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				02277B114D3E43C1633019A6 /* BlinnLighting.frag */,
+				19C75834626C378B14DF4123 /* BlinnOnly.frag */,
+				1980438A5714222B4989664A /* PCN.vert */,
+				04C2614F348F32A437E06524 /* PN.vert */,
+				3BBC4EFE2DAC065170CC7419 /* PhongLighting.frag */,
+				271178403C6C66E4047071A2 /* PhongOnly.frag */,
+				5972559210F15A3350253FEC /* PosTransform.vert */,
+				4D69579049F912A25E9B4C27 /* UniformColor.frag */,
+			);
+			name = "data";
+			path = data;
+			sourceTree = "<group>";
+		};
+		3F043E4C178D460B0325271D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D0473A1749B24DF6A6F1FFB /* Tut 11 Blinn vs Phong LightingD */,
+			);
+			name = "Products";
+			sourceTree = "<group>";
+		};
+		193301735762044367A92D91 /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				261742571EA2493426430C4F /* framework.xcodeproj */,
+			);
+			name = "Projects";
+			sourceTree = "<group>";
+		};
+		7CCD774635CE09A954E4530B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1E7E06A830A73B712AA53725 /* libframeworkD.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		29D10D914DBE286730BA405F /* Tut 11 Blinn vs Phong Lighting */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55F3499F683D25565E6F7516 /* Build configuration list for PBXNativeTarget "Tut 11 Blinn vs Phong Lighting" */;
+			buildPhases = (
+				1F0119A0702D531330D256B1 /* Resources */,
+				1973019449C4768456CB4C93 /* Sources */,
+				024A6F5A32A500D54722392D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6EA0097D16694CAF03C63FC5 /* PBXTargetDependency */,
+			);
+			name = "Tut 11 Blinn vs Phong Lighting";
+			productInstallPath = "$(HOME)/bin";
+			productName = "Tut 11 Blinn vs Phong Lighting";
+			productReference = 3D0473A1749B24DF6A6F1FFB /* Tut 11 Blinn vs Phong LightingD */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Tut 11 Blinn vs Phong Lighting" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 502E160D6F9C7A1667F53D71 /* Tut 11 Blinn vs Phong Lighting */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 7CCD774635CE09A954E4530B /* Products */;
+					ProjectRef = 261742571EA2493426430C4F /* framework.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				29D10D914DBE286730BA405F /* Tut 11 Blinn vs Phong LightingD */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		1E7E06A830A73B712AA53725 /* libframeworkD.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "lib/libframeworkD.a";
+			remoteRef = 20054EA12CEF0F3F77342082 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1F0119A0702D531330D256B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1973019449C4768456CB4C93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A9B6474155D2CC563781918 /* Blinn vs Phong Lighting.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
+
+/* Begin PBXTargetDependency section */
+		6EA0097D16694CAF03C63FC5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "libframeworkD.a";
+			targetProxy = 42672D3A733011CF3A3E66BE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		39C9589948956BA5200B4092 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = "Tut 11 Blinn vs Phong LightingD";
+			};
+			name = "Debug";
+		};
+		160F6A2E214373604EF637C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = "Tut 11 Blinn vs Phong Lighting";
+			};
+			name = "Release";
+		};
+		67976D2D309F2ACA5E6E34D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_CRT_SECURE_NO_WARNINGS",
+					"_CRT_SECURE_NO_DEPRECATE",
+					"_SCL_SECURE_NO_WARNINGS",
+					"TIXML_USE_STL",
+					"FREEGLUT_STATIC",
+					"_LIB",
+					"FREEGLUT_LIB_PRAGMAS=0",
+					"DEBUG",
+					"_DEBUG",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../framework",
+					"../glsdk/glload/include",
+					"../glsdk/glimg/include",
+					"../glsdk/glm",
+					"../glsdk/glutil/include",
+					"../glsdk/glmesh/include",
+					"../glsdk/freeglut/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"../glsdk/glload/lib",
+					"../glsdk/glimg/lib",
+					"../glsdk/glutil/lib",
+					"../glsdk/glmesh/lib",
+					"../glsdk/freeglut/lib",
+				);
+				OBJROOT = "obj/Debug/Tut 11 Blinn vs Phong Lighting";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-lglloadD",
+					"-lglimgD",
+					"-lglutilD",
+					"-lglmeshD",
+					"-lfreeglutD",
+				);
+				PREBINDING = NO;
+			};
+			name = "Debug";
+		};
+		233932483DF94AA33DAF2D61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_CRT_SECURE_NO_WARNINGS",
+					"_CRT_SECURE_NO_DEPRECATE",
+					"_SCL_SECURE_NO_WARNINGS",
+					"TIXML_USE_STL",
+					"FREEGLUT_STATIC",
+					"_LIB",
+					"FREEGLUT_LIB_PRAGMAS=0",
+					"RELEASE",
+					"NDEBUG",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../framework",
+					"../glsdk/glload/include",
+					"../glsdk/glimg/include",
+					"../glsdk/glm",
+					"../glsdk/glutil/include",
+					"../glsdk/glmesh/include",
+					"../glsdk/freeglut/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"../glsdk/glload/lib",
+					"../glsdk/glimg/lib",
+					"../glsdk/glutil/lib",
+					"../glsdk/glmesh/lib",
+					"../glsdk/freeglut/lib",
+				);
+				OBJROOT = "obj/Release/Tut 11 Blinn vs Phong Lighting";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-fomit-frame-pointer",
+				);
+				OTHER_LDFLAGS = (
+					"-lglload",
+					"-lglimg",
+					"-lglutil",
+					"-lglmesh",
+					"-lfreeglut",
+				);
+				PREBINDING = NO;
+				WARNING_CFLAGS = "-Wall";
+			};
+			name = "Release";
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		55F3499F683D25565E6F7516 /* Build configuration list for PBXNativeTarget "Tut 11 Blinn vs Phong LightingD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39C9589948956BA5200B4092 /* Debug */,
+				160F6A2E214373604EF637C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Debug";
+		};
+		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Tut 11 Blinn vs Phong Lighting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67976D2D309F2ACA5E6E34D1 /* Debug */,
+				233932483DF94AA33DAF2D61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Debug";
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

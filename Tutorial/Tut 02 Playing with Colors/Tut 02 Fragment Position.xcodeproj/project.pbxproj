@@ -1,0 +1,336 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5C690FEA093A629529AA7304 /* FragPosition.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7411221E0CCD186C19A34788 /* FragPosition.cpp */; };
+		74E4541E7EBA6D0430F67FA1 /* libframeworkD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78DD2A2371B21B7A77C82448 /* libframeworkD.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		062C3A980A8265B62AEB33FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 078D490F13A3387864540403 /* framework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 225B3CC936837713028E539B;
+			remoteInfo = "libframeworkD.a";
+		};
+		7EB8787F69F4233C41A54C07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 078D490F13A3387864540403 /* framework.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 78AF4B3262FD74AB44764885;
+			remoteInfo = "libframeworkD.a";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7411221E0CCD186C19A34788 /* FragPosition.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "FragPosition.cpp"; path = "FragPosition.cpp"; sourceTree = "<group>"; };
+		09D52E9157DA527315025200 /* FragPosition.frag */ = {isa = PBXFileReference; lastKnownFileType = text; name = "FragPosition.frag"; path = "FragPosition.frag"; sourceTree = "<group>"; };
+		2F5914352FCD61D2227C34F5 /* FragPosition.vert */ = {isa = PBXFileReference; lastKnownFileType = text; name = "FragPosition.vert"; path = "FragPosition.vert"; sourceTree = "<group>"; };
+		3A681A3C0C910CF4209410DA /* Tut 02 Fragment PositionD */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = "Tut 02 Fragment PositionD"; path = "Tut 02 Fragment PositionD"; sourceTree = BUILT_PRODUCTS_DIR; };
+		078D490F13A3387864540403 /* framework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "framework.xcodeproj"; path = "../framework/framework.xcodeproj"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		65BB197C4A7E2ABD5E973DC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74E4541E7EBA6D0430F67FA1 /* libframeworkD.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		69AA58DA6E9A71B5339672C5 /* Tut 02 Fragment Position */ = {
+			isa = PBXGroup;
+			children = (
+				7411221E0CCD186C19A34788 /* FragPosition.cpp */,
+				415E083C2AC64E142ECF4127 /* data */,
+				6F5B5AAE16B16AB5288360BD /* Products */,
+				33AE6E1823CE314553BA0ED6 /* Projects */,
+			);
+			name = "Tut 02 Fragment Position";
+			sourceTree = "<group>";
+		};
+		415E083C2AC64E142ECF4127 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				09D52E9157DA527315025200 /* FragPosition.frag */,
+				2F5914352FCD61D2227C34F5 /* FragPosition.vert */,
+			);
+			name = "data";
+			path = data;
+			sourceTree = "<group>";
+		};
+		6F5B5AAE16B16AB5288360BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A681A3C0C910CF4209410DA /* Tut 02 Fragment PositionD */,
+			);
+			name = "Products";
+			sourceTree = "<group>";
+		};
+		33AE6E1823CE314553BA0ED6 /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				078D490F13A3387864540403 /* framework.xcodeproj */,
+			);
+			name = "Projects";
+			sourceTree = "<group>";
+		};
+		1691451376D809FF5CAD04A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				78DD2A2371B21B7A77C82448 /* libframeworkD.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		12073F28706377EE4AB0276C /* Tut 02 Fragment Position */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E292CC14652715533396501 /* Build configuration list for PBXNativeTarget "Tut 02 Fragment Position" */;
+			buildPhases = (
+				29EE55AF59DB621B066615F3 /* Resources */,
+				35F725C127283EDD5C501E55 /* Sources */,
+				65BB197C4A7E2ABD5E973DC2 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5FF17E134DDE64A332463235 /* PBXTargetDependency */,
+			);
+			name = "Tut 02 Fragment Position";
+			productInstallPath = "$(HOME)/bin";
+			productName = "Tut 02 Fragment Position";
+			productReference = 3A681A3C0C910CF4209410DA /* Tut 02 Fragment PositionD */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Tut 02 Fragment Position" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 69AA58DA6E9A71B5339672C5 /* Tut 02 Fragment Position */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 1691451376D809FF5CAD04A1 /* Products */;
+					ProjectRef = 078D490F13A3387864540403 /* framework.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				12073F28706377EE4AB0276C /* Tut 02 Fragment PositionD */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		78DD2A2371B21B7A77C82448 /* libframeworkD.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "lib/libframeworkD.a";
+			remoteRef = 062C3A980A8265B62AEB33FA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		29EE55AF59DB621B066615F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		35F725C127283EDD5C501E55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C690FEA093A629529AA7304 /* FragPosition.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
+
+/* Begin PBXTargetDependency section */
+		5FF17E134DDE64A332463235 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "libframeworkD.a";
+			targetProxy = 7EB8787F69F4233C41A54C07 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		41A34C0858A4285E5B991FAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = "Tut 02 Fragment PositionD";
+			};
+			name = "Debug";
+		};
+		534E639D621C57F9366A0F2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = "Tut 02 Fragment Position";
+			};
+			name = "Release";
+		};
+		6D3B584C7F805AD3721E2E53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_CRT_SECURE_NO_WARNINGS",
+					"_CRT_SECURE_NO_DEPRECATE",
+					"_SCL_SECURE_NO_WARNINGS",
+					"TIXML_USE_STL",
+					"FREEGLUT_STATIC",
+					"_LIB",
+					"FREEGLUT_LIB_PRAGMAS=0",
+					"DEBUG",
+					"_DEBUG",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../framework",
+					"../glsdk/glload/include",
+					"../glsdk/glimg/include",
+					"../glsdk/glm",
+					"../glsdk/glutil/include",
+					"../glsdk/glmesh/include",
+					"../glsdk/freeglut/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"../glsdk/glload/lib",
+					"../glsdk/glimg/lib",
+					"../glsdk/glutil/lib",
+					"../glsdk/glmesh/lib",
+					"../glsdk/freeglut/lib",
+				);
+				OBJROOT = "obj/Debug/Tut 02 Fragment Position";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-lglloadD",
+					"-lglimgD",
+					"-lglutilD",
+					"-lglmeshD",
+					"-lfreeglutD",
+				);
+				PREBINDING = NO;
+			};
+			name = "Debug";
+		};
+		5121099347404E406F534A4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_CRT_SECURE_NO_WARNINGS",
+					"_CRT_SECURE_NO_DEPRECATE",
+					"_SCL_SECURE_NO_WARNINGS",
+					"TIXML_USE_STL",
+					"FREEGLUT_STATIC",
+					"_LIB",
+					"FREEGLUT_LIB_PRAGMAS=0",
+					"RELEASE",
+					"NDEBUG",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../framework",
+					"../glsdk/glload/include",
+					"../glsdk/glimg/include",
+					"../glsdk/glm",
+					"../glsdk/glutil/include",
+					"../glsdk/glmesh/include",
+					"../glsdk/freeglut/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"../glsdk/glload/lib",
+					"../glsdk/glimg/lib",
+					"../glsdk/glutil/lib",
+					"../glsdk/glmesh/lib",
+					"../glsdk/freeglut/lib",
+				);
+				OBJROOT = "obj/Release/Tut 02 Fragment Position";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-fomit-frame-pointer",
+				);
+				OTHER_LDFLAGS = (
+					"-lglload",
+					"-lglimg",
+					"-lglutil",
+					"-lglmesh",
+					"-lfreeglut",
+				);
+				PREBINDING = NO;
+				WARNING_CFLAGS = "-Wall";
+			};
+			name = "Release";
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3E292CC14652715533396501 /* Build configuration list for PBXNativeTarget "Tut 02 Fragment PositionD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41A34C0858A4285E5B991FAA /* Debug */,
+				534E639D621C57F9366A0F2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Debug";
+		};
+		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Tut 02 Fragment Position" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D3B584C7F805AD3721E2E53 /* Debug */,
+				5121099347404E406F534A4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Debug";
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

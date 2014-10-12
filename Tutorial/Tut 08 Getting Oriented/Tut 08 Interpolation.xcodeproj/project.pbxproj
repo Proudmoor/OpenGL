@@ -1,0 +1,336 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6C866F073552305521166C9A /* Interpolation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2E05039953F46AC4043145A7 /* Interpolation.cpp */; };
+		21F013E3483547FA237E3544 /* libframeworkD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 199F1F8777D96E8F10C85A7A /* libframeworkD.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		657B6E8D2BBE77F2557F14B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 76EB75BF6E1E2A346C226CA0 /* framework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 225B3CC936837713028E539B;
+			remoteInfo = "libframeworkD.a";
+		};
+		18BF476433C1665B07AA56C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 76EB75BF6E1E2A346C226CA0 /* framework.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 78AF4B3262FD74AB44764885;
+			remoteInfo = "libframeworkD.a";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2E05039953F46AC4043145A7 /* Interpolation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Interpolation.cpp"; path = "Interpolation.cpp"; sourceTree = "<group>"; };
+		22334A6B6DDA093714AD7560 /* ColorMultUniform.frag */ = {isa = PBXFileReference; lastKnownFileType = text; name = "ColorMultUniform.frag"; path = "ColorMultUniform.frag"; sourceTree = "<group>"; };
+		03350D4D46DC1F3D019B6A9D /* PosColorLocalTransform.vert */ = {isa = PBXFileReference; lastKnownFileType = text; name = "PosColorLocalTransform.vert"; path = "PosColorLocalTransform.vert"; sourceTree = "<group>"; };
+		5B386E4A756772FA1E042B4D /* Tut 08 InterpolationD */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = "Tut 08 InterpolationD"; path = "Tut 08 InterpolationD"; sourceTree = BUILT_PRODUCTS_DIR; };
+		76EB75BF6E1E2A346C226CA0 /* framework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "framework.xcodeproj"; path = "../framework/framework.xcodeproj"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4284141110411FF13B8C7470 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21F013E3483547FA237E3544 /* libframeworkD.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F577C426D3826FB568967ED /* Tut 08 Interpolation */ = {
+			isa = PBXGroup;
+			children = (
+				2E05039953F46AC4043145A7 /* Interpolation.cpp */,
+				33F13BF14B7A4B03648E5252 /* data */,
+				1F8C2EA17B4D29B4191416C7 /* Products */,
+				0A962198389D0A501060397B /* Projects */,
+			);
+			name = "Tut 08 Interpolation";
+			sourceTree = "<group>";
+		};
+		33F13BF14B7A4B03648E5252 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				22334A6B6DDA093714AD7560 /* ColorMultUniform.frag */,
+				03350D4D46DC1F3D019B6A9D /* PosColorLocalTransform.vert */,
+			);
+			name = "data";
+			path = data;
+			sourceTree = "<group>";
+		};
+		1F8C2EA17B4D29B4191416C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5B386E4A756772FA1E042B4D /* Tut 08 InterpolationD */,
+			);
+			name = "Products";
+			sourceTree = "<group>";
+		};
+		0A962198389D0A501060397B /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				76EB75BF6E1E2A346C226CA0 /* framework.xcodeproj */,
+			);
+			name = "Projects";
+			sourceTree = "<group>";
+		};
+		42B4708600C44E20423150E6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				199F1F8777D96E8F10C85A7A /* libframeworkD.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7DED64FC19CC261B615C7FEF /* Tut 08 Interpolation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BA86F2C5AD4428B6FC6364A /* Build configuration list for PBXNativeTarget "Tut 08 Interpolation" */;
+			buildPhases = (
+				40857DF969AC337962DE790F /* Resources */,
+				726D02AE7A36761519E52BFE /* Sources */,
+				4284141110411FF13B8C7470 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				096B5A1D450A4200356179E7 /* PBXTargetDependency */,
+			);
+			name = "Tut 08 Interpolation";
+			productInstallPath = "$(HOME)/bin";
+			productName = "Tut 08 Interpolation";
+			productReference = 5B386E4A756772FA1E042B4D /* Tut 08 InterpolationD */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Tut 08 Interpolation" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 2F577C426D3826FB568967ED /* Tut 08 Interpolation */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 42B4708600C44E20423150E6 /* Products */;
+					ProjectRef = 76EB75BF6E1E2A346C226CA0 /* framework.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				7DED64FC19CC261B615C7FEF /* Tut 08 InterpolationD */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		199F1F8777D96E8F10C85A7A /* libframeworkD.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "lib/libframeworkD.a";
+			remoteRef = 657B6E8D2BBE77F2557F14B3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		40857DF969AC337962DE790F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		726D02AE7A36761519E52BFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C866F073552305521166C9A /* Interpolation.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
+
+/* Begin PBXTargetDependency section */
+		096B5A1D450A4200356179E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "libframeworkD.a";
+			targetProxy = 18BF476433C1665B07AA56C0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		28C5598210A7652E3BA75C2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = "Tut 08 InterpolationD";
+			};
+			name = "Debug";
+		};
+		3BE95E3452351E3A1E245F5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = "Tut 08 Interpolation";
+			};
+			name = "Release";
+		};
+		187E7A714489280E4D9B1706 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_CRT_SECURE_NO_WARNINGS",
+					"_CRT_SECURE_NO_DEPRECATE",
+					"_SCL_SECURE_NO_WARNINGS",
+					"TIXML_USE_STL",
+					"FREEGLUT_STATIC",
+					"_LIB",
+					"FREEGLUT_LIB_PRAGMAS=0",
+					"DEBUG",
+					"_DEBUG",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../framework",
+					"../glsdk/glload/include",
+					"../glsdk/glimg/include",
+					"../glsdk/glm",
+					"../glsdk/glutil/include",
+					"../glsdk/glmesh/include",
+					"../glsdk/freeglut/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"../glsdk/glload/lib",
+					"../glsdk/glimg/lib",
+					"../glsdk/glutil/lib",
+					"../glsdk/glmesh/lib",
+					"../glsdk/freeglut/lib",
+				);
+				OBJROOT = "obj/Debug/Tut 08 Interpolation";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-lglloadD",
+					"-lglimgD",
+					"-lglutilD",
+					"-lglmeshD",
+					"-lfreeglutD",
+				);
+				PREBINDING = NO;
+			};
+			name = "Debug";
+		};
+		420B177538B97C2500902F3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_CRT_SECURE_NO_WARNINGS",
+					"_CRT_SECURE_NO_DEPRECATE",
+					"_SCL_SECURE_NO_WARNINGS",
+					"TIXML_USE_STL",
+					"FREEGLUT_STATIC",
+					"_LIB",
+					"FREEGLUT_LIB_PRAGMAS=0",
+					"RELEASE",
+					"NDEBUG",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../framework",
+					"../glsdk/glload/include",
+					"../glsdk/glimg/include",
+					"../glsdk/glm",
+					"../glsdk/glutil/include",
+					"../glsdk/glmesh/include",
+					"../glsdk/freeglut/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"../glsdk/glload/lib",
+					"../glsdk/glimg/lib",
+					"../glsdk/glutil/lib",
+					"../glsdk/glmesh/lib",
+					"../glsdk/freeglut/lib",
+				);
+				OBJROOT = "obj/Release/Tut 08 Interpolation";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-fomit-frame-pointer",
+				);
+				OTHER_LDFLAGS = (
+					"-lglload",
+					"-lglimg",
+					"-lglutil",
+					"-lglmesh",
+					"-lfreeglut",
+				);
+				PREBINDING = NO;
+				WARNING_CFLAGS = "-Wall";
+			};
+			name = "Release";
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1BA86F2C5AD4428B6FC6364A /* Build configuration list for PBXNativeTarget "Tut 08 InterpolationD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28C5598210A7652E3BA75C2B /* Debug */,
+				3BE95E3452351E3A1E245F5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Debug";
+		};
+		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Tut 08 Interpolation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				187E7A714489280E4D9B1706 /* Debug */,
+				420B177538B97C2500902F3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Debug";
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

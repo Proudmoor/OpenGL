@@ -1,0 +1,336 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		28BD17070DD93CC40E6E12E9 /* Translation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53802318031D70754ABE2CC0 /* Translation.cpp */; };
+		598D413B2BB46A1F475A01CE /* libframeworkD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D844850197A411954E27A9B /* libframeworkD.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7257515E202A5A0801B07685 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0365716E1261260C643D0AE4 /* framework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 225B3CC936837713028E539B;
+			remoteInfo = "libframeworkD.a";
+		};
+		3AF004A64EBD5FB444E05989 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0365716E1261260C643D0AE4 /* framework.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 78AF4B3262FD74AB44764885;
+			remoteInfo = "libframeworkD.a";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		53802318031D70754ABE2CC0 /* Translation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Translation.cpp"; path = "Translation.cpp"; sourceTree = "<group>"; };
+		34033C8B6B5B4CF25EB96C9E /* ColorPassthrough.frag */ = {isa = PBXFileReference; lastKnownFileType = text; name = "ColorPassthrough.frag"; path = "ColorPassthrough.frag"; sourceTree = "<group>"; };
+		1572241B101703122D6239B3 /* PosColorLocalTransform.vert */ = {isa = PBXFileReference; lastKnownFileType = text; name = "PosColorLocalTransform.vert"; path = "PosColorLocalTransform.vert"; sourceTree = "<group>"; };
+		7CD2669D5FD93D6C14D60032 /* Tut 06 TranslationD */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = "Tut 06 TranslationD"; path = "Tut 06 TranslationD"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0365716E1261260C643D0AE4 /* framework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "framework.xcodeproj"; path = "../framework/framework.xcodeproj"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6C724B332919290607F323AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				598D413B2BB46A1F475A01CE /* libframeworkD.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07746D3A0B380AC315AA7CBA /* Tut 06 Translation */ = {
+			isa = PBXGroup;
+			children = (
+				53802318031D70754ABE2CC0 /* Translation.cpp */,
+				2AAB6D6931D2716F3A362F84 /* data */,
+				1F6D363570150EE432C611D8 /* Products */,
+				3D593ABB047933FA0C1D5DD7 /* Projects */,
+			);
+			name = "Tut 06 Translation";
+			sourceTree = "<group>";
+		};
+		2AAB6D6931D2716F3A362F84 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				34033C8B6B5B4CF25EB96C9E /* ColorPassthrough.frag */,
+				1572241B101703122D6239B3 /* PosColorLocalTransform.vert */,
+			);
+			name = "data";
+			path = data;
+			sourceTree = "<group>";
+		};
+		1F6D363570150EE432C611D8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7CD2669D5FD93D6C14D60032 /* Tut 06 TranslationD */,
+			);
+			name = "Products";
+			sourceTree = "<group>";
+		};
+		3D593ABB047933FA0C1D5DD7 /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				0365716E1261260C643D0AE4 /* framework.xcodeproj */,
+			);
+			name = "Projects";
+			sourceTree = "<group>";
+		};
+		01497608219B5757186C5F8A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D844850197A411954E27A9B /* libframeworkD.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7A6727BF72BB7AD34CCA6E8F /* Tut 06 Translation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 270A03AE3418366D68E45832 /* Build configuration list for PBXNativeTarget "Tut 06 Translation" */;
+			buildPhases = (
+				5E09290A5392424E348B3508 /* Resources */,
+				4BEC2106421F2A170B262A09 /* Sources */,
+				6C724B332919290607F323AD /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B8142076F8A5A74170E4B86 /* PBXTargetDependency */,
+			);
+			name = "Tut 06 Translation";
+			productInstallPath = "$(HOME)/bin";
+			productName = "Tut 06 Translation";
+			productReference = 7CD2669D5FD93D6C14D60032 /* Tut 06 TranslationD */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Tut 06 Translation" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 07746D3A0B380AC315AA7CBA /* Tut 06 Translation */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 01497608219B5757186C5F8A /* Products */;
+					ProjectRef = 0365716E1261260C643D0AE4 /* framework.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				7A6727BF72BB7AD34CCA6E8F /* Tut 06 TranslationD */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3D844850197A411954E27A9B /* libframeworkD.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "lib/libframeworkD.a";
+			remoteRef = 7257515E202A5A0801B07685 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5E09290A5392424E348B3508 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4BEC2106421F2A170B262A09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28BD17070DD93CC40E6E12E9 /* Translation.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
+
+/* Begin PBXTargetDependency section */
+		3B8142076F8A5A74170E4B86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "libframeworkD.a";
+			targetProxy = 3AF004A64EBD5FB444E05989 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3CC279BE643C2F3C157478EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = "Tut 06 TranslationD";
+			};
+			name = "Debug";
+		};
+		5F6E450E424216C307C1398A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = "Tut 06 Translation";
+			};
+			name = "Release";
+		};
+		0B4173CB46F942204EAB7693 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_CRT_SECURE_NO_WARNINGS",
+					"_CRT_SECURE_NO_DEPRECATE",
+					"_SCL_SECURE_NO_WARNINGS",
+					"TIXML_USE_STL",
+					"FREEGLUT_STATIC",
+					"_LIB",
+					"FREEGLUT_LIB_PRAGMAS=0",
+					"DEBUG",
+					"_DEBUG",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../framework",
+					"../glsdk/glload/include",
+					"../glsdk/glimg/include",
+					"../glsdk/glm",
+					"../glsdk/glutil/include",
+					"../glsdk/glmesh/include",
+					"../glsdk/freeglut/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"../glsdk/glload/lib",
+					"../glsdk/glimg/lib",
+					"../glsdk/glutil/lib",
+					"../glsdk/glmesh/lib",
+					"../glsdk/freeglut/lib",
+				);
+				OBJROOT = "obj/Debug/Tut 06 Translation";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-lglloadD",
+					"-lglimgD",
+					"-lglutilD",
+					"-lglmeshD",
+					"-lfreeglutD",
+				);
+				PREBINDING = NO;
+			};
+			name = "Debug";
+		};
+		36D622903AB027536F6A4D9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_CRT_SECURE_NO_WARNINGS",
+					"_CRT_SECURE_NO_DEPRECATE",
+					"_SCL_SECURE_NO_WARNINGS",
+					"TIXML_USE_STL",
+					"FREEGLUT_STATIC",
+					"_LIB",
+					"FREEGLUT_LIB_PRAGMAS=0",
+					"RELEASE",
+					"NDEBUG",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../framework",
+					"../glsdk/glload/include",
+					"../glsdk/glimg/include",
+					"../glsdk/glm",
+					"../glsdk/glutil/include",
+					"../glsdk/glmesh/include",
+					"../glsdk/freeglut/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"../glsdk/glload/lib",
+					"../glsdk/glimg/lib",
+					"../glsdk/glutil/lib",
+					"../glsdk/glmesh/lib",
+					"../glsdk/freeglut/lib",
+				);
+				OBJROOT = "obj/Release/Tut 06 Translation";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-fomit-frame-pointer",
+				);
+				OTHER_LDFLAGS = (
+					"-lglload",
+					"-lglimg",
+					"-lglutil",
+					"-lglmesh",
+					"-lfreeglut",
+				);
+				PREBINDING = NO;
+				WARNING_CFLAGS = "-Wall";
+			};
+			name = "Release";
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		270A03AE3418366D68E45832 /* Build configuration list for PBXNativeTarget "Tut 06 TranslationD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CC279BE643C2F3C157478EE /* Debug */,
+				5F6E450E424216C307C1398A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Debug";
+		};
+		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Tut 06 Translation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B4173CB46F942204EAB7693 /* Debug */,
+				36D622903AB027536F6A4D9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Debug";
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

@@ -1,0 +1,342 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C40697E00144D75672A01D3 /* Vertex Point Lighting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 757563556D3F61837BE23865 /* Vertex Point Lighting.cpp */; };
+		6E782B940A9C16EC7C6F5E75 /* libframeworkD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EF009987797654C62203EC8 /* libframeworkD.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		177802073E84726B0E7A0C7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B6719464E8939401FBC29B7 /* framework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 225B3CC936837713028E539B;
+			remoteInfo = "libframeworkD.a";
+		};
+		5D214F913CD410A015B14484 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B6719464E8939401FBC29B7 /* framework.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 78AF4B3262FD74AB44764885;
+			remoteInfo = "libframeworkD.a";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		757563556D3F61837BE23865 /* Vertex Point Lighting.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Vertex Point Lighting.cpp"; path = "Vertex Point Lighting.cpp"; sourceTree = "<group>"; };
+		2C7803161DC7754309CF3382 /* ColorPassthrough.frag */ = {isa = PBXFileReference; lastKnownFileType = text; name = "ColorPassthrough.frag"; path = "ColorPassthrough.frag"; sourceTree = "<group>"; };
+		2ED154283AA074A26BB00512 /* PosTransform.vert */ = {isa = PBXFileReference; lastKnownFileType = text; name = "PosTransform.vert"; path = "PosTransform.vert"; sourceTree = "<group>"; };
+		0E3413F158D26A3279503250 /* PosVertexLighting_PCN.vert */ = {isa = PBXFileReference; lastKnownFileType = text; name = "PosVertexLighting_PCN.vert"; path = "PosVertexLighting_PCN.vert"; sourceTree = "<group>"; };
+		40B54BD60F5470FA40507D4B /* PosVertexLighting_PN.vert */ = {isa = PBXFileReference; lastKnownFileType = text; name = "PosVertexLighting_PN.vert"; path = "PosVertexLighting_PN.vert"; sourceTree = "<group>"; };
+		7D5559DC0CEF360306FE1632 /* UniformColor.frag */ = {isa = PBXFileReference; lastKnownFileType = text; name = "UniformColor.frag"; path = "UniformColor.frag"; sourceTree = "<group>"; };
+		11832FBD27C712E37C406D6C /* Tut 10 Vertex Point LightingD */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = "Tut 10 Vertex Point LightingD"; path = "Tut 10 Vertex Point LightingD"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B6719464E8939401FBC29B7 /* framework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "framework.xcodeproj"; path = "../framework/framework.xcodeproj"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		370E32C92A8C538E4FAE4ED6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E782B940A9C16EC7C6F5E75 /* libframeworkD.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		410F63C25FA76EE853C07709 /* Tut 10 Vertex Point Lighting */ = {
+			isa = PBXGroup;
+			children = (
+				757563556D3F61837BE23865 /* Vertex Point Lighting.cpp */,
+				5912302442B87F682CCE27EC /* data */,
+				504503D959076EF06B376CE6 /* Products */,
+				25F1135D77795D9B02AB6849 /* Projects */,
+			);
+			name = "Tut 10 Vertex Point Lighting";
+			sourceTree = "<group>";
+		};
+		5912302442B87F682CCE27EC /* data */ = {
+			isa = PBXGroup;
+			children = (
+				2C7803161DC7754309CF3382 /* ColorPassthrough.frag */,
+				2ED154283AA074A26BB00512 /* PosTransform.vert */,
+				0E3413F158D26A3279503250 /* PosVertexLighting_PCN.vert */,
+				40B54BD60F5470FA40507D4B /* PosVertexLighting_PN.vert */,
+				7D5559DC0CEF360306FE1632 /* UniformColor.frag */,
+			);
+			name = "data";
+			path = data;
+			sourceTree = "<group>";
+		};
+		504503D959076EF06B376CE6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				11832FBD27C712E37C406D6C /* Tut 10 Vertex Point LightingD */,
+			);
+			name = "Products";
+			sourceTree = "<group>";
+		};
+		25F1135D77795D9B02AB6849 /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				2B6719464E8939401FBC29B7 /* framework.xcodeproj */,
+			);
+			name = "Projects";
+			sourceTree = "<group>";
+		};
+		7B911ABA29715A2820A13072 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5EF009987797654C62203EC8 /* libframeworkD.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		03B30D7468451F1D33CD164C /* Tut 10 Vertex Point Lighting */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D5B13682D5766A17D712993 /* Build configuration list for PBXNativeTarget "Tut 10 Vertex Point Lighting" */;
+			buildPhases = (
+				1621533E40507938603E126D /* Resources */,
+				6D444BC90E0A5FDB29CD7C8B /* Sources */,
+				370E32C92A8C538E4FAE4ED6 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4AB569FD19F26449353154BE /* PBXTargetDependency */,
+			);
+			name = "Tut 10 Vertex Point Lighting";
+			productInstallPath = "$(HOME)/bin";
+			productName = "Tut 10 Vertex Point Lighting";
+			productReference = 11832FBD27C712E37C406D6C /* Tut 10 Vertex Point LightingD */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Tut 10 Vertex Point Lighting" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 410F63C25FA76EE853C07709 /* Tut 10 Vertex Point Lighting */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 7B911ABA29715A2820A13072 /* Products */;
+					ProjectRef = 2B6719464E8939401FBC29B7 /* framework.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				03B30D7468451F1D33CD164C /* Tut 10 Vertex Point LightingD */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		5EF009987797654C62203EC8 /* libframeworkD.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "lib/libframeworkD.a";
+			remoteRef = 177802073E84726B0E7A0C7A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1621533E40507938603E126D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6D444BC90E0A5FDB29CD7C8B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C40697E00144D75672A01D3 /* Vertex Point Lighting.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
+
+/* Begin PBXTargetDependency section */
+		4AB569FD19F26449353154BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "libframeworkD.a";
+			targetProxy = 5D214F913CD410A015B14484 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		67E657B76CF36F5272F221EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = "Tut 10 Vertex Point LightingD";
+			};
+			name = "Debug";
+		};
+		7662230C6EB873815A714E7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = "Tut 10 Vertex Point Lighting";
+			};
+			name = "Release";
+		};
+		472B61E648F23A1015A313CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_CRT_SECURE_NO_WARNINGS",
+					"_CRT_SECURE_NO_DEPRECATE",
+					"_SCL_SECURE_NO_WARNINGS",
+					"TIXML_USE_STL",
+					"FREEGLUT_STATIC",
+					"_LIB",
+					"FREEGLUT_LIB_PRAGMAS=0",
+					"DEBUG",
+					"_DEBUG",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../framework",
+					"../glsdk/glload/include",
+					"../glsdk/glimg/include",
+					"../glsdk/glm",
+					"../glsdk/glutil/include",
+					"../glsdk/glmesh/include",
+					"../glsdk/freeglut/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"../glsdk/glload/lib",
+					"../glsdk/glimg/lib",
+					"../glsdk/glutil/lib",
+					"../glsdk/glmesh/lib",
+					"../glsdk/freeglut/lib",
+				);
+				OBJROOT = "obj/Debug/Tut 10 Vertex Point Lighting";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-lglloadD",
+					"-lglimgD",
+					"-lglutilD",
+					"-lglmeshD",
+					"-lfreeglutD",
+				);
+				PREBINDING = NO;
+			};
+			name = "Debug";
+		};
+		48B25E7D0B6F267019985AA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_CRT_SECURE_NO_WARNINGS",
+					"_CRT_SECURE_NO_DEPRECATE",
+					"_SCL_SECURE_NO_WARNINGS",
+					"TIXML_USE_STL",
+					"FREEGLUT_STATIC",
+					"_LIB",
+					"FREEGLUT_LIB_PRAGMAS=0",
+					"RELEASE",
+					"NDEBUG",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../framework",
+					"../glsdk/glload/include",
+					"../glsdk/glimg/include",
+					"../glsdk/glm",
+					"../glsdk/glutil/include",
+					"../glsdk/glmesh/include",
+					"../glsdk/freeglut/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"../glsdk/glload/lib",
+					"../glsdk/glimg/lib",
+					"../glsdk/glutil/lib",
+					"../glsdk/glmesh/lib",
+					"../glsdk/freeglut/lib",
+				);
+				OBJROOT = "obj/Release/Tut 10 Vertex Point Lighting";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-fomit-frame-pointer",
+				);
+				OTHER_LDFLAGS = (
+					"-lglload",
+					"-lglimg",
+					"-lglutil",
+					"-lglmesh",
+					"-lfreeglut",
+				);
+				PREBINDING = NO;
+				WARNING_CFLAGS = "-Wall";
+			};
+			name = "Release";
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7D5B13682D5766A17D712993 /* Build configuration list for PBXNativeTarget "Tut 10 Vertex Point LightingD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67E657B76CF36F5272F221EC /* Debug */,
+				7662230C6EB873815A714E7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Debug";
+		};
+		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Tut 10 Vertex Point Lighting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				472B61E648F23A1015A313CC /* Debug */,
+				48B25E7D0B6F267019985AA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Debug";
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

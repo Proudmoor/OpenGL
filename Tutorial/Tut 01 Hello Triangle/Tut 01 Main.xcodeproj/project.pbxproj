@@ -1,0 +1,356 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		49CD51EE782438880B8D0ACB /* tut1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27D51B4D5DCB536134E21D1E /* tut1.cpp */; };
+		E251A0E619D3DDD30066D554 /* libframeworkD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 074352BD7F412FFD10075A6C /* libframeworkD.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		170D160B42684C5656525A78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2CDC258F727B21A900037F75 /* framework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 26215B7923D45FBE71BE046A;
+			remoteInfo = libframeworkD.a;
+		};
+		30282DA136207FB351EB3C1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2CDC258F727B21A900037F75 /* framework.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 086D41AE298303DF35C815A8;
+			remoteInfo = libframeworkD.a;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		27D51B4D5DCB536134E21D1E /* tut1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = tut1.cpp; sourceTree = "<group>"; };
+		2CDC258F727B21A900037F75 /* framework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = framework.xcodeproj; path = ../framework/framework.xcodeproj; sourceTree = SOURCE_ROOT; };
+		61B331F96891150E79DB2B05 /* Tut 01 MainD */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Tut 01 MainD"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E251A0E419D2C0A70066D554 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6AF12CDE6441043E033D21B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E251A0E619D3DDD30066D554 /* libframeworkD.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00415F7B28B317B43D92588B /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				2CDC258F727B21A900037F75 /* framework.xcodeproj */,
+			);
+			name = Projects;
+			sourceTree = "<group>";
+		};
+		0F9D2D2E61470E897BDC4CF4 /* Tut 01 Main */ = {
+			isa = PBXGroup;
+			children = (
+				E251A0E419D2C0A70066D554 /* GLUT.framework */,
+				27D51B4D5DCB536134E21D1E /* tut1.cpp */,
+				4AF8124B005175B4165C1A27 /* Products */,
+				00415F7B28B317B43D92588B /* Projects */,
+			);
+			name = "Tut 01 Main";
+			sourceTree = "<group>";
+		};
+		469448E674BA750416F36B06 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				074352BD7F412FFD10075A6C /* libframeworkD.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4AF8124B005175B4165C1A27 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				61B331F96891150E79DB2B05 /* Tut 01 MainD */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		74DD770F7E1F631F1D162806 /* Tut 01 Main */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10AA0BAB20EB653F0BB25661 /* Build configuration list for PBXNativeTarget "Tut 01 Main" */;
+			buildPhases = (
+				1E856C466CAE155868DB3D78 /* Resources */,
+				436D586F74D75FBE4144178D /* Sources */,
+				6AF12CDE6441043E033D21B3 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7DC862C84A8D7C2E3CB51362 /* PBXTargetDependency */,
+			);
+			name = "Tut 01 Main";
+			productInstallPath = "$(HOME)/bin";
+			productName = "Tut 01 Main";
+			productReference = 61B331F96891150E79DB2B05 /* Tut 01 MainD */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+			};
+			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Tut 01 Main" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0F9D2D2E61470E897BDC4CF4 /* Tut 01 Main */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 469448E674BA750416F36B06 /* Products */;
+					ProjectRef = 2CDC258F727B21A900037F75 /* framework.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				74DD770F7E1F631F1D162806 /* Tut 01 Main */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		074352BD7F412FFD10075A6C /* libframeworkD.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libframeworkD.a;
+			remoteRef = 170D160B42684C5656525A78 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1E856C466CAE155868DB3D78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		436D586F74D75FBE4144178D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49CD51EE782438880B8D0ACB /* tut1.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7DC862C84A8D7C2E3CB51362 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = libframeworkD.a;
+			targetProxy = 30282DA136207FB351EB3C1E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		20A07896731F7CB509846DDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				HEADER_SEARCH_PATHS = (
+					../framework,
+					../glsdk/glload/include,
+					../glsdk/glimg/include,
+					../glsdk/glm,
+					../glsdk/glmesh/include,
+					/usr/X11/include,
+				);
+				INSTALL_PATH = /usr/local/bin;
+				LIBRARY_SEARCH_PATHS = (
+					../glsdk/glload/lib,
+					../glsdk/glimg/lib,
+					../glsdk/glmesh/lib,
+					/usr/X11/lib,
+					../glsdk/glutil/lib,
+				);
+				PRODUCT_NAME = "Tut 01 Main";
+			};
+			name = Release;
+		};
+		2EE561FA77376A5034AF63AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				HEADER_SEARCH_PATHS = (
+					../framework,
+					../glsdk/glload/include,
+					../glsdk/glimg/include,
+					../glsdk/glm,
+					../glsdk/glmesh/include,
+					/usr/X11/include,
+				);
+				INSTALL_PATH = /usr/local/bin;
+				LIBRARY_SEARCH_PATHS = (
+					../glsdk/glload/lib,
+					../glsdk/glimg/lib,
+					../glsdk/glmesh/lib,
+					/usr/X11/lib,
+					../glsdk/glutil/lib,
+				);
+				PRODUCT_NAME = "Tut 01 MainD";
+			};
+			name = Debug;
+		};
+		31827DEC4B5A34D06F326918 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_CRT_SECURE_NO_WARNINGS,
+					_CRT_SECURE_NO_DEPRECATE,
+					_SCL_SECURE_NO_WARNINGS,
+					TIXML_USE_STL,
+					FREEGLUT_STATIC,
+					_LIB,
+					"FREEGLUT_LIB_PRAGMAS=0",
+					RELEASE,
+					NDEBUG,
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../framework,
+					../glsdk/glload/include,
+					../glsdk/glimg/include,
+					../glsdk/glm,
+					../glsdk/glmesh/include,
+					/usr/local/Cellar/freeglut/2.8.1/include,
+					../glsdk/glutil/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					../glsdk/glload/lib,
+					../glsdk/glimg/lib,
+					../glsdk/glmesh/lib,
+					/usr/X11/lib,
+					../glsdk/glutil/lib,
+				);
+				OBJROOT = obj/Release;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-fomit-frame-pointer";
+				OTHER_LDFLAGS = (
+					"-lglload",
+					"-lglimg",
+					"-lglmesh",
+					"-lglut",
+					"-lglutil",
+				);
+				PREBINDING = NO;
+				WARNING_CFLAGS = "-Wall";
+			};
+			name = Release;
+		};
+		4BE9401A102866550FFC260B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_CRT_SECURE_NO_WARNINGS,
+					_CRT_SECURE_NO_DEPRECATE,
+					_SCL_SECURE_NO_WARNINGS,
+					TIXML_USE_STL,
+					FREEGLUT_STATIC,
+					_LIB,
+					"FREEGLUT_LIB_PRAGMAS=0",
+					DEBUG,
+					_DEBUG,
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../framework,
+					../glsdk/glload/include,
+					../glsdk/glimg/include,
+					../glsdk/glm,
+					../glsdk/glmesh/include,
+					/usr/local/Cellar/freeglut/2.8.1/include,
+					../glsdk/glutil/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					../glsdk/glload/lib,
+					../glsdk/glimg/lib,
+					../glsdk/glmesh/lib,
+					/usr/X11/lib,
+					../glsdk/glutil/lib,
+				);
+				OBJROOT = obj/Debug;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-lglloadD",
+					"-lglimgD",
+					"-lglmeshD",
+					"-lglut",
+					"-lglutil",
+				);
+				PREBINDING = NO;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		10AA0BAB20EB653F0BB25661 /* Build configuration list for PBXNativeTarget "Tut 01 Main" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EE561FA77376A5034AF63AC /* Debug */,
+				20A07896731F7CB509846DDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Tut 01 Main" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BE9401A102866550FFC260B /* Debug */,
+				31827DEC4B5A34D06F326918 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

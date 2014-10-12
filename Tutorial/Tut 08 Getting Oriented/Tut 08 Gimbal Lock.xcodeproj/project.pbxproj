@@ -1,0 +1,336 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7E073429004403BC42265F5D /* GimbalLock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1ACA591C7126148943DA4BA4 /* GimbalLock.cpp */; };
+		5FBF2D6E28D54564671454B8 /* libframeworkD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 15A3163E5F6D18FB419E292D /* libframeworkD.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1ADC6A5F0A476F5000354AD0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 191078173BC530193E941C22 /* framework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 225B3CC936837713028E539B;
+			remoteInfo = "libframeworkD.a";
+		};
+		267422D009857B4A74FB3132 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 191078173BC530193E941C22 /* framework.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 78AF4B3262FD74AB44764885;
+			remoteInfo = "libframeworkD.a";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1ACA591C7126148943DA4BA4 /* GimbalLock.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "GimbalLock.cpp"; path = "GimbalLock.cpp"; sourceTree = "<group>"; };
+		0EF061B74D4D317840D70698 /* ColorMultUniform.frag */ = {isa = PBXFileReference; lastKnownFileType = text; name = "ColorMultUniform.frag"; path = "ColorMultUniform.frag"; sourceTree = "<group>"; };
+		6A0659D33B8077BE68BC4659 /* PosColorLocalTransform.vert */ = {isa = PBXFileReference; lastKnownFileType = text; name = "PosColorLocalTransform.vert"; path = "PosColorLocalTransform.vert"; sourceTree = "<group>"; };
+		642E181B1F9D07E54BC37B6F /* Tut 08 Gimbal LockD */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = "Tut 08 Gimbal LockD"; path = "Tut 08 Gimbal LockD"; sourceTree = BUILT_PRODUCTS_DIR; };
+		191078173BC530193E941C22 /* framework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "framework.xcodeproj"; path = "../framework/framework.xcodeproj"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2FC967654AD779B77BFC0B2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FBF2D6E28D54564671454B8 /* libframeworkD.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B7743667F4F4B55581D7757 /* Tut 08 Gimbal Lock */ = {
+			isa = PBXGroup;
+			children = (
+				1ACA591C7126148943DA4BA4 /* GimbalLock.cpp */,
+				564423032B146951749F07B7 /* data */,
+				381862582DEB274746D644EA /* Products */,
+				79E361756CE46F582E983E04 /* Projects */,
+			);
+			name = "Tut 08 Gimbal Lock";
+			sourceTree = "<group>";
+		};
+		564423032B146951749F07B7 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				0EF061B74D4D317840D70698 /* ColorMultUniform.frag */,
+				6A0659D33B8077BE68BC4659 /* PosColorLocalTransform.vert */,
+			);
+			name = "data";
+			path = data;
+			sourceTree = "<group>";
+		};
+		381862582DEB274746D644EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				642E181B1F9D07E54BC37B6F /* Tut 08 Gimbal LockD */,
+			);
+			name = "Products";
+			sourceTree = "<group>";
+		};
+		79E361756CE46F582E983E04 /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				191078173BC530193E941C22 /* framework.xcodeproj */,
+			);
+			name = "Projects";
+			sourceTree = "<group>";
+		};
+		055D23AA048F7F7D15A0679D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				15A3163E5F6D18FB419E292D /* libframeworkD.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		40220A651E523CAC01BB3113 /* Tut 08 Gimbal Lock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 073B375C24B44D05219B51A0 /* Build configuration list for PBXNativeTarget "Tut 08 Gimbal Lock" */;
+			buildPhases = (
+				03F143BE1B1521CF43763437 /* Resources */,
+				394F7303741476453118604C /* Sources */,
+				2FC967654AD779B77BFC0B2A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B021C8A3A2E462C0B9B72BE /* PBXTargetDependency */,
+			);
+			name = "Tut 08 Gimbal Lock";
+			productInstallPath = "$(HOME)/bin";
+			productName = "Tut 08 Gimbal Lock";
+			productReference = 642E181B1F9D07E54BC37B6F /* Tut 08 Gimbal LockD */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Tut 08 Gimbal Lock" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 2B7743667F4F4B55581D7757 /* Tut 08 Gimbal Lock */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 055D23AA048F7F7D15A0679D /* Products */;
+					ProjectRef = 191078173BC530193E941C22 /* framework.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				40220A651E523CAC01BB3113 /* Tut 08 Gimbal LockD */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		15A3163E5F6D18FB419E292D /* libframeworkD.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "lib/libframeworkD.a";
+			remoteRef = 1ADC6A5F0A476F5000354AD0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		03F143BE1B1521CF43763437 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		394F7303741476453118604C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E073429004403BC42265F5D /* GimbalLock.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
+
+/* Begin PBXTargetDependency section */
+		5B021C8A3A2E462C0B9B72BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "libframeworkD.a";
+			targetProxy = 267422D009857B4A74FB3132 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0B51117203746E2178C841F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = "Tut 08 Gimbal LockD";
+			};
+			name = "Debug";
+		};
+		637E140B716139FD4B4D3B0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = "Tut 08 Gimbal Lock";
+			};
+			name = "Release";
+		};
+		5DDE2E3A1F377959039A174F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_CRT_SECURE_NO_WARNINGS",
+					"_CRT_SECURE_NO_DEPRECATE",
+					"_SCL_SECURE_NO_WARNINGS",
+					"TIXML_USE_STL",
+					"FREEGLUT_STATIC",
+					"_LIB",
+					"FREEGLUT_LIB_PRAGMAS=0",
+					"DEBUG",
+					"_DEBUG",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../framework",
+					"../glsdk/glload/include",
+					"../glsdk/glimg/include",
+					"../glsdk/glm",
+					"../glsdk/glutil/include",
+					"../glsdk/glmesh/include",
+					"../glsdk/freeglut/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"../glsdk/glload/lib",
+					"../glsdk/glimg/lib",
+					"../glsdk/glutil/lib",
+					"../glsdk/glmesh/lib",
+					"../glsdk/freeglut/lib",
+				);
+				OBJROOT = "obj/Debug/Tut 08 Gimbal Lock";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-lglloadD",
+					"-lglimgD",
+					"-lglutilD",
+					"-lglmeshD",
+					"-lfreeglutD",
+				);
+				PREBINDING = NO;
+			};
+			name = "Debug";
+		};
+		6C65604D7671158036CA45B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_CRT_SECURE_NO_WARNINGS",
+					"_CRT_SECURE_NO_DEPRECATE",
+					"_SCL_SECURE_NO_WARNINGS",
+					"TIXML_USE_STL",
+					"FREEGLUT_STATIC",
+					"_LIB",
+					"FREEGLUT_LIB_PRAGMAS=0",
+					"RELEASE",
+					"NDEBUG",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../framework",
+					"../glsdk/glload/include",
+					"../glsdk/glimg/include",
+					"../glsdk/glm",
+					"../glsdk/glutil/include",
+					"../glsdk/glmesh/include",
+					"../glsdk/freeglut/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"../glsdk/glload/lib",
+					"../glsdk/glimg/lib",
+					"../glsdk/glutil/lib",
+					"../glsdk/glmesh/lib",
+					"../glsdk/freeglut/lib",
+				);
+				OBJROOT = "obj/Release/Tut 08 Gimbal Lock";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-fomit-frame-pointer",
+				);
+				OTHER_LDFLAGS = (
+					"-lglload",
+					"-lglimg",
+					"-lglutil",
+					"-lglmesh",
+					"-lfreeglut",
+				);
+				PREBINDING = NO;
+				WARNING_CFLAGS = "-Wall";
+			};
+			name = "Release";
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		073B375C24B44D05219B51A0 /* Build configuration list for PBXNativeTarget "Tut 08 Gimbal LockD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B51117203746E2178C841F1 /* Debug */,
+				637E140B716139FD4B4D3B0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Debug";
+		};
+		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Tut 08 Gimbal Lock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DDE2E3A1F377959039A174F /* Debug */,
+				6C65604D7671158036CA45B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Debug";
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}
