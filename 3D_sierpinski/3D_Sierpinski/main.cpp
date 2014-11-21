@@ -26,6 +26,9 @@ tdogl::Program* gProgram = NULL;
 typedef glm::vec3 point3;
 typedef glm::vec3 color3;
 
+GLuint gVAO = 0;
+GLuint gVBO = 0;
+
 const int NumTimesTosubdivide = 4;
 const int NumTetrahedrons = 256;
 const int NumTriangles = 4 * NumTetrahedrons;
@@ -55,45 +58,45 @@ static std::string ResourcePath (std::string fileName) {
     return "./";
 }
 
-void triangle(const point3& a, const point3& b, const point3& c, const int color){
-    
-    
-    static color3 base_colors[4] = {
-        color3(0.0f, 0.0f, 0.0f), color3(0.0f, 1.0f, 0.0f),
-        color3(0.0f, 0.0f, 1.0f), color3(1.0f, 0.0f, 0.0f)
-    };
+static glm::vec3  base_colors[] = {
+    glm::vec3( 1.0, 0.0, 0.0 ),
+    glm::vec3( 0.0, 1.0, 0.0 ),
+    glm::vec3( 0.0, 0.0, 1.0 ),
+    glm::vec3( 0.0, 0.0, 0.0 )
+};
 
-    points[Index] = a;  colors[Index] = base_colors[color]; Index++;
-    points[Index] = b;  colors[Index] = base_colors[color]; Index++;
-    points[Index] = c;  colors[Index] = base_colors[color]; Index++;
+void triangle(const point3& a, const point3& b, const point3& c,const int color){
+    
+    points[Index++] = a;
+    points[Index++] = b;
+    points[Index++] = c;
+    colors[Index] = base_colors[color];
+    
 }
 
-void tetra(const point3& a, const point3& b, const point3& c, const point3& d){
-    triangle(a, b, c, 0);
-    triangle(a, c, d, 1);
-    triangle(a, d, b, 2);
-    triangle(b, d, c, 3);
-}
-
-void divide_tetra(const point3& a, const point3& b, const point3& c, const point3& d, int m){
-    if(m > 0){
-        glm::vec3 mid[6];
-        
-        mid[0] = (a + b) / 2.0f;
-        mid[1] = (a + c) / 2.0f;
-        mid[2] = (a + d) / 2.0f;
-        mid[3] = (b + c) / 2.0f;
-        mid[4] = (c + d) / 2.0f;
-        mid[5] = (b + d) / 2.0f;
-        
-        divide_tetra(a, mid[0], mid[1], mid[2], m-1);
-        divide_tetra(mid[0], b, mid[3], mid[5], m-1);
-        divide_tetra(mid[1], mid[3], c, mid[4], m-1);
-        divide_tetra(mid[2], mid[4], mid[5], d, m-1);
+void divide_triangle(const point3& a, const point3& b, const point3&c, const int color,int m) {
+    point3 v1, v2, v3;
+    
+    if (m > 0) {
+        v1 = (a + b) / 2.0f;
+        v2 = (a + c) / 2.0f;
+        v3 = (b + c) / 2.0f;
+        divide_triangle(a, v1, v2, color,m-1);
+        divide_triangle(c, v2, v3, color,m-1);
+        divide_triangle(b, v3, v1, color,m-1);
     }
+    else triangle(a,b,c,color);
     
-    else tetra(a, b, c, d);
 }
+
+
+void tetra(const point3& a, const point3& b, const point3& c, const point3& d,int m){
+    divide_triangle(a, b, c, 0, m);
+    divide_triangle(a, c, d, 1, m);
+    divide_triangle(a, d, b, 2, m);
+    divide_triangle(b, d, c, 3, m);
+}
+
 static void LoadShaders() {
     std:: vector<tdogl::Shader> shaders;
     shaders.push_back(tdogl::Shader::shaderFromFile(ResourcePath("vertex.txt"), GL_VERTEX_SHADER));
@@ -109,10 +112,8 @@ static void LoadTriangle() {
         point3 (  0.0f,  0.0f,  1.0f)
     };
     
-    divide_tetra(vertices[0], vertices[1], vertices[2], vertices[3], NumTimesTosubdivide);
+    tetra(vertices[0], vertices[1], vertices[2], vertices[3], NumTimesTosubdivide);
     
-    GLuint gVAO = 0;
-    GLuint gVBO = 0;
 
     glGenVertexArrays(1, &gVAO);
     glBindVertexArray(gVAO);
@@ -127,7 +128,6 @@ static void LoadTriangle() {
     glBufferSubData(GL_ARRAY_BUFFER, 0, sizeof(points), points);
     glBufferSubData(GL_ARRAY_BUFFER, sizeof(points), sizeof(colors), colors);
     
-    LoadShaders();
     glUseProgram(gProgram->object());
     
     glEnableVertexAttribArray(gProgram->attrib("vert"));
@@ -143,15 +143,14 @@ static void LoadTriangle() {
 static void Render() {
     
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    glEnable(GL_DEPTH_TEST);
     
+    glUseProgram(gProgram->object());
     
-    //glUseProgram(gProgram->object());
-    
-    //glBindVertexArray(gVAO);
+    glBindVertexArray(gVAO);
     glDrawArrays(GL_TRIANGLES, 0, NumVertices);
     
-    //glBindVertexArray(0);
-    //glFlush();
+    glBindVertexArray(0);
     
     glfwSwapBuffers();
 }
@@ -182,7 +181,7 @@ void AppMain() {
         throw std::runtime_error("OpenGL 3.2 API is not available.");
     
     
-   // LoadShaders();
+    LoadShaders();
     LoadTriangle();
     
     
