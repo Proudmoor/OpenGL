@@ -25,6 +25,8 @@ tdogl::Program* gProgram = NULL;
 
 typedef glm::vec3 point3;
 typedef glm::vec3 color3;
+GLuint gVAO = 0;
+GLuint gVBO = 0;
 
 const int NumTimesTosubdivide = 4;
 const int NumTetrahedrons = 256;
@@ -89,7 +91,7 @@ void divide_tetra(const point3& a, const point3& b, const point3& c, const point
         divide_tetra(a, mid[0], mid[1], mid[2], m-1);
         divide_tetra(mid[0], b, mid[3], mid[5], m-1);
         divide_tetra(mid[1], mid[3], c, mid[4], m-1);
-        divide_tetra(mid[2], mid[4], mid[5], d, m-1);
+        divide_tetra(mid[2], mid[5], mid[4], d, m-1);
     }
     
     else tetra(a, b, c, d);
@@ -111,8 +113,7 @@ static void LoadTriangle() {
     
     divide_tetra(vertices[0], vertices[1], vertices[2], vertices[3], NumTimesTosubdivide);
     
-    GLuint gVAO = 0;
-    GLuint gVBO = 0;
+    
 
     glGenVertexArrays(1, &gVAO);
     glBindVertexArray(gVAO);
@@ -127,30 +128,27 @@ static void LoadTriangle() {
     glBufferSubData(GL_ARRAY_BUFFER, 0, sizeof(points), points);
     glBufferSubData(GL_ARRAY_BUFFER, sizeof(points), sizeof(colors), colors);
     
-    LoadShaders();
-    glUseProgram(gProgram->object());
     
     glEnableVertexAttribArray(gProgram->attrib("vert"));
     glVertexAttribPointer(gProgram->attrib("vert"), 3, GL_FLOAT, GL_FALSE, 0, NULL);
     
     glEnableVertexAttribArray(gProgram -> attrib("vColor"));
     glVertexAttribPointer(gProgram->attrib("vColor"), 3, GL_FLOAT, GL_FALSE, 0, (const GLvoid*)sizeof(points));
-    glEnable(GL_DEPTH_TEST);
-    glClearColor(1.0, 1.0, 1.0, 1.0);
-   
+    
 }
 
 static void Render() {
     
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    glEnable(GL_DEPTH_TEST);
+    glClearColor(1.0, 1.0, 1.0, 1.0);
     
+    glUseProgram(gProgram->object());
     
-    //glUseProgram(gProgram->object());
-    
-    //glBindVertexArray(gVAO);
+    glBindVertexArray(gVAO);
     glDrawArrays(GL_TRIANGLES, 0, NumVertices);
     
-    //glBindVertexArray(0);
+    glBindVertexArray(0);
     //glFlush();
     
     glfwSwapBuffers();
@@ -182,14 +180,14 @@ void AppMain() {
         throw std::runtime_error("OpenGL 3.2 API is not available.");
     
     
-   // LoadShaders();
+    LoadShaders();
     LoadTriangle();
     
     
     while(glfwGetWindowParam(GLFW_OPENED)){
         
         Render();
-        std::cout << "next " << std::endl;
+        //std::cout << "next " << std::endl;
     }
     
     glfwTerminate();
