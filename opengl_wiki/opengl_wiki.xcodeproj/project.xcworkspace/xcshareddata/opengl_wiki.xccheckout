@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F6704753-6B26-4614-82F8-9B6E9B57A9F7</string>
+	<key>IDESourceControlProjectName</key>
+	<string>opengl_wiki</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>052DDD1DDBAA8D7974DCBC8A72EB89A732482B53</key>
+		<string>github.com:tomdalling/opengl-series.git</string>
+		<key>C5089FEF6504818771F3C8E643FCD9C2E66C1A0F</key>
+		<string>github.com:Proudmoor/OpenGL.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>mac_demo/opengl_wiki/opengl_wiki.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>052DDD1DDBAA8D7974DCBC8A72EB89A732482B53</key>
+		<string>../../../../../opengl-series</string>
+		<key>C5089FEF6504818771F3C8E643FCD9C2E66C1A0F</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:Proudmoor/OpenGL.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C5089FEF6504818771F3C8E643FCD9C2E66C1A0F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C5089FEF6504818771F3C8E643FCD9C2E66C1A0F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>OpenGL</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>052DDD1DDBAA8D7974DCBC8A72EB89A732482B53</string>
+			<key>IDESourceControlWCCName</key>
+			<string>opengl-series</string>
+		</dict>
+	</array>
+</dict>
+</plist>

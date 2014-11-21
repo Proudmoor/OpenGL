@@ -2,9 +2,7 @@
 // Generated using randomly selected vertices and bisection
 
 #include "Angel.h"
-//
-//#pragma comment(lib, "glew32.lib")
-//#pragma comment(lib, "freeglut.lib")
+
 
 const int NumPoints = 5000;
 
@@ -93,7 +91,7 @@ main( int argc, char **argv )
    // glutInitContextVersion( 3, 1 );
 //    glutInitContextProfile( GLUT_CORE_PROFILE );
 
-    glutCreateWindow( "Sierpinski Gasket" );
+    glutCreateWindow( "Sierpinski " );
     glewExperimental = GL_TRUE;
     glewInit();
     
