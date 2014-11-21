@@ -67,11 +67,11 @@ static glm::vec3  base_colors[] = {
 
 void triangle(const point3& a, const point3& b, const point3& c,const int color){
     
-    points[Index++] = a;
-    points[Index++] = b;
-    points[Index++] = c;
-    colors[Index] = base_colors[color];
+    points[Index++] = a;colors[Index] = base_colors[color];
+    points[Index++] = b;colors[Index] = base_colors[color];
+    points[Index++] = c;colors[Index] = base_colors[color];
     
+    //colors[Index] = base_colors[color];
 }
 
 void divide_triangle(const point3& a, const point3& b, const point3&c, const int color,int m) {
@@ -91,8 +91,8 @@ void divide_triangle(const point3& a, const point3& b, const point3&c, const int
 
 
 void tetra(const point3& a, const point3& b, const point3& c, const point3& d,int m){
-    divide_triangle(a, b, c, 0, m);
-    divide_triangle(a, c, d, 1, m);
+    divide_triangle(a, b, c, 1, m);
+    divide_triangle(a, c, d, 0, m);
     divide_triangle(a, d, b, 2, m);
     divide_triangle(b, d, c, 3, m);
 }
