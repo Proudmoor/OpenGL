@@ -109,7 +109,7 @@ static void LoadShaders() {
     glm::mat4 projection = glm::perspective<float>(50.0, SCREEN_SIZE.x/SCREEN_SIZE.y, 0.1, 10.0);
     gProgram -> setUniform("projection", projection);
     
-    glm::mat4 camera = glm::lookAt(glm::vec3(3,3,3), glm::vec3(0,0,0), glm::vec3(0,1,0));
+    glm::mat4 camera = glm::lookAt(glm::vec3(0,0,3), glm::vec3(0,0,1), glm::vec3(0,1,1));
     gProgram -> setUniform("camera", camera);
     
     gProgram -> stopUsing();
@@ -172,7 +172,7 @@ static void Render() {
 }
 
 void Update(float secondsElapsed) {
-    const GLfloat degreesPerSecond = 180.0f;
+    const GLfloat degreesPerSecond = 30.0f;
     gDegreesRotated += secondsElapsed * degreesPerSecond;
     while (gDegreesRotated > 360.0f) gDegreesRotated -= 360.0f;
 }
