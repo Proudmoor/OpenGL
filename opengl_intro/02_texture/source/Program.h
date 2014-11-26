@@ -24,6 +24,12 @@ namespace tdogl{
         
         GLuint object() const;
         
+        void use() const;
+        
+        bool isInUse() const;
+        
+        void stopUsing() const;
+        
         GLint attrib(const GLchar* attribName) const;
         
         GLint uniform(const GLchar* uniformName) const;

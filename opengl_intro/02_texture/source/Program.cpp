@@ -8,6 +8,7 @@
 
 #include "Program.h"
 #include <stdexcept>
+#include <glm/gtc/type_ptr.hpp>
 
 using namespace tdogl;
 
@@ -53,6 +54,21 @@ GLuint Program::object() const {
     return _object;
 }
 
+void Program::use() const {
+    glUseProgram(_object);
+}
+
+bool Program::isInUse() const {
+    GLint currentProgram = 0;
+    glGetIntegerv(GL_CURRENT_PROGRAM, &currentProgram);
+    return (currentProgram == (GLint)_object);
+}
+
+void Program::stopUsing() const {
+    assert(isInUse());
+    glUseProgram(0);
+}
+
 GLint Program::attrib(const GLchar* attribName) const {
     if(!attribName)
         throw std::runtime_error("attribName was NUll");
@@ -78,6 +94,45 @@ GLint Program::uniform (const GLchar* uniformName) const {
 
 
 
+
+
+void Program::setUniformMatrix2(const GLchar* name, const GLfloat* v, GLsizei count, GLboolean transpose) {
+    assert(isInUse());
+    glUniformMatrix2fv(uniform(name), count, transpose, v);
+}
+
+void Program::setUniformMatrix3(const GLchar* name, const GLfloat* v, GLsizei count, GLboolean transpose) {
+    assert(isInUse());
+    glUniformMatrix3fv(uniform(name), count, transpose, v);
+}
+
+void Program::setUniformMatrix4(const GLchar* name, const GLfloat* v, GLsizei count, GLboolean transpose) {
+    assert(isInUse());
+    glUniformMatrix4fv(uniform(name), count, transpose, v);
+}
+
+void Program::setUniform(const GLchar* name, const glm::mat2& m, GLboolean transpose) {
+    assert(isInUse());
+    glUniformMatrix2fv(uniform(name), 1, transpose, glm::value_ptr(m));
+}
+
+void Program::setUniform(const GLchar* name, const glm::mat3& m, GLboolean transpose) {
+    assert(isInUse());
+    glUniformMatrix3fv(uniform(name), 1, transpose, glm::value_ptr(m));
+}
+
+void Program::setUniform(const GLchar* name, const glm::mat4& m, GLboolean transpose) {
+    assert(isInUse());
+    glUniformMatrix4fv(uniform(name), 1, transpose, glm::value_ptr(m));
+}
+
+void Program::setUniform(const GLchar* uniformName, const glm::vec3& v) {
+    setUniform3v(uniformName, glm::value_ptr(v));
+}
+
+void Program::setUniform(const GLchar* uniformName, const glm::vec4& v) {
+    setUniform4v(uniformName, glm::value_ptr(v));
+}
 
 
 

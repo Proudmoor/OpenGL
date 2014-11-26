@@ -44,6 +44,8 @@ namespace tdogl {
         
         void flipVertically();
         
+        void rotate90CounterClockwise();
+        
         void copyRectFromBitmap(const Bitmap& src,
                                 unsigned srcCol,
                                 unsigned srcRow,
@@ -51,6 +53,8 @@ namespace tdogl {
                                 unsigned destRow,
                                 unsigned width,
                                 unsigned height);
+        
+        //Bitmap(const Bitmap& other);
     private:
         Format _format;
         unsigned _width;

@@ -10,6 +10,7 @@
 #include <GL/glew.h>
 #include <GL/glfw.h>
 #include <glm/glm.hpp>
+#include <glm/gtc/matrix_transform.hpp>
 
 #include <cassert>
 #include <iostream>
@@ -17,14 +18,15 @@
 #include <cmath>
 
 #include "Program.h"
+#include "Texture.h"
 
 const glm::vec2 SCREEN_SIZE(800, 600);
 
 tdogl::Program* gProgram = NULL;
+tdogl::Texture* gTexture = NULL;
 GLuint gVAO = 0;
 GLuint gVBO = 0;
-
-tdogl::Texture* gTexture = NULL;
+GLfloat gDegreesRotated = 0.0f;
 
 static std::string ResourcePath (std::string fileName) {
     NSString* fname = [NSString stringWithCString:fileName.c_str() encoding:NSUTF8StringEncoding];
@@ -37,6 +39,10 @@ static void LoadShaders() {
     shaders.push_back(tdogl::Shader::shaderFromFile(ResourcePath("vertex.txt"), GL_VERTEX_SHADER));
     shaders.push_back(tdogl::Shader::shaderFromFile(ResourcePath("fragment.txt"), GL_FRAGMENT_SHADER));
     gProgram = new tdogl::Program(shaders);
+    
+    gProgram -> use();
+    
+    glm::mat4 projection = glm::perspective<float>
 }
 
 static void LoadTriangle() {
@@ -61,6 +67,11 @@ static void LoadTriangle() {
     glBindVertexArray(0);
 }
 
+static void LoadTexture() {
+    tdogl::Bitmap bmp = tdogl::Bitmap::bitmapFromFile(ResourcePath("wooden.jpg"));
+    bmp.flipVertically();
+    gTexture = new tdogl::Texture(bmp);
+}
 
 static void Render() {
     glClearColor(0, 0, 0, 1);

@@ -10,6 +10,7 @@
 #include <GL/glew.h>
 #include <GL/glfw.h>
 #include <glm/glm.hpp>
+#include <glm/gtc/matrix_transform.hpp>
 
 #include <cassert>
 #include <stdexcept>
@@ -27,6 +28,7 @@ typedef glm::vec3 point3;
 typedef glm::vec3 color3;
 GLuint gVAO = 0;
 GLuint gVBO = 0;
+GLfloat gDegreesRotated = 0.0f;
 
 const int NumTimesTosubdivide = 4;
 const int NumTetrahedrons = 256;
@@ -101,6 +103,17 @@ static void LoadShaders() {
     shaders.push_back(tdogl::Shader::shaderFromFile(ResourcePath("vertex.txt"), GL_VERTEX_SHADER));
     shaders.push_back(tdogl::Shader::shaderFromFile(ResourcePath("fragment.txt"), GL_FRAGMENT_SHADER));
     gProgram = new tdogl::Program(shaders);
+    
+    gProgram -> use();
+    
+    glm::mat4 projection = glm::perspective<float>(50.0, SCREEN_SIZE.x/SCREEN_SIZE.y, 0.1, 10.0);
+    gProgram -> setUniform("projection", projection);
+    
+    glm::mat4 camera = glm::lookAt(glm::vec3(3,3,3), glm::vec3(0,0,0), glm::vec3(0,1,0));
+    gProgram -> setUniform("camera", camera);
+    
+    gProgram -> stopUsing();
+    
 }
 
 static void LoadTriangle() {
@@ -145,13 +158,23 @@ static void Render() {
     
     glUseProgram(gProgram->object());
     
+    gProgram -> setUniform("model", glm::rotate(glm::mat4(), gDegreesRotated, glm::vec3(0,1,0)));
+    
     glBindVertexArray(gVAO);
     glDrawArrays(GL_TRIANGLES, 0, NumVertices);
     
     glBindVertexArray(0);
     //glFlush();
     
+    gProgram -> stopUsing();
+    
     glfwSwapBuffers();
+}
+
+void Update(float secondsElapsed) {
+    const GLfloat degreesPerSecond = 180.0f;
+    gDegreesRotated += secondsElapsed * degreesPerSecond;
+    while (gDegreesRotated > 360.0f) gDegreesRotated -= 360.0f;
 }
 
 void AppMain() {
@@ -183,9 +206,12 @@ void AppMain() {
     LoadShaders();
     LoadTriangle();
     
-    
+    double lastTime = glfwGetTime();
     while(glfwGetWindowParam(GLFW_OPENED)){
         
+        double thisTime = glfwGetTime();
+        Update(thisTime - lastTime);
+        lastTime  = thisTime;
         Render();
         //std::cout << "next " << std::endl;
     }
