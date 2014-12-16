@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E233E2DE1A3D8ED000F1D411 /* hazard.png in Resources */ = {isa = PBXBuildFile; fileRef = E233E2DD1A3D8ED000F1D411 /* hazard.png */; };
 		E2AD5DD51A19090F005C6C46 /* fragment.txt in Resources */ = {isa = PBXBuildFile; fileRef = E2AD5DCD1A19090F005C6C46 /* fragment.txt */; };
 		E2AD5DD61A19090F005C6C46 /* vertex.txt in Resources */ = {isa = PBXBuildFile; fileRef = E2AD5DCE1A19090F005C6C46 /* vertex.txt */; };
 		E2AD5DD71A19090F005C6C46 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = E2AD5DD01A19090F005C6C46 /* main.mm */; };
@@ -32,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E233E2DD1A3D8ED000F1D411 /* hazard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hazard.png; sourceTree = "<group>"; };
 		E2AD5DAA1A1908CE005C6C46 /* 01_skeleton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 01_skeleton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2AD5DCD1A19090F005C6C46 /* fragment.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fragment.txt; sourceTree = "<group>"; };
 		E2AD5DCE1A19090F005C6C46 /* vertex.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vertex.txt; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 		E2AD5E1E1A190C35005C6C46 /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				E233E2DD1A3D8ED000F1D411 /* hazard.png */,
 				E2AD5E1F1A190C35005C6C46 /* fragment.txt */,
 				E2AD5E201A190C35005C6C46 /* vertex.txt */,
 			);
@@ -274,6 +277,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E233E2DE1A3D8ED000F1D411 /* hazard.png in Resources */,
 				E2AD5E221A190C35005C6C46 /* vertex.txt in Resources */,
 				E2AD5E211A190C35005C6C46 /* fragment.txt in Resources */,
 			);

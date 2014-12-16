@@ -39,10 +39,6 @@ static void LoadShaders() {
     shaders.push_back(tdogl::Shader::shaderFromFile(ResourcePath("vertex.txt"), GL_VERTEX_SHADER));
     shaders.push_back(tdogl::Shader::shaderFromFile(ResourcePath("fragment.txt"), GL_FRAGMENT_SHADER));
     gProgram = new tdogl::Program(shaders);
-    
-    gProgram -> use();
-    
-    glm::mat4 projection = glm::perspective<float>
 }
 
 static void LoadTriangle() {
@@ -54,21 +50,24 @@ static void LoadTriangle() {
     
     GLfloat vertexData[] = {
         //  X    Y    Z
-        0.0f, 0.8f, 0.0f,
-       -0.8f,-0.8f, 0.0f,
-        0.8f,-0.8f, 0.0f,
+        0.0f, 0.8f, 0.0f,   0.5f, 1.0f,
+       -0.8f,-0.8f, 0.0f,   0.0f, 0.0f,
+        0.8f,-0.8f, 0.0f,   1.0f, 0.0f,
     };
     glBufferData(GL_ARRAY_BUFFER, sizeof(vertexData), vertexData, GL_STATIC_DRAW);
     
     glEnableVertexAttribArray(gProgram->attrib("vert"));
-    glVertexAttribPointer(gProgram->attrib("vert"), 3, GL_FLOAT, GL_FALSE, 0, NULL);
+    glVertexAttribPointer(gProgram->attrib("vert"), 3, GL_FLOAT, GL_FALSE, 5*sizeof(GLfloat), NULL);
     
-    glBindBuffer(GL_ARRAY_BUFFER, 0);
+    glEnableVertexAttribArray(gProgram -> attrib("vertTexCoord"));
+    glVertexAttribPointer(gProgram->attrib("vertTexCoord"), 2, GL_FLOAT, GL_TRUE, 5*sizeof(GLfloat), (const GLvoid*)(3 * sizeof(GLfloat)));
+    
+    //glBindBuffer(GL_ARRAY_BUFFER, 0);
     glBindVertexArray(0);
 }
 
 static void LoadTexture() {
-    tdogl::Bitmap bmp = tdogl::Bitmap::bitmapFromFile(ResourcePath("wooden.jpg"));
+    tdogl::Bitmap bmp = tdogl::Bitmap::bitmapFromFile(ResourcePath("hazard.png"));
     bmp.flipVertically();
     gTexture = new tdogl::Texture(bmp);
 }
@@ -77,14 +76,19 @@ static void Render() {
     glClearColor(0, 0, 0, 1);
     glClear(GL_COLOR_BUFFER_BIT);
     
-    glUseProgram(gProgram->object());
+    gProgram->use();
+    
+    glActiveTexture(GL_TEXTURE0);
+    glBindTexture(GL_TEXTURE_2D, gTexture->object());
+    gProgram->setUniform("tex", 0);
+    
     
     glBindVertexArray(gVAO);
     glDrawArrays(GL_TRIANGLES, 0, 3);
     
     glBindVertexArray(0);
-    
-    glUseProgram(0);
+    glBindTexture(GL_TEXTURE_2D, 0);
+    gProgram -> stopUsing();
     
     glfwSwapBuffers();
 }
@@ -116,6 +120,7 @@ void AppMain() {
     
     LoadShaders();
     
+    LoadTexture();
     LoadTriangle();
     
     while(glfwGetWindowParam(GLFW_OPENED)){

@@ -19,9 +19,19 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
+		<key>Line.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>E237863C1A40B2F40026A014</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>E2AD5E411A1F11C5005C6C46</key>
 		<dict>
 			<key>primary</key>

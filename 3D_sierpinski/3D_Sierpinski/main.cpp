@@ -206,6 +206,7 @@ void AppMain() {
     LoadShaders();
     LoadTriangle();
     
+    
     double lastTime = glfwGetTime();
     while(glfwGetWindowParam(GLFW_OPENED)){
         
