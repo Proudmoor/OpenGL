@@ -32,7 +32,7 @@ void init2d(int w, int h) {
 }
 
 void drawLineWithDDA(int x0, int y0, int xEnd, int yEnd) {
-    // slope, notice the difference between the true C/C++ code and the math equation
+
     int dx = xEnd - x0;
     int dy = yEnd - y0;
     float x = x0;
@@ -47,7 +47,7 @@ void drawLineWithDDA(int x0, int y0, int xEnd, int yEnd) {
     for (int i = 0; i <= steps; ++i) {
         x += xIncrement;
         y += yIncrement;
-        setPixel(lroundf(x), lroundf(y));
+        setPixel(roundf(x), roundf(y));
     }
 }
 

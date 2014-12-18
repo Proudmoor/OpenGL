@@ -22,6 +22,7 @@
 		E2AD5E5E1A1F2070005C6C46 /* Program.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2AD5E5C1A1F2070005C6C46 /* Program.cpp */; };
 		E2AD5E5F1A1F3356005C6C46 /* fragment.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2AD5E5B1A1F1920005C6C46 /* fragment.txt */; };
 		E2AD5E601A1F3356005C6C46 /* vertex.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2AD5E4C1A1F1282005C6C46 /* vertex.txt */; };
+		E2BCF4CC1A43210E00CD7DD8 /* Circle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2BCF4CB1A43210E00CD7DD8 /* Circle.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -64,6 +65,7 @@
 		E2AD5E5B1A1F1920005C6C46 /* fragment.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = fragment.txt; path = shader/fragment.txt; sourceTree = "<group>"; };
 		E2AD5E5C1A1F2070005C6C46 /* Program.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Program.cpp; sourceTree = "<group>"; };
 		E2AD5E5D1A1F2070005C6C46 /* Program.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Program.h; sourceTree = "<group>"; };
+		E2BCF4CB1A43210E00CD7DD8 /* Circle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Circle.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				E237863F1A40B2F40026A014 /* main.cpp */,
+				E2BCF4CB1A43210E00CD7DD8 /* Circle.cpp */,
 			);
 			path = Line;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E23786401A40B2F40026A014 /* main.cpp in Sources */,
+				E2BCF4CC1A43210E00CD7DD8 /* Circle.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,6 +458,7 @@
 				E23786431A40B2F40026A014 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E2AD5E381A1F1049005C6C46 /* Build configuration list for PBXProject "Assignment" */ = {
 			isa = XCConfigurationList;
