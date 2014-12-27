@@ -35,6 +35,7 @@ void drawLineSegment (srcPt endPt1, srcPt endPt2) {
 		glVertex2i (endPt1.x, endPt1.y);
 		glVertex2i (endPt2.x, endPt2.y);
 	glEnd();
+	glFlush();
 }
 
 void polyline (GLint button, GLint action, GLint xMouse, GLint yMouse) {
@@ -45,19 +46,23 @@ void polyline (GLint button, GLint action, GLint xMouse, GLint yMouse) {
 			endPt1.x = xMouse;
 			endPt1.y = winHeight - yMouse;
 			ptCtr = 1;
-		} else if (button == GLUT_RIGHT_BUTTON){
+		} else 
+			if (button == GLUT_RIGHT_BUTTON)
 			exit (0);
-		}
-	} else if (button == GLUT_LEFT_BUTTON && action == GLUT_DOWN) {
+	}
+	 else 
+		 if (button == GLUT_LEFT_BUTTON && action == GLUT_DOWN){ 
 			endPt2.x = xMouse;
 			endPt2.y = winHeight - yMouse;
 
 			drawLineSegment(endPt1,endPt2);
-			//endPt1 = endPt2;
-			//drawLineSegment(endPt1,endPt2);
-	} else if (button == GLUT_RIGHT_BUTTON) 
-			exit(0);
-	glFlush();
+			endPt1 = endPt2;
+		 }
+		 else 
+			 if (button == GLUT_RIGHT_BUTTON)
+		exit(0);
+	
+	//glFlush();
 
 }
 
