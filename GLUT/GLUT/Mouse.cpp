@@ -17,6 +17,7 @@ void init () {
 
 void display () {
 	glClear(GL_COLOR_BUFFER_BIT);
+	glFlush();
 }
 
 void winReshape (GLint newWidth , GLint newHeight) {
