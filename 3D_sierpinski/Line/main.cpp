@@ -35,6 +35,7 @@ void init2d(int w, int h) {
     
 }
 //DDA method to draw lines
+
 void drawLineWithDDA(int x0, int y0, int xEnd, int yEnd) {
 
     int dx = xEnd - x0;
@@ -82,6 +83,8 @@ void drawLineWithBres(int x0, int y0, int xEnd, int yEnd) {
         setPixel(x, y);
     }
 }
+
+void drawCirle (int )
 
 void display () {
     
