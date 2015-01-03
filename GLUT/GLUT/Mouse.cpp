@@ -17,7 +17,7 @@ void init () {
 
 void display () {
 	glClear(GL_COLOR_BUFFER_BIT);
-	glFlush();
+	//glFlush();
 }
 
 void winReshape (GLint newWidth , GLint newHeight) {
@@ -66,6 +66,8 @@ void polyline (GLint button, GLint action, GLint xMouse, GLint yMouse) {
 	//glFlush();
 
 }
+
+
 
 void main (int argc, char** argv) {
 	glutInit (&argc, argv);
