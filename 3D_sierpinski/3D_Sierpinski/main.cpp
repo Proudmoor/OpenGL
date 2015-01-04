@@ -19,10 +19,12 @@
 #include <CoreFoundation/CoreFoundation.h>
 
 #include "Program.h"
+#include "Camera.h"
 
 const glm::vec2 SCREEN_SIZE(800,600);
 
 tdogl::Program* gProgram = NULL;
+tdogl::Camera gCamera;
 
 typedef glm::vec3 point3;
 typedef glm::vec3 color3;
@@ -104,15 +106,15 @@ static void LoadShaders() {
     shaders.push_back(tdogl::Shader::shaderFromFile(ResourcePath("fragment.txt"), GL_FRAGMENT_SHADER));
     gProgram = new tdogl::Program(shaders);
     
-    gProgram -> use();
-    
-    glm::mat4 projection = glm::perspective<float>(50.0, SCREEN_SIZE.x/SCREEN_SIZE.y, 0.1, 10.0);
-    gProgram -> setUniform("projection", projection);
-    
-    glm::mat4 camera = glm::lookAt(glm::vec3(0,0,3), glm::vec3(0,0,1), glm::vec3(0,1,1));
-    gProgram -> setUniform("camera", camera);
-    
-    gProgram -> stopUsing();
+//    gProgram -> use();
+//    
+//    glm::mat4 projection = glm::perspective<float>(50.0, SCREEN_SIZE.x/SCREEN_SIZE.y, 0.1, 10.0);
+//    gProgram -> setUniform("projection", projection);
+//    
+//    glm::mat4 camera = glm::lookAt(glm::vec3(0,0,3), glm::vec3(0,0,1), glm::vec3(0,1,1));
+//    gProgram -> setUniform("camera", camera);
+//    
+//    gProgram -> stopUsing();
     
 }
 
@@ -154,9 +156,11 @@ static void Render() {
     
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     glEnable(GL_DEPTH_TEST);
-    glClearColor(1.0, 1.0, 1.0, 1.0);
+    glClearColor(0.0, 0.0, 0.0, 1.0);
     
     glUseProgram(gProgram->object());
+    
+    gProgram -> setUniform("camera", gCamera.matrix());
     
     gProgram -> setUniform("model", glm::rotate(glm::mat4(), gDegreesRotated, glm::vec3(0,1,0)));
     
@@ -175,6 +179,38 @@ void Update(float secondsElapsed) {
     const GLfloat degreesPerSecond = 30.0f;
     gDegreesRotated += secondsElapsed * degreesPerSecond;
     while (gDegreesRotated > 360.0f) gDegreesRotated -= 360.0f;
+    
+    const float moveSpeed = 3.0;
+    if (glfwGetKey('S')) {
+        gCamera.offsetPositon(secondsElapsed * moveSpeed * -gCamera.forward());
+    } else if (glfwGetKey('W')){
+        gCamera.offsetPositon(secondsElapsed * moveSpeed * gCamera.forward());
+    } else if (glfwGetKey('A')) {
+        gCamera.offsetPositon(secondsElapsed * moveSpeed * -gCamera.right());
+    } else if (glfwGetKey('D')) {
+        gCamera.offsetPositon(secondsElapsed * moveSpeed * gCamera.right());
+    }
+    if (glfwGetKey('Z')) {
+        gCamera.offsetPositon(secondsElapsed* moveSpeed * -glm::vec3(0,1,0));
+    } else if (glfwGetKey('X')) {
+        gCamera.offsetPositon(secondsElapsed * moveSpeed * glm::vec3(0,1,0));
+    }
+    
+    //mouse movement with camera
+    const float mouseSensitivity = 0.1;
+    int mouseX, mouseY;
+    glfwGetMousePos(&mouseX, &mouseY);
+    gCamera.offsetOrientation(mouseSensitivity* mouseY, mouseSensitivity* mouseX);
+    glfwSetMousePos(0,0);
+    
+    //mouse wheel with field of view
+    const float zoomSensitivity = -0.8;
+    float fieldOfView = gCamera.fieldOfView() + zoomSensitivity *(float)glfwGetMouseWheel();
+    if(fieldOfView < 5.0f) fieldOfView = 5.0f;
+    if(fieldOfView > 130.0f) fieldOfView = 130.0f;
+    gCamera.setFieldOfView(fieldOfView);
+    glfwSetMouseWheel(0);
+    
 }
 
 void AppMain() {
@@ -202,10 +238,15 @@ void AppMain() {
     if(!GLEW_VERSION_3_2)
         throw std::runtime_error("OpenGL 3.2 API is not available.");
     
+    glfwDisable(GLFW_MOUSE_CURSOR);
+    glfwSetMousePos(0,0);
+    glfwSetMouseWheel(0);
     
     LoadShaders();
     LoadTriangle();
     
+    gCamera.setPosition(glm::vec3(0,0,4));
+    gCamera.setViewportAspectRatio(SCREEN_SIZE.x / SCREEN_SIZE.y);
     
     double lastTime = glfwGetTime();
     while(glfwGetWindowParam(GLFW_OPENED)){
