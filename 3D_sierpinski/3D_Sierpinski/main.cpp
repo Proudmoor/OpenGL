@@ -25,7 +25,7 @@ struct Light {
     glm::vec3 position;
     glm::vec3 intensities;
     float attenuation;
-    float ambientCofficient;
+    float ambientCoefficient;
 };
 
 GLfloat material_shininess = 27.0f;
@@ -46,8 +46,8 @@ glm::vec3 Axis;
 Light gLight;
 
 
-const int NumTimesTosubdivide = 4;
-const int NumTetrahedrons = 256;
+const int NumTimesTosubdivide = 3;
+const int NumTetrahedrons = 64;
 const int NumTriangles = 4 * NumTetrahedrons;
 const int NumVertices = 3 * NumTriangles;
 
@@ -185,7 +185,7 @@ static void Render() {
     gProgram -> setUniform("materialSpecularColor", specularColor);
     gProgram -> setUniform("materialShininess", material_shininess);
     gProgram -> setUniform("light.attenuation", gLight.attenuation);
-    gProgram -> setUniform("light.ambientCoefficient", gLight.ambientCofficient);
+    gProgram -> setUniform("light.ambientCoefficient", gLight.ambientCoefficient);
     gProgram -> setUniform("cameraPosition", gCamera.position());
     
     glBindVertexArray(gVAO);
@@ -294,13 +294,16 @@ void AppMain() {
     LoadTriangle();
     
     //intialise the Camera position
-    gCamera.setPosition(glm::vec3(0,0,2));
+    gCamera.setPosition(glm::vec3(0,0,4));
     gCamera.setViewportAspectRatio(SCREEN_SIZE.x / SCREEN_SIZE.y);
+    gCamera.setNearAndFarPlanes(0.5, 100.0f);
     Axis = glm::vec3(0,1,0);
     
     //intialise the Light attribute
     gLight.position = glm::vec3(0.0f,0.0f,-0.5f);
     gLight.intensities = glm::vec3(1,1,1); // white light
+    gLight.attenuation = 0.2f;
+    gLight.ambientCoefficient = 0.005f;
     
     double lastTime = glfwGetTime();
     while(glfwGetWindowParam(GLFW_OPENED)){
