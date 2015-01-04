@@ -36,7 +36,7 @@ void main () {
     vec3 diffuse = diffuseCoefficient * color.rgb * light.intensities;
     
     float specularCoefficient = 0.0;
-    if (diffuseCoefficient > 0)
+    if (diffuseCoefficient > 0.0)
         specularCoefficient = pow(max(0.0, dot(surfaceToCamera, reflect(-surfaceToLight, normal))), materialShininess);
     vec3 specular = specularCoefficient * materialSpecularColor * light.intensities;
     
