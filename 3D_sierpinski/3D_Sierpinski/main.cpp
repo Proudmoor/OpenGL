@@ -24,7 +24,12 @@
 struct Light {
     glm::vec3 position;
     glm::vec3 intensities;
+    float attenuation;
+    float ambientCofficient;
 };
+
+GLfloat material_shininess = 27.0f;
+glm::vec3 specularColor(0.99f, 0.91f, 0.81f);
 
 //constants
 const glm::vec2 SCREEN_SIZE(800,600);
@@ -117,16 +122,6 @@ static void LoadShaders() {
     shaders.push_back(tdogl::Shader::shaderFromFile(ResourcePath("fragment.glsl"), GL_FRAGMENT_SHADER));
     gProgram = new tdogl::Program(shaders);
     
-//    gProgram -> use();
-//    
-//    glm::mat4 projection = glm::perspective<float>(50.0, SCREEN_SIZE.x/SCREEN_SIZE.y, 0.1, 10.0);
-//    gProgram -> setUniform("projection", projection);
-//    
-//    glm::mat4 camera = glm::lookAt(glm::vec3(0,0,3), glm::vec3(0,0,1), glm::vec3(0,1,1));
-//    gProgram -> setUniform("camera", camera);
-//    
-//    gProgram -> stopUsing();
-    
 }
 
 static void LoadTriangle() {
@@ -184,11 +179,14 @@ static void Render() {
     glUseProgram(gProgram->object());
     
     gProgram -> setUniform("camera", gCamera.matrix());
-    
     gProgram -> setUniform("model", glm::rotate(glm::mat4(), gDegreesRotated, Axis));
-    
     gProgram -> setUniform("light.position", gLight.position);
     gProgram -> setUniform("light.intensities",gLight.intensities);
+    gProgram -> setUniform("materialSpecularColor", specularColor);
+    gProgram -> setUniform("materialShininess", material_shininess);
+    gProgram -> setUniform("light.attenuation", gLight.attenuation);
+    gProgram -> setUniform("light.ambientCoefficient", gLight.ambientCofficient);
+    gProgram -> setUniform("cameraPosition", gCamera.position());
     
     glBindVertexArray(gVAO);
     glDrawArrays(GL_TRIANGLES, 0, NumVertices);
@@ -197,7 +195,7 @@ static void Render() {
     //glFlush();
     
     gProgram -> stopUsing();
-    
+    glShadeModel(GL_SMOOTH);
     glfwSwapBuffers();
 }
 
@@ -296,13 +294,13 @@ void AppMain() {
     LoadTriangle();
     
     //intialise the Camera position
-    gCamera.setPosition(glm::vec3(0,0,4));
+    gCamera.setPosition(glm::vec3(0,0,2));
     gCamera.setViewportAspectRatio(SCREEN_SIZE.x / SCREEN_SIZE.y);
     Axis = glm::vec3(0,1,0);
     
     //intialise the Light attribute
-    gLight.position = glm::vec3(0,0,1);
-    gLight.intensities = glm::vec3(1,1,1);
+    gLight.position = glm::vec3(0.0f,0.0f,-0.5f);
+    gLight.intensities = glm::vec3(1,1,1); // white light
     
     double lastTime = glfwGetTime();
     while(glfwGetWindowParam(GLFW_OPENED)){
