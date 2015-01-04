@@ -21,6 +21,12 @@
 #include "Program.h"
 #include "Camera.h"
 
+struct Light {
+    glm::vec3 position;
+    glm::vec3 intensities;
+};
+
+//constants
 const glm::vec2 SCREEN_SIZE(800,600);
 
 tdogl::Program* gProgram = NULL;
@@ -31,6 +37,9 @@ typedef glm::vec3 color3;
 GLuint gVAO = 0;
 GLuint gVBO = 0;
 GLfloat gDegreesRotated = 0.0f;
+glm::vec3 Axis;
+Light gLight;
+
 
 const int NumTimesTosubdivide = 4;
 const int NumTetrahedrons = 256;
@@ -39,6 +48,7 @@ const int NumVertices = 3 * NumTriangles;
 
 glm::vec3 points[NumVertices];
 glm::vec3 colors[NumVertices];
+glm::vec3 normals[NumVertices];
 
 int Index = 0;
 
@@ -68,10 +78,11 @@ void triangle(const point3& a, const point3& b, const point3& c, const int color
         color3(0.0f, 0.0f, 0.0f), color3(0.0f, 1.0f, 0.0f),
         color3(0.0f, 0.0f, 1.0f), color3(1.0f, 0.0f, 0.0f)
     };
+    glm::vec3 normal = glm::normalize(glm::cross(b - a, c - b));
 
-    points[Index] = a;  colors[Index] = base_colors[color]; Index++;
-    points[Index] = b;  colors[Index] = base_colors[color]; Index++;
-    points[Index] = c;  colors[Index] = base_colors[color]; Index++;
+    normals[Index] = normal; points[Index] = a;  colors[Index] = base_colors[color]; Index++;
+    normals[Index] = normal; points[Index] = b;  colors[Index] = base_colors[color]; Index++;
+    normals[Index] = normal; points[Index] = c;  colors[Index] = base_colors[color]; Index++;
 }
 
 void tetra(const point3& a, const point3& b, const point3& c, const point3& d){
@@ -102,8 +113,8 @@ void divide_tetra(const point3& a, const point3& b, const point3& c, const point
 }
 static void LoadShaders() {
     std:: vector<tdogl::Shader> shaders;
-    shaders.push_back(tdogl::Shader::shaderFromFile(ResourcePath("vertex.txt"), GL_VERTEX_SHADER));
-    shaders.push_back(tdogl::Shader::shaderFromFile(ResourcePath("fragment.txt"), GL_FRAGMENT_SHADER));
+    shaders.push_back(tdogl::Shader::shaderFromFile(ResourcePath("vertex.glsl"), GL_VERTEX_SHADER));
+    shaders.push_back(tdogl::Shader::shaderFromFile(ResourcePath("fragment.glsl"), GL_FRAGMENT_SHADER));
     gProgram = new tdogl::Program(shaders);
     
 //    gProgram -> use();
@@ -138,10 +149,11 @@ static void LoadTriangle() {
     
     
     
-    glBufferData(GL_ARRAY_BUFFER, sizeof(points) + sizeof(colors), NULL, GL_STATIC_DRAW);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(points) + sizeof(colors) + sizeof(normals), NULL, GL_STATIC_DRAW);
     
     glBufferSubData(GL_ARRAY_BUFFER, 0, sizeof(points), points);
     glBufferSubData(GL_ARRAY_BUFFER, sizeof(points), sizeof(colors), colors);
+    glBufferSubData(GL_ARRAY_BUFFER, sizeof(points) + sizeof(colors),sizeof(normals), normals);
     
     
     glEnableVertexAttribArray(gProgram->attrib("vert"));
@@ -150,19 +162,33 @@ static void LoadTriangle() {
     glEnableVertexAttribArray(gProgram -> attrib("vColor"));
     glVertexAttribPointer(gProgram->attrib("vColor"), 3, GL_FLOAT, GL_FALSE, 0, (const GLvoid*)sizeof(points));
     
+    glEnableVertexAttribArray(gProgram -> attrib("vNormal"));
+    glVertexAttribPointer(gProgram ->attrib("vNormal"), 3, GL_FLOAT, GL_FALSE, 0,(const GLvoid*)(sizeof(points) + sizeof(colors)));
+    
 }
+
+//struct Light {
+//    glm::vec3 position;
+//    glm::vec3 intensities;
+//    float attenuation;
+//    float ambientCofficient;
+//};
+//Light gLight;
 
 static void Render() {
     
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     glEnable(GL_DEPTH_TEST);
-    glClearColor(0.0, 0.0, 0.0, 1.0);
+    glClearColor(1.0, 1.0, 1.0, 1.0); //set the background
     
     glUseProgram(gProgram->object());
     
     gProgram -> setUniform("camera", gCamera.matrix());
     
-    gProgram -> setUniform("model", glm::rotate(glm::mat4(), gDegreesRotated, glm::vec3(0,1,0)));
+    gProgram -> setUniform("model", glm::rotate(glm::mat4(), gDegreesRotated, Axis));
+    
+    gProgram -> setUniform("light.position", gLight.position);
+    gProgram -> setUniform("light.intensities",gLight.intensities);
     
     glBindVertexArray(gVAO);
     glDrawArrays(GL_TRIANGLES, 0, NumVertices);
@@ -176,9 +202,25 @@ static void Render() {
 }
 
 void Update(float secondsElapsed) {
-    const GLfloat degreesPerSecond = 30.0f;
+    //change the axis that rotated
+    if (glfwGetKey('7')){
+        Axis =glm::vec3(1,0,0);
+    }
+    if (glfwGetKey('8')){
+        Axis =glm::vec3(0,0,1);
+    }
+    if (glfwGetKey('9')){
+        Axis =glm::vec3(0,1,0);
+    }
+    //press "T" to stop rotate
+    GLfloat degreesPerSecond = 30.0f;
+    if (glfwGetKey('T')){
+        degreesPerSecond = 0.0f;
+    }
+
     gDegreesRotated += secondsElapsed * degreesPerSecond;
     while (gDegreesRotated > 360.0f) gDegreesRotated -= 360.0f;
+    
     
     const float moveSpeed = 3.0;
     if (glfwGetKey('S')) {
@@ -195,6 +237,14 @@ void Update(float secondsElapsed) {
     } else if (glfwGetKey('X')) {
         gCamera.offsetPositon(secondsElapsed * moveSpeed * glm::vec3(0,1,0));
     }
+    
+    // change light color
+    if(glfwGetKey('2'))
+        gLight.intensities = glm::vec3(1,0,0); //red
+    else if(glfwGetKey('3'))
+        gLight.intensities = glm::vec3(0,1,0); //green
+    else if(glfwGetKey('4'))
+        gLight.intensities = glm::vec3(1,1,1); //white
     
     //mouse movement with camera
     const float mouseSensitivity = 0.1;
@@ -245,8 +295,14 @@ void AppMain() {
     LoadShaders();
     LoadTriangle();
     
+    //intialise the Camera position
     gCamera.setPosition(glm::vec3(0,0,4));
     gCamera.setViewportAspectRatio(SCREEN_SIZE.x / SCREEN_SIZE.y);
+    Axis = glm::vec3(0,1,0);
+    
+    //intialise the Light attribute
+    gLight.position = glm::vec3(0,0,1);
+    gLight.intensities = glm::vec3(1,1,1);
     
     double lastTime = glfwGetTime();
     while(glfwGetWindowParam(GLFW_OPENED)){

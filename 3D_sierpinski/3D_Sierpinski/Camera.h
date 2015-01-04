@@ -17,7 +17,7 @@ namespace tdogl {
     public:
         Camera();
         //position of the camera
-        const glm::vec3& positon() const;
+        const glm::vec3& position() const;
         void setPosition(const glm::vec3& position);
         void offsetPositon(const glm::vec3& offset);
         
@@ -57,7 +57,7 @@ namespace tdogl {
         glm::mat4 view() const;
         
     private:
-        glm::vec3 _positon;
+        glm::vec3 _position;
         float _horizontalAngle;
         float _verticalAngle;
         

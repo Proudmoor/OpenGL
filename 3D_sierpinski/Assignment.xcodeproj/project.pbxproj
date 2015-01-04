@@ -22,8 +22,8 @@
 		E2AD5E571A1F148D005C6C46 /* libglfw.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2AD5E561A1F148D005C6C46 /* libglfw.a */; };
 		E2AD5E5A1A1F18AD005C6C46 /* Shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2AD5E581A1F18AD005C6C46 /* Shader.cpp */; };
 		E2AD5E5E1A1F2070005C6C46 /* Program.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2AD5E5C1A1F2070005C6C46 /* Program.cpp */; };
-		E2AD5E5F1A1F3356005C6C46 /* fragment.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2AD5E5B1A1F1920005C6C46 /* fragment.txt */; };
-		E2AD5E601A1F3356005C6C46 /* vertex.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2AD5E4C1A1F1282005C6C46 /* vertex.txt */; };
+		E2AD5E5F1A1F3356005C6C46 /* fragment.glsl in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2AD5E5B1A1F1920005C6C46 /* fragment.glsl */; };
+		E2AD5E601A1F3356005C6C46 /* vertex.glsl in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2AD5E4C1A1F1282005C6C46 /* vertex.glsl */; };
 		E2BCF4CC1A43210E00CD7DD8 /* Circle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2BCF4CB1A43210E00CD7DD8 /* Circle.cpp */; };
 /* End PBXBuildFile section */
 
@@ -52,8 +52,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 16;
 			files = (
-				E2AD5E5F1A1F3356005C6C46 /* fragment.txt in CopyFiles */,
-				E2AD5E601A1F3356005C6C46 /* vertex.txt in CopyFiles */,
+				E2AD5E5F1A1F3356005C6C46 /* fragment.glsl in CopyFiles */,
+				E2AD5E601A1F3356005C6C46 /* vertex.glsl in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,7 +69,7 @@
 		E26190401A56B5A100050E00 /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Camera.h; sourceTree = "<group>"; };
 		E2AD5E421A1F11C5005C6C46 /* 3D_Sierpinski */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 3D_Sierpinski; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2AD5E451A1F11C5005C6C46 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		E2AD5E4C1A1F1282005C6C46 /* vertex.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = vertex.txt; path = shader/vertex.txt; sourceTree = "<group>"; };
+		E2AD5E4C1A1F1282005C6C46 /* vertex.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode.glsl; fileEncoding = 4; name = vertex.glsl; path = shader/vertex.glsl; sourceTree = "<group>"; };
 		E2AD5E4E1A1F13DF005C6C46 /* glew.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = glew.c; path = ../thirdparty/glew/src/glew.c; sourceTree = "<group>"; };
 		E2AD5E501A1F146E005C6C46 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		E2AD5E521A1F1477005C6C46 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -77,7 +77,7 @@
 		E2AD5E561A1F148D005C6C46 /* libglfw.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglfw.a; path = thirdparty/glfw/libglfw.a; sourceTree = "<group>"; };
 		E2AD5E581A1F18AD005C6C46 /* Shader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Shader.cpp; sourceTree = "<group>"; };
 		E2AD5E591A1F18AD005C6C46 /* Shader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shader.h; sourceTree = "<group>"; };
-		E2AD5E5B1A1F1920005C6C46 /* fragment.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = fragment.txt; path = shader/fragment.txt; sourceTree = "<group>"; };
+		E2AD5E5B1A1F1920005C6C46 /* fragment.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode.glsl; fileEncoding = 4; name = fragment.glsl; path = shader/fragment.glsl; sourceTree = "<group>"; };
 		E2AD5E5C1A1F2070005C6C46 /* Program.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Program.cpp; sourceTree = "<group>"; };
 		E2AD5E5D1A1F2070005C6C46 /* Program.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Program.h; sourceTree = "<group>"; };
 		E2BCF4CB1A43210E00CD7DD8 /* Circle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Circle.cpp; sourceTree = "<group>"; };
@@ -182,8 +182,8 @@
 		E2AD5E4B1A1F1223005C6C46 /* resource */ = {
 			isa = PBXGroup;
 			children = (
-				E2AD5E5B1A1F1920005C6C46 /* fragment.txt */,
-				E2AD5E4C1A1F1282005C6C46 /* vertex.txt */,
+				E2AD5E5B1A1F1920005C6C46 /* fragment.glsl */,
+				E2AD5E4C1A1F1282005C6C46 /* vertex.glsl */,
 			);
 			name = resource;
 			sourceTree = "<group>";
@@ -607,6 +607,7 @@
 				E261903D1A56B1A600050E00 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E2AD5E381A1F1049005C6C46 /* Build configuration list for PBXProject "Assignment" */ = {
 			isa = XCConfigurationList;

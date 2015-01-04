@@ -19,7 +19,7 @@ static inline float RadiansToDegrees(float radians) {
 }
 
 Camera::Camera() :
-    _positon(0.0f, 0.0f, 1.0f),
+    _position(0.0f, 0.0f, 1.0f),
     _horizontalAngle(0.0f),
     _verticalAngle(0.0f),
     _fieldOfView(50.0f),
@@ -29,16 +29,16 @@ Camera::Camera() :
 {
 }
 
-const glm::vec3& Camera::positon() const {
-    return _positon;
+const glm::vec3& Camera::position() const {
+    return _position;
 }
 
 void Camera::setPosition(const glm::vec3 &position) {
-    _positon = position;
+    _position = position;
 }
 
 void Camera::offsetPositon(const glm::vec3 &offset) {
-    _positon += offset;
+    _position += offset;
 }
 
 float Camera::fieldOfView() const {
@@ -78,9 +78,9 @@ void Camera::offsetOrientation(float upAngle, float rightAngle) {
     normalizeAngles();
 }
 
-void Camera::lookAt(glm::vec3 positon) {
-    assert(positon != _positon);
-    glm::vec3 direction = glm::normalize(positon - _positon);
+void Camera::lookAt(glm::vec3 position) {
+    assert(position != _position);
+    glm::vec3 direction = glm::normalize(position - _position);
     _verticalAngle = RadiansToDegrees(asinf(-direction.y));
     _horizontalAngle = -RadiansToDegrees(atan2f(-direction.x, -direction.z));
     normalizeAngles();
@@ -119,7 +119,7 @@ glm::mat4 Camera::projection() const {
 }
 
 glm::mat4 Camera::view() const {
-    return orientation() * glm::translate(glm::mat4(), -_positon);
+    return orientation() * glm::translate(glm::mat4(), -_position);
 }
 
 void Camera::normalizeAngles() {
