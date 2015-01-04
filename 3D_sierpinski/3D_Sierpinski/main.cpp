@@ -28,8 +28,8 @@ struct Light {
     float ambientCoefficient;
 };
 
-GLfloat material_shininess = 27.0f;
-glm::vec3 specularColor(0.99f, 0.91f, 0.81f);
+GLfloat material_shininess = 80.0f;
+glm::vec3 specularColor(1.0f, 1.0f, 1.0f);
 
 //constants
 const glm::vec2 SCREEN_SIZE(800,600);
@@ -162,13 +162,6 @@ static void LoadTriangle() {
     
 }
 
-//struct Light {
-//    glm::vec3 position;
-//    glm::vec3 intensities;
-//    float attenuation;
-//    float ambientCofficient;
-//};
-//Light gLight;
 
 static void Render() {
     
@@ -211,7 +204,7 @@ void Update(float secondsElapsed) {
         Axis =glm::vec3(0,1,0);
     }
     //press "T" to stop rotate
-    GLfloat degreesPerSecond = 30.0f;
+    GLfloat degreesPerSecond = 20.0f;
     if (glfwGetKey('T')){
         degreesPerSecond = 0.0f;
     }
@@ -250,6 +243,7 @@ void Update(float secondsElapsed) {
     glfwGetMousePos(&mouseX, &mouseY);
     gCamera.offsetOrientation(mouseSensitivity* mouseY, mouseSensitivity* mouseX);
     glfwSetMousePos(0,0);
+    
     
     //mouse wheel with field of view
     const float zoomSensitivity = -0.8;
@@ -300,7 +294,7 @@ void AppMain() {
     Axis = glm::vec3(0,1,0);
     
     //intialise the Light attribute
-    gLight.position = glm::vec3(0.0f,0.0f,-0.5f);
+    gLight.position = glm::vec3(0.0f,-0.0f,-0.5f);
     gLight.intensities = glm::vec3(1,1,1); // white light
     gLight.attenuation = 0.2f;
     gLight.ambientCoefficient = 0.005f;
