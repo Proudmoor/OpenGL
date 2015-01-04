@@ -192,6 +192,7 @@ static void Render() {
     glfwSwapBuffers();
 }
 
+//rotated and add keyboard and mouse callback
 void Update(float secondsElapsed) {
     //change the axis that rotated
     if (glfwGetKey('7')){
@@ -230,10 +231,12 @@ void Update(float secondsElapsed) {
     }
     
     // change light color
-    if(glfwGetKey('2'))
-        gLight.intensities = glm::vec3(1,0,0); //red
-    else if(glfwGetKey('3'))
-        gLight.intensities = glm::vec3(0,1,0); //green
+    if(glfwGetKey('1'))
+        gLight.intensities = glm::vec3(0.8, 0.3, 0.0); //red
+    else if(glfwGetKey('2'))
+        gLight.intensities = glm::vec3(0.0, 0.8, 0.2); //green
+    else if (glfwGetKey('3'))
+        gLight.intensities = glm::vec3(0.1, 0.3, 0.8);
     else if(glfwGetKey('4'))
         gLight.intensities = glm::vec3(1,1,1); //white
     
@@ -298,7 +301,7 @@ void AppMain() {
     gLight.position = glm::vec3(0.0f,0.1f,-0.1f);
     gLight.intensities = glm::vec3(0.8,0.78,1); // white light
     gLight.attenuation = 0.2f;
-    gLight.ambientCoefficient = 0.0005f;
+    gLight.ambientCoefficient = 0.005f;
     
     double lastTime = glfwGetTime();
     while(glfwGetWindowParam(GLFW_OPENED)){
