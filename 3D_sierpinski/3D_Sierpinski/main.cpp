@@ -196,6 +196,20 @@ void Update(float secondsElapsed) {
         gCamera.offsetPositon(secondsElapsed * moveSpeed * glm::vec3(0,1,0));
     }
     
+    //mouse movement with camera
+    const float mouseSensitivity = 0.1;
+    int mouseX, mouseY;
+    glfwGetMousePos(&mouseX, &mouseY);
+    gCamera.offsetOrientation(mouseSensitivity* mouseY, mouseSensitivity* mouseX);
+    glfwSetMousePos(0,0);
+    
+    //mouse wheel with field of view
+    const float zoomSensitivity = -0.8;
+    float fieldOfView = gCamera.fieldOfView() + zoomSensitivity *(float)glfwGetMouseWheel();
+    if(fieldOfView < 5.0f) fieldOfView = 5.0f;
+    if(fieldOfView > 130.0f) fieldOfView = 130.0f;
+    gCamera.setFieldOfView(fieldOfView);
+    glfwSetMouseWheel(0);
     
 }
 
@@ -224,6 +238,9 @@ void AppMain() {
     if(!GLEW_VERSION_3_2)
         throw std::runtime_error("OpenGL 3.2 API is not available.");
     
+    glfwDisable(GLFW_MOUSE_CURSOR);
+    glfwSetMousePos(0,0);
+    glfwSetMouseWheel(0);
     
     LoadShaders();
     LoadTriangle();
