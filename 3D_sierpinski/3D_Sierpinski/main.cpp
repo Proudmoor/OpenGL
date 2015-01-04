@@ -167,7 +167,7 @@ static void Render() {
     
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     glEnable(GL_DEPTH_TEST);
-    glClearColor(1.0, 1.0, 1.0, 1.0); //set the background
+    glClearColor(0.0, 0.1, 0.1, 1.0); //set the background
     
     glUseProgram(gProgram->object());
     
@@ -244,6 +244,7 @@ void Update(float secondsElapsed) {
     gCamera.offsetOrientation(mouseSensitivity* mouseY, mouseSensitivity* mouseX);
     glfwSetMousePos(0,0);
     
+
     
     //mouse wheel with field of view
     const float zoomSensitivity = -0.8;
@@ -294,10 +295,10 @@ void AppMain() {
     Axis = glm::vec3(0,1,0);
     
     //intialise the Light attribute
-    gLight.position = glm::vec3(0.0f,-0.0f,-0.5f);
-    gLight.intensities = glm::vec3(1,1,1); // white light
+    gLight.position = glm::vec3(0.0f,0.1f,-0.1f);
+    gLight.intensities = glm::vec3(0.8,0.78,1); // white light
     gLight.attenuation = 0.2f;
-    gLight.ambientCoefficient = 0.005f;
+    gLight.ambientCoefficient = 0.0005f;
     
     double lastTime = glfwGetTime();
     while(glfwGetWindowParam(GLFW_OPENED)){
