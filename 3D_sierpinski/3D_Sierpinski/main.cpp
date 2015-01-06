@@ -83,6 +83,7 @@ void triangle(const point3& a, const point3& b, const point3& c, const int color
         color3(0.0f, 0.0f, 0.0f), color3(0.0f, 1.0f, 0.0f),
         color3(0.0f, 0.0f, 1.0f), color3(1.0f, 0.0f, 0.0f)
     };
+    //the normal of vertics
     glm::vec3 normal = glm::normalize(glm::cross(b - a, c - b));
 
     normals[Index] = normal; points[Index] = a;  colors[Index] = base_colors[color]; Index++;
