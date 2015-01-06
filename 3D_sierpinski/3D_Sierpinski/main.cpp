@@ -247,7 +247,6 @@ void Update(float secondsElapsed) {
     gCamera.offsetOrientation(mouseSensitivity* mouseY, mouseSensitivity* mouseX);
     glfwSetMousePos(0,0);
     
-
     
     //mouse wheel with field of view
     const float zoomSensitivity = -0.8;
@@ -255,6 +254,8 @@ void Update(float secondsElapsed) {
     if(fieldOfView < 5.0f) fieldOfView = 5.0f;
     if(fieldOfView > 130.0f) fieldOfView = 130.0f;
     gCamera.setFieldOfView(fieldOfView);
+    if (glfwGetMouseButton(0))          //press left button to reset the Fov;
+        gCamera.setFieldOfView(50.0f);
     glfwSetMouseWheel(0);
     
 }
@@ -266,7 +267,7 @@ void AppMain() {
     glfwOpenWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
     glfwOpenWindowHint(GLFW_OPENGL_VERSION_MAJOR, 3);
     glfwOpenWindowHint(GLFW_OPENGL_VERSION_MINOR, 2);
-    glfwOpenWindowHint(GLFW_WINDOW_NO_RESIZE, GL_TRUE);
+    glfwOpenWindowHint(GLFW_WINDOW_NO_RESIZE, GL_FALSE);
     
     if(!glfwOpenWindow(SCREEN_SIZE.x, SCREEN_SIZE.y, 8, 8, 8, 8, 0, 0, GLFW_WINDOW))
         throw std::runtime_error("glfwOpenWindow failed. Can your hardware handle OpenGL 3.2?");
@@ -310,7 +311,7 @@ void AppMain() {
         Update(thisTime - lastTime);
         lastTime  = thisTime;
         Render();
-        //std::cout << "next " << std::endl;
+        
     }
     
     glfwTerminate();
