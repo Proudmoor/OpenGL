@@ -92,6 +92,10 @@ void Update(float secondsElapsed)
 
 **运行截图**
 
+![](/Users/pengfei/Desktop/1.png)
+![](/Users/pengfei/Desktop/2.png)
+![](/Users/pengfei/Desktop/3.png)
+
 
 
 
