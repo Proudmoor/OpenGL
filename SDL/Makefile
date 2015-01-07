@@ -1,8 +1,9 @@
 CC = g++
 
-setup.o:setup.h
-setup:setup.o
-	g++ -o setup setup.o -framework SDL2
+#setup.o:setup.h
+
+.cpp:
+	$(CC) $@.cpp -framework SDL2 -o $@
 
 
 clean:
