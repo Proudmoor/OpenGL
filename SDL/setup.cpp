@@ -32,12 +32,13 @@ bool App::OnInit() {
 	if(SDL_Init(SDL_INIT_EVERYTHING) < 0) {
 		return false;
 	}
-
-	if(SDL_CreateWindow("My Game Window",
+	
+	SDL_Window * screen = SDL_CreateWindow("My Game Window",
                           SDL_WINDOWPOS_UNDEFINED,
                           SDL_WINDOWPOS_UNDEFINED,
                           640, 480,
-                          SDL_WINDOW_FULLSCREEN_DESKTOP | SDL_WINDOW_OPENGL)) {
+                          SDL_WINDOW_FULLSCREEN_DESKTOP);
+	if(!screen) {
 		return false;
 	}
 	return true;
