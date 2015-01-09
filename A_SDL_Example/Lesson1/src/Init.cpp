@@ -22,7 +22,7 @@ int main (int argc, char **argv) {
 		return 1;
 	}
 
-	std::string imagePath = getResourcePath("Lesson1") + "image.bmp";
+	std::string imagePath = getResourcePath() + "image.bmp";
 	SDL_Surface *bmp = SDL_LoadBMP(imagePath.c_str());
 	if (bmp == nullptr) {
 		SDL_DestroyRenderer(ren);

@@ -25,7 +25,7 @@ std::string getResourcePath(const std::string &subDir = ""){
 			return "";
 		}
 
-		size_t pos = baseRes.rfind("bin");
+		size_t pos = baseRes.rfind("src");
 		baseRes = baseRes.substr(0, pos) + "res" + PATH_SEP;
 	}
 	
