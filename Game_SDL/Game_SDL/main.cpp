@@ -16,11 +16,11 @@ int main(int argc, const char * argv[]) {
     
     gGame = new Game();
     
-    gGame -> Init("Chapter 1", 100, 100, 640, 480, 0);
+    gGame -> Init("Chapter 1", 100, 100, 640, 480, true);
     
     while (gGame -> IsRun()) {
         gGame -> handleEvents();
-        gGame -> update();
+        //gGame -> update();
         gGame -> render();
     }
     

@@ -21,7 +21,7 @@ public:
     ~Game(){};
     
     bool Init(const char* title, int xpos, int ypos,
-              int width, int height, int flags);
+              int width, int height, bool fullscreen);
     
     void render();
     

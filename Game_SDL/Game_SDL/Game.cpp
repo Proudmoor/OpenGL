@@ -9,11 +9,16 @@
 #include "Game.h"
 
 bool Game::Init(const char *title, int xpos, int ypos,
-                int width, int height, int flags) {
+                int width, int height, bool fullscreen) {
     if (SDL_Init(SDL_INIT_EVERYTHING) == 0) {
         std::cout << "SDL Init Success\n";
         
-        m_Window = SDL_CreateWindow(title, xpos, ypos, width, height, flags);
+        int flags = 0;
+        if (fullscreen) {
+            flags = SDL_WINDOW_FULLSCREEN_DESKTOP;
+        }
+        
+        m_Window = SDL_CreateWindow(title, xpos, ypos, width, height,flags);
         if (m_Window != 0) {
             std::cout << "window creation success" << std::endl;
             m_Render = SDL_CreateRenderer(m_Window, -1, 0);
@@ -69,7 +74,9 @@ void Game::clean() {
     SDL_Quit();
 }
 
-
+bool Game::IsRun() {
+    return m_Running;
+}
 
 
 
