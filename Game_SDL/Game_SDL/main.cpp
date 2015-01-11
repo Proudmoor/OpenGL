@@ -16,7 +16,7 @@ int main(int argc, const char * argv[]) {
     
     gGame = new Game();
     
-    gGame -> Init("Chapter 1", 100, 100, 640, 480, true);
+    gGame -> Init("Chapter 1", 100, 100, 640, 480, false);
     
     while (gGame -> IsRun()) {
         gGame -> handleEvents();

@@ -38,6 +38,19 @@ bool Game::Init(const char *title, int xpos, int ypos,
         std::cout << "SDL Init fail\n";
         return false;
     }
+    
+    //load Texture
+    SDL_Surface* gTempSurface = SDL_LoadBMP("image.bmp");
+    m_Texture  = SDL_CreateTextureFromSurface(m_Render, gTempSurface);
+    
+    SDL_FreeSurface(gTempSurface);
+    SDL_QueryTexture(m_Texture, nullptr, NULL, &m_srcRect.w, &m_srcRect.h);
+    m_srcRect.w = m_srcRect.h = 50;
+    m_destRect.x = m_srcRect.x = 0; // define the origin of rect
+    m_destRect.y = m_srcRect.y = 0;
+    m_destRect.w = m_srcRect.w;
+    m_destRect.h = m_srcRect.h;
+    
      // start the main loop
     std::cout << "init success"<<std::endl;
     m_Running = true;
@@ -48,6 +61,7 @@ void Game::render() {
     SDL_RenderClear(m_Render);
     
     // draw something
+    SDL_RenderCopy(m_Render, m_Texture, &m_destRect, &m_destRect);
     
     SDL_RenderPresent(m_Render);
 }
