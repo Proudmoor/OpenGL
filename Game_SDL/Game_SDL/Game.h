@@ -11,6 +11,7 @@
 
 #include <iostream>
 #include <SDL2/SDL.h>
+#include "Texture.h"
 
 class Game
 {
@@ -37,10 +38,13 @@ private:
     
     SDL_Window* m_Window;
     SDL_Renderer* m_Render;
-    
-    SDL_Texture* m_Texture;
-    SDL_Rect    m_srcRect;
-    SDL_Rect    m_destRect;
+      // dont need with texture manager
+//    SDL_Texture* m_Texture;
+//    SDL_Rect    m_srcRect;
+//    SDL_Rect    m_destRect;
+     // instead use
+    int m_currentFrame;
+    TextureManager m_textureManager;
     
 };
 

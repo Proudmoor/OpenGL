@@ -40,17 +40,8 @@ bool Game::Init(const char *title, int xpos, int ypos,
         return false;
     }
     
-    //load Texture
-    SDL_Surface* gTempSurface = IMG_Load("char2.png");
-    m_Texture  = SDL_CreateTextureFromSurface(m_Render, gTempSurface);
-    
-    SDL_FreeSurface(gTempSurface);
-    SDL_QueryTexture(m_Texture, nullptr, NULL, &m_srcRect.w, &m_srcRect.h);
-    m_srcRect.w =   100;        m_srcRect.h= 100;
-    m_destRect.x = 0;       m_srcRect.x = 0; // define the origin of rect
-    m_destRect.y = 0;       m_srcRect.y = 80;
-    m_destRect.w = 640;
-    m_destRect.h = 480;
+    //load Texture  use textmanager
+    m_textureManager.load("char2.png", "animate", m_Render);
     
      // start the main loop
     std::cout << "init success"<<std::endl;
@@ -61,9 +52,9 @@ bool Game::Init(const char *title, int xpos, int ypos,
 void Game::render() {
     SDL_RenderClear(m_Render);
     
-    // draw something
-    SDL_RenderCopyEx(m_Render, m_Texture, &m_srcRect, &m_destRect, 0, 0, SDL_FLIP_HORIZONTAL);
+    m_textureManager.draw("animate", 0, 0, 100, 80, m_Render);
     
+    m_textureManager.drawFrame("animate", 0, 0, 100, 80, 2, m_currentFrame, m_Render, SDL_FLIP_HORIZONTAL);
     SDL_RenderPresent(m_Render);
 }
 
@@ -94,7 +85,7 @@ bool Game::IsRun() {
 }
 
 void Game::update() {
-    m_srcRect.x = 100 * int(((SDL_GetTicks() / 100) % 6));
+    m_currentFrame =  int(((SDL_GetTicks() / 100) % 6));
 }
 
 
