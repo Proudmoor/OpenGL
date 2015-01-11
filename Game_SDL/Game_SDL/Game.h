@@ -44,6 +44,7 @@ private:
 //    SDL_Rect    m_destRect;
      // instead use
     int m_currentFrame;
+    int m_currentRow;
     //TextureManager m_textureManager;
     
 };

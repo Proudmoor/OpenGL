@@ -44,7 +44,7 @@ bool Game::Init(const char *title, int xpos, int ypos,
     
     //load Texture  use textmanager
     //m_textureManager.load("char2.png", "animate", m_Render);
-    if(!TheTextureManager::Instance() -> load("char2.png", "animate", m_Render)) {
+    if(!TheTextureManager::Instance() -> load("spritesheet.png", "animate", m_Render)) {
         return false;
     }
      // start the main loop
@@ -56,9 +56,9 @@ bool Game::Init(const char *title, int xpos, int ypos,
 void Game::render() {
     SDL_RenderClear(m_Render);
     
-    TheTextureManager::Instance() -> draw("animate", 0, 0, 100, 80, m_Render);
+    TheTextureManager::Instance() -> draw("animate", 0, 0, 125, 125, m_Render,SDL_FLIP_HORIZONTAL);
     
-    TheTextureManager::Instance() -> drawFrame("animate", 0, 0, 100, 80, 2, m_currentFrame, m_Render, SDL_FLIP_HORIZONTAL);
+    TheTextureManager::Instance() -> drawFrame("animate", 0, 0, 125, 125, m_currentRow, m_currentFrame, m_Render, SDL_FLIP_HORIZONTAL);
     SDL_RenderPresent(m_Render);
 }
 
@@ -89,7 +89,9 @@ bool Game::IsRun() {
 }
 
 void Game::update() {
-    m_currentFrame =  int(((SDL_GetTicks() / 100) % 6));
+    m_currentFrame = int(((SDL_GetTicks() / 100) % 4));
+    m_currentRow   = int(((SDL_GetTicks() / 100) % 4));
+
 }
 
 
