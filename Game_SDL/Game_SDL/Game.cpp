@@ -94,7 +94,7 @@ bool Game::IsRun() {
 }
 
 void Game::update() {
-    m_srcRect.x = 128 * int(((SDL_GetTicks() / 100) % 6));
+    m_srcRect.x = 100 * int(((SDL_GetTicks() / 100) % 6));
 }
 
 
