@@ -26,7 +26,12 @@ public:
     void drawFrame(std::string id, int x, int y, int width, int height,
                    int currentRow, int currentFrame, SDL_Renderer* pRenderer,
                    SDL_RendererFlip flip);
-private:
+    
+    static TextureManager* Instance();
+
+    private:
+    static TextureManager* s_pInstance;
+    TextureManager() {}
     
     std::map<std::string, SDL_Texture*> m_textureMap;
 };

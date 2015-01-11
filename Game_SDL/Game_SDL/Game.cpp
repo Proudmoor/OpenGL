@@ -9,6 +9,8 @@
 #include "Game.h"
 #include <SDL2_image/SDL_image.h>
 
+typedef TextureManager TheTextureManager;
+
 bool Game::Init(const char *title, int xpos, int ypos,
                 int width, int height, bool fullscreen) {
     if (SDL_Init(SDL_INIT_EVERYTHING) == 0) {
@@ -41,8 +43,10 @@ bool Game::Init(const char *title, int xpos, int ypos,
     }
     
     //load Texture  use textmanager
-    m_textureManager.load("char2.png", "animate", m_Render);
-    
+    //m_textureManager.load("char2.png", "animate", m_Render);
+    if(!TheTextureManager::Instance() -> load("char2.png", "animate", m_Render)) {
+        return false;
+    }
      // start the main loop
     std::cout << "init success"<<std::endl;
     m_Running = true;
@@ -52,9 +56,9 @@ bool Game::Init(const char *title, int xpos, int ypos,
 void Game::render() {
     SDL_RenderClear(m_Render);
     
-    m_textureManager.draw("animate", 0, 0, 100, 80, m_Render);
+    TheTextureManager::Instance() -> draw("animate", 0, 0, 100, 80, m_Render);
     
-    m_textureManager.drawFrame("animate", 0, 0, 100, 80, 2, m_currentFrame, m_Render, SDL_FLIP_HORIZONTAL);
+    TheTextureManager::Instance() -> drawFrame("animate", 0, 0, 100, 80, 2, m_currentFrame, m_Render, SDL_FLIP_HORIZONTAL);
     SDL_RenderPresent(m_Render);
 }
 
