@@ -7,6 +7,7 @@
 //
 
 #include "Game.h"
+#include <SDL2_image/SDL_image.h>
 
 bool Game::Init(const char *title, int xpos, int ypos,
                 int width, int height, bool fullscreen) {
@@ -40,16 +41,16 @@ bool Game::Init(const char *title, int xpos, int ypos,
     }
     
     //load Texture
-    SDL_Surface* gTempSurface = SDL_LoadBMP("image.bmp");
+    SDL_Surface* gTempSurface = IMG_Load("char2.png");
     m_Texture  = SDL_CreateTextureFromSurface(m_Render, gTempSurface);
     
     SDL_FreeSurface(gTempSurface);
     SDL_QueryTexture(m_Texture, nullptr, NULL, &m_srcRect.w, &m_srcRect.h);
-    m_srcRect.w = m_srcRect.h = 50;
-    m_destRect.x = m_srcRect.x = 0; // define the origin of rect
-    m_destRect.y = m_srcRect.y = 0;
-    m_destRect.w = m_srcRect.w;
-    m_destRect.h = m_srcRect.h;
+    m_srcRect.w =   100;        m_srcRect.h= 100;
+    m_destRect.x = 0;       m_srcRect.x = 0; // define the origin of rect
+    m_destRect.y = 0;       m_srcRect.y = 80;
+    m_destRect.w = 640;
+    m_destRect.h = 480;
     
      // start the main loop
     std::cout << "init success"<<std::endl;
@@ -61,7 +62,7 @@ void Game::render() {
     SDL_RenderClear(m_Render);
     
     // draw something
-    SDL_RenderCopy(m_Render, m_Texture, &m_destRect, &m_destRect);
+    SDL_RenderCopyEx(m_Render, m_Texture, &m_srcRect, &m_destRect, 0, 0, SDL_FLIP_HORIZONTAL);
     
     SDL_RenderPresent(m_Render);
 }
@@ -92,7 +93,9 @@ bool Game::IsRun() {
     return m_Running;
 }
 
-
+void Game::update() {
+    m_srcRect.x = 128 * int(((SDL_GetTicks() / 100) % 6));
+}
 
 
 

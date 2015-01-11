@@ -20,7 +20,7 @@ int main(int argc, const char * argv[]) {
     
     while (gGame -> IsRun()) {
         gGame -> handleEvents();
-        //gGame -> update();
+        gGame -> update();
         gGame -> render();
     }
     
