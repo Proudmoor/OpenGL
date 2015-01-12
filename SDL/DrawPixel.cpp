@@ -89,14 +89,14 @@ int main(int argc, char** argv) {
                     if(ptCount == 0){
                         SDL_GetMouseState(&x1, &y1);
                         std::stringstream ss;
-                        ss << "X1:  " << x2 << "X1:  " << y2;
+                        ss << "  X1:" << x2 << "  X1:" << y2;
                         SDL_SetWindowTitle(window, ss.str().c_str());
                         ptCount = true;
                     } else {
                         SDL_GetMouseState(&x2, &y2);
 
                         std::stringstream ss;
-                        ss << "X2:  " << x2 << "X2:  " << y2;
+                        ss << "X2:" << x2 << "  X2:" << y2;
                         SDL_SetWindowTitle(window, ss.str().c_str());
                         ptCount = false;
 
