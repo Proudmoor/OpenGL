@@ -190,6 +190,7 @@ static void Render() {
     
     gProgram -> stopUsing();
     glShadeModel(GL_SMOOTH);
+    glEnable(GL_DEPTH);
     glfwSwapBuffers();
 }
 
