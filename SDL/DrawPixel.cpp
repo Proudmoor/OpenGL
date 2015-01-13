@@ -30,7 +30,8 @@ void DrawLine(int x0, int y0,  int xEnd,  int yEnd) {
     int y = y0;
 
     const int maxX = xEnd;
-
+    //draw point 
+    if (x0 == xEnd & y0 == yEnd) SetPixel(x0,y0); 
     for (int x = x0; x < maxX; x++){
         if (steep){
             SetPixel(y, x);
@@ -99,15 +100,9 @@ int main(int argc, char** argv) {
                         ss << "X2:" << x2 << "  X2:" << y2;
                         SDL_SetWindowTitle(window, ss.str().c_str());
                         ptCount = false;
-
                         DrawLine(x1, y1, x2, y2);
                     }
                 }
-                
-
-                
-
-
             case SDL_MOUSEMOTION:
                 if (leftMouseButtonDown){
                     int mouseX = event.motion.x;
