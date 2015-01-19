@@ -22,6 +22,7 @@ int main(int argc, const char * argv[]) {
         gGame -> handleEvents();
         gGame -> update();
         gGame -> render();
+        SDL_Delay(10);
     }
     
     gGame -> clean();

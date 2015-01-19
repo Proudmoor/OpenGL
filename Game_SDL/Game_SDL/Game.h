@@ -12,6 +12,12 @@
 #include <iostream>
 #include <SDL2/SDL.h>
 #include "Texture.h"
+#include "GameObject.h"
+#include "Player.h"
+
+
+
+
 
 class Game
 {
@@ -35,6 +41,8 @@ public:
     bool IsRun() ;
 private:
     bool m_Running;
+    GameObject m_go;
+    Player m_player;
     
     SDL_Window* m_Window;
     SDL_Renderer* m_Render;
