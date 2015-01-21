@@ -25,3 +25,21 @@ void Player::update() {
 void Player::clean() {
     
 }
+
+Enemy::Enemy(const LoaderParams* pParams):
+SDLGameObject(pParams) {
+    
+}
+
+void Enemy::draw() {
+    SDLGameObject::draw();
+}
+
+void Enemy::update() {
+    m_x += 1;
+    m_currentFrame = int (((SDL_GetTicks() / 80) % 6));
+}
+
+void Enemy::clean() {
+    
+}

@@ -14,8 +14,12 @@ typedef TextureManager TheTextureManager;
 bool Game::Init(const char *title, int xpos, int ypos,
                 int width, int height, bool fullscreen) {
     
-    m_go.load(100,100,128,82,"animate");
-    m_player.load(300, 300, 128, 82, "animate");
+//    m_go.load(100,100,128,82,"animate");
+//    m_player.load(300, 300, 128, 82, "animate");
+    
+    m_gameObjects.push_back(new Player(new LoaderParams(100, 100, 128, 82, "animate")));
+    m_gameObjects.push_back(new Enemy(new LoaderParams(300, 300, 128, 82, "animate")));
+    
     if (SDL_Init(SDL_INIT_EVERYTHING) == 0) {
         std::cout << "SDL Init Success\n";
         
@@ -59,8 +63,8 @@ bool Game::Init(const char *title, int xpos, int ypos,
 void Game::render() {
     SDL_RenderClear(m_Render);
     
-    m_go.draw(m_Render);
-    m_player.draw(m_Render);
+//    m_go.draw(m_Render);
+//    m_player.draw(m_Render);
     
     SDL_RenderPresent(m_Render);
 }
@@ -92,9 +96,9 @@ bool Game::IsRun() {
 }
 
 void Game::update() {
-    m_go.update();
-    m_player.update();
-
+    for (std::vector<GameObject* >::size_type i = 0; i != m_gameObjects.size(); i++){
+        m_gameObjects[i] -> update();
+    }
 }
 
 Game* Game::s_pInstance = 0;

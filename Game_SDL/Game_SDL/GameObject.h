@@ -54,7 +54,6 @@ private:
 class GameObject {
 public:
     
-    void load (int x, int y, int width, int height, std::string textureID);
 
     virtual void draw() = 0;
     virtual void update() = 0;

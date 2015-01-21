@@ -14,10 +14,7 @@
 #include "Texture.h"
 #include "GameObject.h"
 #include "Player.h"
-
-
-
-
+#include <vector>
 
 class Game
 {
@@ -50,12 +47,12 @@ public:
         return s_pInstance;
     }
 private:
-    Game();
+    Game() {};
     
     static Game* s_pInstance;
     bool m_Running;
-    GameObject m_go;
-    Player m_player;
+    
+    std::vector<GameObject* > m_gameObjects;
     
     SDL_Window* m_Window;
     SDL_Renderer* m_Render;
