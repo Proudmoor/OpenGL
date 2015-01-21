@@ -8,23 +8,22 @@
 
 #include "GameObject.h"
 #include "Texture.h"
+#include "Game.h"
 
-void GameObject::load(int x, int y, int width, int height, std::string textureID) {
-    m_x = x;
-    m_y = y;
-    m_width = width;
-    m_height = height;
-    m_textureID = textureID;
+SDLGameObject::SDLGameObject(const LoaderParams* pParams) :
+GameObject(pParams) {
+    m_x = pParams -> getX();
+    m_y = pParams -> getY();
+    m_width = pParams -> getWidth();
+    m_height = pParams -> getHeight();
+    
+    m_textureID = pParams -> getTextureID();
     
     m_currentRow = 1;
     m_currentFrame = 1;
 }
 
-void GameObject::draw(SDL_Renderer *pRenderer){
-    TextureManager::Instance() -> drawFrame(m_textureID, m_x, m_y, m_width, m_height, m_currentRow, m_currentFrame, pRenderer, SDL_FLIP_NONE);
-}
-
-void GameObject::update() {
-    m_x +=1;
-    
+void SDLGameObject::draw() {
+    TextureManager::Instance() -> drawFrame(m_textureID, m_x, m_y, m_width, m_height, m_currentRow, m_currentFrame,
+                                            Game::Instance() -> getRenderer(), SDL_FLIP_NONE);
 }

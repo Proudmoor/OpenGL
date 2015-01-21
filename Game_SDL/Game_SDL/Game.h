@@ -23,7 +23,6 @@ class Game
 {
 public:
     
-    Game() {};
     
     ~Game(){};
     
@@ -31,6 +30,9 @@ public:
               int width, int height, bool fullscreen);
     
     void render();
+    SDL_Renderer* getRenderer() const {
+        return m_Render;
+    }
     
     void update();
     
@@ -39,7 +41,18 @@ public:
     void clean();
     
     bool IsRun() ;
+    
+    static Game* Instance() {
+        if (s_pInstance == 0) {
+            s_pInstance = new Game();
+            return s_pInstance;
+        }
+        return s_pInstance;
+    }
 private:
+    Game();
+    
+    static Game* s_pInstance;
     bool m_Running;
     GameObject m_go;
     Player m_player;

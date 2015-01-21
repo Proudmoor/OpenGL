@@ -12,12 +12,22 @@
 #include <stdio.h>
 #include "GameObject.h"
 
-class Player : public GameObject{
+class Player : public SDLGameObject{
 public:
-    void load(int x, int y, int width, int height, std::string textureID);
-    void draw(SDL_Renderer* pRenderer);
-    void update();
-    void clean();
+    Player(const LoaderParams* pParams);
+    
+    virtual void draw();
+    virtual void update();
+    virtual void clean();
+};
+
+class Enemy: public SDLGameObject {
+public:
+    Enemy(const LoaderParams* pParams);
+    
+    virtual void draw();
+    virtual void update();
+    virtual void clean();
 };
 
 

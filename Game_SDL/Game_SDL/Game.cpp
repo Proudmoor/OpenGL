@@ -97,6 +97,7 @@ void Game::update() {
 
 }
 
+Game* Game::s_pInstance = 0;
 
 
 

@@ -13,22 +13,34 @@
 #include <iostream>
 #include <SDL2/SDL.h>
 
-class GameObject {
+class LoaderParams {
 public:
     
-    void load (int x, int y, int width, int height, std::string textureID);
-
-    void draw(SDL_Renderer* pRenderer) ;
-    void update();
-    void clean() {
-        std::cout << "clean game object";
+    LoaderParams(int x, int y, int width, int height, std::string textureID) :
+    m_x(x), m_y(y), m_width(width), m_height(height), m_textureID(textureID){
+        
     }
-protected:
     
-    std::string m_textureID;
+    int getX() const {
+        return m_x;
+    }
     
-    int m_currentFrame;
-    int m_currentRow;
+    int getY() const {
+        return m_y;
+    }
+    int getWidth() const {
+        return m_width;
+    }
+    int getHeight() const {
+        return m_height;
+    }
+    std::string getTextureID() const {
+        return m_textureID;
+    }
+    
+    
+    
+private:
     
     int m_x;
     int m_y;
@@ -36,7 +48,86 @@ protected:
     int m_width;
     int m_height;
     
+    std::string m_textureID;
 };
+
+class GameObject {
+public:
+    
+    void load (int x, int y, int width, int height, std::string textureID);
+
+    virtual void draw() = 0;
+    virtual void update() = 0;
+    virtual void clean() = 0;
+    
+protected:
+    
+    GameObject (const LoaderParams* pParams){
+        
+    }
+    
+    virtual ~GameObject() {
+        
+    }
+
+};
+
+
+
+class SDLGameObject : public GameObject {
+public:
+    
+    SDLGameObject(const LoaderParams* pParams);
+    
+    virtual void draw();
+    virtual void update();
+    virtual void clean();
+    
+protected:
+    int m_x;
+    int m_y;
+    
+    int m_width;
+    int m_height;
+    
+    int m_currentRow;
+    int m_currentFrame;
+    
+    std::string m_textureID;
+    
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 #endif /* defined(__Game_SDL__GameObject__) */

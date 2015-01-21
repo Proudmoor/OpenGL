@@ -10,22 +10,28 @@
 #include <SDL2/SDL.h>
 #include "Game.h"
 
-Game* gGame = 0;
+typedef Game TheGame;
 
 int main(int argc, const char * argv[]) {
     
-    gGame = new Game();
+    std::cout << "game init attempt...\n";
     
-    gGame -> Init("Chapter 1", 100, 100, 640, 480, false);
-    
-    while (gGame -> IsRun()) {
-        gGame -> handleEvents();
-        gGame -> update();
-        gGame -> render();
-        SDL_Delay(10);
+    if (TheGame::Instance() -> Init("Chapter 1", 100, 100, 640, 480, false)) {
+        std::cout << "game init success! \n";
+        while (TheGame::Instance() -> IsRun()) {
+            TheGame::Instance() -> handleEvents();
+            TheGame::Instance() -> update();
+            TheGame::Instance() -> render();
+            
+            SDL_Delay(10);
+        }
+    } else {
+        std::cout << "game init failed : " << SDL_GetError() << "\n";
+        return -1;
     }
     
-    gGame -> clean();
+    std::cout << "game closing...\n";
+    TheGame::Instance() -> clean();
     
     return 0;
 
