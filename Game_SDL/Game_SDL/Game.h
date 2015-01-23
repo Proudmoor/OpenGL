@@ -56,14 +56,8 @@ private:
     
     SDL_Window* m_Window;
     SDL_Renderer* m_Render;
-      // dont need with texture manager
-//    SDL_Texture* m_Texture;
-//    SDL_Rect    m_srcRect;
-//    SDL_Rect    m_destRect;
-     // instead use
-    int m_currentFrame;
+     int m_currentFrame;
     int m_currentRow;
-    //TextureManager m_textureManager;
     
 };
 
