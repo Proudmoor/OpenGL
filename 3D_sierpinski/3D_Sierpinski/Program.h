@@ -79,3 +79,5 @@ void setUniform4v(const GLchar* uniformName, const OGL_TYPE* v, GLsizei count=1)
         const Program& operator = (const Program&);
     };
 }
+
+

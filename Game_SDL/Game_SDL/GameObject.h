@@ -12,6 +12,7 @@
 #include <stdio.h>
 #include <iostream>
 #include <SDL2/SDL.h>
+#include "Vector2D.h"
 
 class LoaderParams {
 public:
@@ -83,8 +84,7 @@ public:
     virtual void clean();
     
 protected:
-    int m_x;
-    int m_y;
+    Vector2D m_position;
     
     int m_width;
     int m_height;

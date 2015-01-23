@@ -63,8 +63,9 @@ bool Game::Init(const char *title, int xpos, int ypos,
 void Game::render() {
     SDL_RenderClear(m_Render);
     
-//    m_go.draw(m_Render);
-//    m_player.draw(m_Render);
+    for (std::vector<GameObject*>::size_type i = 0; i != m_gameObjects.size(); i++) {
+        m_gameObjects[i] -> draw();
+    }
     
     SDL_RenderPresent(m_Render);
 }

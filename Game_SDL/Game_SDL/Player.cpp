@@ -18,8 +18,8 @@ void Player::draw() {
 }
 
 void Player::update() {
-    m_x -= 1;
-    m_currentFrame = int(((SDL_GetTicks() / 100) % 6));
+    m_position.setX(m_position.getX() + 1);
+    m_currentFrame = int(((SDL_GetTicks() / 1000) % 6));
 }
 
 void Player::clean() {
@@ -36,7 +36,8 @@ void Enemy::draw() {
 }
 
 void Enemy::update() {
-    m_x += 1;
+    m_position.setX(m_position.getX() + 1);
+    m_position.setY(m_position.getY() + 1);
     m_currentFrame = int (((SDL_GetTicks() / 80) % 6));
 }
 
