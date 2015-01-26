@@ -11,7 +11,8 @@
 #include "Game.h"
 
 SDLGameObject::SDLGameObject(const LoaderParams* pParams) :
-GameObject(pParams) , m_position(pParams->getX(), pParams->getY()){
+GameObject(pParams) , m_position(pParams->getX(), pParams->getY()),
+m_velocity(0,0), m_acceleration(0,0){
 //    m_x = pParams -> getX();
 //    m_y = pParams -> getY();
     m_width = pParams -> getWidth();
@@ -33,5 +34,6 @@ void SDLGameObject::clean() {
 }
 
 void SDLGameObject::update() {
-    Game::Instance() -> update();
+    m_velocity += m_acceleration;
+    m_position += m_velocity;
 }

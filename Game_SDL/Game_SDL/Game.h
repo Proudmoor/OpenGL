@@ -13,9 +13,8 @@
 #include <SDL2/SDL.h>
 #include "Texture.h"
 #include "GameObject.h"
-#include "Player.h"
 #include <vector>
-
+#include "Player.h"
 class Game
 {
 public:
@@ -42,7 +41,6 @@ public:
     static Game* Instance() {
         if (s_pInstance == 0) {
             s_pInstance = new Game();
-            return s_pInstance;
         }
         return s_pInstance;
     }
@@ -60,5 +58,7 @@ private:
     int m_currentRow;
     
 };
+
+
 
 #endif /* defined(__Game_SDL__Game__) */

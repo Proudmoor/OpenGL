@@ -11,6 +11,8 @@
 
 #include <stdio.h>
 #include "GameObject.h"
+#include "InputHandler.h"
+
 
 class Player : public SDLGameObject{
 public:
@@ -19,6 +21,8 @@ public:
     virtual void draw();
     virtual void update();
     virtual void clean();
+private:
+    void handleInput();
 };
 
 class Enemy: public SDLGameObject {

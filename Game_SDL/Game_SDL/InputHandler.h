@@ -12,16 +12,28 @@
 #include <stdio.h>
 #include <SDL2/SDL.h>
 #include <vector>
-#include "Game.h"
+#include <iostream>
+#include "Vector2D.h"
+
+
+enum mouse_buttons{
+    LEFT = 0,
+    MIDDLE = 1,
+    RIGHT = 2
+};
+
+const int m_joystickDeadZone = 10000;
 
 class InputHandler{
+   
 public:
     static InputHandler* Instance() {
-        if (s_pInstance == 0) {
-            s_pInstance = new InputHandler();
+        if (s_Instance == 0) {
+            s_Instance = new InputHandler();
         }
-        return s_pInstance;
+        return s_Instance;
     }
+    
     void update();
     void clean();
     
@@ -30,15 +42,37 @@ public:
         return m_bJoysticksInitialised;
     }
     
+    bool getButtonState(int joy, int buttonNumber) {
+        return m_buttonStates[joy][buttonNumber];
+    }
+    
+    bool getMouseButtonState(int buttonNumber) {
+        return m_mouseButtonStates[buttonNumber];
+    }
+    
+    Vector2D* getMousePosition(){
+        return m_mousePosition;
+    }
+    int xvalue(int joy, int stick);
+    int yvalue(int joy, int stick);
+    
 private:
     std::vector<SDL_Joystick*> m_joysticks;
     bool m_bJoysticksInitialised;
+    std::vector<std::pair<Vector2D*, Vector2D*> > m_joystickValues;
+    std::vector<std::vector<bool>> m_buttonStates;
     
-    InputHandler() ;
+    std::vector<bool> m_mouseButtonStates;
+    
+    Vector2D* m_mousePosition;
+
+    static InputHandler*  s_Instance;
+    InputHandler();
     ~InputHandler() {}
     
-    static InputHandler* s_pInstance;
+    
 };
+
 
 typedef InputHandler TheInputHandler;
 
