@@ -11,7 +11,7 @@
 
 #include <stdio.h>
 #include <SFML/Graphics.hpp>
-
+const sf::Time TimePerFrame = sf::seconds(1.f / 60.f);
 class Game {
 public:
     Game();
@@ -20,11 +20,14 @@ public:
 private:
     void handleEvents();
     void handlePlayerInput(sf::Keyboard::Key key, bool isPressed);
-    void update();
+    void update(sf::Time deltaTime);
     void render();
     
-    sf::RenderWindow m_window;
-    sf::CircleShape  m_player;
+    //sf::RenderWindow m_window;
+    //sf::CircleShape  m_player;
+     
+    sf::Texture m_texture;
+    sf::Sprite m_player;
     
     bool m_isMovingUp, m_isMovingDown, m_isMovingLeft, m_isMovingRight;
 };

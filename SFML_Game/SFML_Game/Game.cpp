@@ -9,17 +9,27 @@
 #include "Game.h"
 
 Game::Game() :
-m_window(sf::VideoMode(640, 480), "SFML GAME")
+m_texture()
 ,m_player(){
-    m_player.setRadius(40.0f);
+    if (!m_texture.loadFromFile("Media/Textures/Eagle.png")) {
+        //...
+    }
+    m_player.setTexture(m_texture);
     m_player.setPosition(100.f, 100.f);
-    m_player.setFillColor(sf::Color::Cyan);
 }
 
 void Game::run() {
+    sf::Clock clock;
+    sf::Time timeSinceLastUpdate = sf::Time::Zero;
     while (m_window.isOpen()) {
+        //sf::Time deltaTime = clock.restart();
         handleEvents();
-        update();
+        timeSinceLastUpdate += clock.restart();
+        while (timeSinceLastUpdate > TimePerFrame){
+            timeSinceLastUpdate -= TimePerFrame;
+            handleEvents();
+            update(TimePerFrame);
+        }
         render();
     }
 }
@@ -57,26 +67,28 @@ void Game::handlePlayerInput(sf::Keyboard::Key key, bool isPressed) {
         m_isMovingRight = isPressed;
     }
 }
-void Game::update() {
+
+void Game::update(sf::Time deltaTime) {
     sf::Vector2f movement(0.f, 0.f);
+    float PlayerSpeed = 10.0f;
     if (m_isMovingUp) {
-        movement.y -= 1.f;
+        movement.y -= PlayerSpeed;
     }
     if (m_isMovingDown) {
-        movement.y += 1.f;
+        movement.y += PlayerSpeed;
     }
     if (m_isMovingLeft) {
-        movement.x -= 1.f;
+        movement.x -= PlayerSpeed;
     }
     if (m_isMovingRight) {
-        movement.x += 1.f;
+        movement.x += PlayerSpeed;
     }
     
-    m_player.move(movement);
+    m_player.move(movement * deltaTime.asSeconds());
 }
 
 void Game::render() {
-    m_window.clear();
+    m_texture.clear();
     m_window.draw(m_player);
     m_window.display();
 }
