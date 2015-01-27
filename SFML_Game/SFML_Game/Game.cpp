@@ -1,4 +1,4 @@
-//
+ //
 //  Game.cpp
 //  SFML_Game
 //
@@ -9,12 +9,16 @@
 #include "Game.h"
 
 Game::Game() :
+m_window(sf::VideoMode(640, 480), "SFML GAME"),
 m_texture()
-,m_player(){
+,m_player(),m_isMovingUp(false),m_isMovingDown(false),
+m_isMovingLeft(false),m_isMovingRight(false){
+    
     if (!m_texture.loadFromFile("Media/Textures/Eagle.png")) {
         //...
     }
     m_player.setTexture(m_texture);
+    //m_player.setTextureRect(sf::IntRect(10,10,32,32));
     m_player.setPosition(100.f, 100.f);
 }
 
@@ -65,12 +69,16 @@ void Game::handlePlayerInput(sf::Keyboard::Key key, bool isPressed) {
         m_isMovingLeft = isPressed;
     } else if (key == sf::Keyboard::D) {
         m_isMovingRight = isPressed;
+    } else if (key == sf::Keyboard::Num1) {
+        m_speed = 1;
+    } else if (key == sf::Keyboard::Num2){
+        m_speed = 4;
     }
 }
 
 void Game::update(sf::Time deltaTime) {
     sf::Vector2f movement(0.f, 0.f);
-    float PlayerSpeed = 10.0f;
+    float PlayerSpeed = 20.0f * m_speed;
     if (m_isMovingUp) {
         movement.y -= PlayerSpeed;
     }
@@ -88,7 +96,7 @@ void Game::update(sf::Time deltaTime) {
 }
 
 void Game::render() {
-    m_texture.clear();
+    m_window.clear();
     m_window.draw(m_player);
     m_window.display();
 }
